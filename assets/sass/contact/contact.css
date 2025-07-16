@@ -1,0 +1,248 @@
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+body {
+  font-family: ttrg-bd;
+}
+
+.contact-banner {
+  position: relative;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-banner {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-banner {
+    height: 40vh;
+  }
+}
+.contact-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0.85) 100%);
+}
+.contact-banner .video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.contact-banner .bg-wrapper {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.contact-banner .bg-wrapper h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+@media only screen and (max-width: 540px) {
+  .contact-banner .bg-wrapper h1 {
+    font-size: 38px;
+    margin-bottom: 7px;
+  }
+}
+.contact-banner .bg-wrapper p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--white);
+}
+@media only screen and (max-width: 540px) {
+  .contact-banner .bg-wrapper p {
+    font-size: 14px;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.contact-secA {
+  padding: 90px 0;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA {
+    padding: 50px 0;
+  }
+}
+.contact-secA .grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .grid-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contact-secA .grid-box .grid-box-item {
+  width: 100%;
+  height: 221px;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 21px 28px;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .contact-secA .grid-box .grid-box-item {
+    padding: 21px 8px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .grid-box .grid-box-item {
+    height: auto;
+  }
+}
+.contact-secA .grid-box .grid-box-item .title {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-secA .grid-box .grid-box-item p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-secA .grid-box .grid-box-item p {
+    font-size: 12px;
+  }
+}
+.contact-secA .grid-box .grid-box-item p a {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text);
+}
+@media only screen and (max-width: 1024px) {
+  .contact-secA .grid-box .grid-box-item p a {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-secA .grid-box .grid-box-item p a {
+    font-size: 12px;
+  }
+}
+
+.contact-secB {
+  padding: 50px 0 20px 0;
+  background: #EAEAEA;
+}
+.contact-secB h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  max-width: 40%;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-secB h2 {
+    max-width: 60%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-secB h2 {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB h2 {
+    max-width: 100%;
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+.contact-secB form {
+  padding: 50px 0;
+  width: 55%;
+  margin: auto;
+  --item: 2;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-secB form {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB form {
+    --item: 1;
+  }
+}
+.contact-secB form .form-group label, .contact-secB form .form-group input, .contact-secB form .form-group textarea {
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact-secB form .btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.contact-secB form .btn:hover {
+  background: var(--black);
+  color: var(--primary);
+  border-color: var(--black);
+}
+
+.contact-secC {
+  overflow: hidden;
+  height: auto;
+  margin-bottom: -6.9px;
+}
+.contact-secC iframe {
+  width: 100%;
+  margin-bottom: 0;
+  height: 656px;
+}
+@media only screen and (max-width: 991px) {
+  .contact-secC iframe {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secC iframe {
+    height: 60vh;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,534 @@
+@import '../_var'
+
+
+.home-banner
+    position: relative
+    color: white
+    overflow: hidden
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include media(1024)
+        height: 80vh
+    @include media(991)
+        height: 50vh
+    @include media(540)
+        height: 70vh
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0) 49.04%, rgba(0, 0, 0, 0.98) 100%)
+        @include media(540)    
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0) 49.04%, rgba(0, 0, 0, 0.98) 100%)
+
+    .video-background 
+        video 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            z-index: -1
+    .container
+        @include media(540)
+            padding: 0
+    .bg-wrapper
+        // max-width: 50%
+        position: absolute
+        z-index: 1
+        width: 100%
+        bottom: 15%
+        margin-left: 10px
+        @include media(991)
+            bottom: 40%
+        @include media(540)
+            bottom: 25%
+        .play-button
+            margin-top: 100px
+            display: flex
+            align-items: center
+            gap: 20px
+            @include media(540)
+                display: flex
+                justify-content: center
+            p
+                text-transform: uppercase
+                font-size: 14px
+                font-weight: 600
+        h1
+            font-weight: 600
+            font-size: 48px
+            line-height: 1.1
+            text-align: left
+            margin-bottom: 18px
+            max-width: 528px
+
+            @include media(991)
+                max-width: 70%
+                line-height: 1.2
+                font-size: 30px
+            @include media(540)
+                max-width: 100%
+                font-size: 25px
+                line-height: 1.1
+                text-align: center
+                padding: 0 20px
+                margin-bottom: 8px
+
+        p
+            font-family: $Poppins
+            font-weight: 500
+            font-size: 16px
+            line-height: 100%
+            color: $white
+            max-width: 50%
+            @include media(991)
+                max-width: 100%
+                color: #ffffffe0
+            @include media(540)
+                max-width: 100%
+                font-size: 13px
+                line-height: 1.2
+                text-align: center
+                color: #ffffffdb
+
+.home-secA
+    padding: 50px 0
+    position: relative
+    overflow: hidden
+    background: var(--gradient-a)
+    &::before
+        content: ""
+        position: absolute
+        top: -80px
+        right: -20px
+        width: 357px
+        height: 285px
+        background: url("../../images/home/dot-bg.png")
+    &::after
+        content: ""
+        position: absolute
+        bottom: -140px
+        left: -20px
+        width: 357px
+        height: 285px
+        background: url("../../images/home/dot-bg.png")
+    .container
+        text-align: center
+        .heading
+            max-width: 50%
+            margin: auto
+            h2
+                color: $white
+            p
+                font-weight: 500
+                font-size: 16px
+        .services-slider
+            padding: 70px 0 
+            position: relative
+            .swiper-nav
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 104%
+                position: absolute
+                top: 50%
+                left: -2%
+                translate: 0% -50%
+                z-index: 2
+                max-width: 110%
+                @include media(540)
+                    display: none
+                button
+                    width: 45px
+                    height: 45px
+                    background-color: $white
+                    border-radius: 50%
+                    // box-shadow: 0px 5px 15px 0 #00000059
+                    border: none
+                    &.swiper-prev
+                        &:hover
+                            svg
+                                translate: -5px 0
+                    &.swiper-next
+                        &:hover
+                            svg
+                                translate: 5px 0
+                    svg
+                        transition: .3s ease
+                        vertical-align: middle
+                        path 
+                            fill: $black
+            .services-slider-slider
+                .swiper-slide
+                    text-align: center
+                    background: #FFFFFF0D
+                    position: relative
+                    overflow: hidden
+                    border-radius: 8px
+                    padding: 50px 40px
+                    transition: 0.5s ease
+                    svg path
+                        stroke: #43ADFF
+
+                    &:hover
+                        background: #3E69AC
+                        svg path
+                            stroke: white
+                    h5
+                        font-weight: 500
+                        font-size: 20px
+                        padding: 20px 0
+                        color: $white
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        color: #FFFFFFB2 
+                .swiper-slide-active
+                    background: #3E69AC
+                    svg path
+                        stroke: white
+        .view-btn
+            margin: 30px 0
+            a
+                opacity: 1
+                border-radius: 5px
+                padding: 8px 15px
+                color: $white
+                border: 1px solid $white
+                align-items: center
+                img
+                    padding-left: 10px
+                    transition: 0.3s ease
+                &:hover
+                    background: $primary
+                    border: 1px solid $primary
+                    img
+                        padding-left: 14px
+                     
+.home-secB
+    padding: 100px 0 150px 0
+    .flex-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .flex-box-item:first-child
+            max-width: 45%
+            .heading
+                text-align: left
+                position: relative
+                h2
+                    font-weight: 700
+                    font-size: 48px
+                    line-height: 45px
+                    span:nth-child(1)
+                        color: $primary
+                    span:nth-child(2)
+                        color: #666666
+                    span:nth-child(3)
+                        color: $black
+            .counter-flex
+                width: 100%
+                display: flex
+                justify-content: left 
+                align-items: center
+                gap: 30px
+                margin: 30px 0
+                @include media(991)
+                    align-items: unset
+                @include media(540)
+                    align-items: unset
+                    justify-content: space-around
+                    gap: 0
+                .counter-item
+                    h5
+                        font-weight: 500
+                        font-size: 20px
+                        @include media(540)
+                            margin-bottom: 4px
+                    p   
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 25px
+                        color: $text
+
+                        @include media(991)
+                            font-size: 10px
+                            line-height: 1.3
+                            justify-content: space-between
+                        @include media(540)
+                            font-size: 10px
+                            line-height: 1.3
+            .more-btn
+                margin: 30px 0
+                a
+                    opacity: 1
+                    border-radius: 5px
+                    padding: 8px 15px
+                    color: $white
+                    align-items: center
+                    background: $primary
+                    border: 1px solid $primary
+                    display: flex
+                    align-items: center
+                    width: fit-content
+                    font-weight: 500
+                    svg
+                        padding-left: 10px
+                        transition: 0.3s ease
+                        width: 30px 
+                        height: 30px 
+                    &:hover
+                        background: $white
+                        border: 1px solid $primary
+                        color: $primary
+                        font-weight: 500
+                        svg path
+                            stroke: $primary
+            .logo
+                display: flex
+                justify-content: start
+                align-items: center
+                gap: 40px
+                p
+                    font-weight: 500
+                    font-size: 14px
+        .flex-box-item:last-child
+            .video-sec
+                position: relative
+                figure
+                    width: 500px
+                    height: 415px
+                    border-top-left-radius: 50px
+                    video
+                        transform: translate(-10%,0%)
+                        border-top-left-radius: 50px
+                    .play-button
+                        position: absolute
+                        top: 50%
+                        left: 40%
+                        transform: translate(-50%, -50%)
+                        .play-btn
+                            background: $white
+                            &::after
+                                border-left: calc(var(--btnsize) / 5.6) solid  #1C499B
+
+                .bg
+                    position: absolute
+                    background: #5393C5
+                    width: 500px
+                    height: 415px
+                    top: 10%
+                    left: 0
+                    z-index: -1
+
+                video
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    line-height: 0
+
+.home-secC
+    padding: 100px 0
+    background: #F4F4F4
+    .container
+        .heading
+            text-align: center
+            h2
+                font-weight: 700
+                font-size: 48px
+                line-height: 45px
+                span:nth-child(1)
+                    color: $black
+                span:nth-child(2)
+                    color: $primary
+                span:nth-child(3)
+                    color: #666666
+        .flex-box
+            display: flex
+            justify-content: space-around
+            padding: 70px 0 
+            .flex-box-item:first-child
+                width: 100%
+                max-width: 45%
+                .content
+                    .summery-detail-content
+                        .col
+                            border-bottom: 1px solid #0000003B
+                            .title
+                                cursor: pointer
+                                padding: 10px 0
+                                display: flex
+                                justify-content: space-between
+                                align-items: center
+                                h6
+                                    font-weight: 500
+                                    font-size: 30px
+                                    color: $text
+                                    transition: 0.5s ease
+                                .ico
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    transition: 0.5s ease
+                                    svg
+                                        width: 30px
+                                        height: 30px
+                                        transition: 0.5s ease                                    
+                                        path
+                                            color: #666666
+                            article
+                                padding-bottom: 20px
+                                p
+                                    font-weight: 400
+                                    font-size: 16px
+
+                        .active
+                            h6
+                                color: $primary !important
+                            .ico 
+                                transform: rotate(0.50turn)
+                                svg
+                                    path
+                                        stroke: $primary !important
+
+                            
+            .flex-box-item:last-child
+                max-width: 45%
+                img
+                    border-radius: 5px
+
+.home-secD
+    background: #03052E
+    position: relative
+    height: 100vh
+    overflow: hidden
+    .video-sec
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: 0.5s ease
+        figure
+            position: relative
+            width: 350px
+            transition: 0.5s ease   
+            background: #03052E
+            video
+                width: 100%
+                height: 100%
+                object-fit: cover
+                mix-blend-mode: Lighten
+            h3
+                font-size: 48px
+                color: $white
+                transition: 0.5s ease   
+                font-weight: 600
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+    .scroll-btn
+        position: absolute
+        top: 80%
+        left: 49%
+        animation: scroll 1.5s ease-in-out infinite forwards
+        p
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: 5%
+            text-align: center
+            text-transform: uppercase
+
+.home-secE
+    position: relative
+    overflow: hidden
+    padding: 50px 0
+    @include media(540)
+        padding: 50px 0
+    
+    .homeTeam-swiper-slider
+        width: 100%
+        @include media(540)
+            margin-bottom: 0px
+            margin-top: 30px
+        .heading
+            text-align: left
+            position: relative
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 20px 0 50px 0
+            h2
+                font-weight: 700
+                font-size: 36px
+                line-height: 45px
+                margin-bottom: 0
+                @include media(540)
+                    font-size: 34px
+                    line-height: 1.2
+                    text-align: center
+                    margin-bottom: 5px
+                span:last-child
+                    font-weight: 400
+                    font-size: 36px
+                    color: #A8A6A7
+                    display: block
+        .swiper-nav
+            .swiper-prev,.swiper-next
+                border: 1px solid $primary
+                svg path
+                    stroke: $primary
+                &:hover
+                    svg path
+                        stroke: $secondary
+
+        .homeTeam-slider
+            .swiper-wrapper
+                .swiper-slide
+                    opacity: 0.56
+                .swiper-slide-active
+                    opacity: 1
+        .swiper-slide
+            background: #D2EBFF
+            border-radius: 10px
+            height: 300px
+            .flex-box
+                display: flex
+                justify-content: space-between  
+                .flex-box-item:first-child
+                    max-width: 65%
+                    .user-content
+                        padding: 30px 0 0 40px
+                        .user-heading
+                            position: relative
+                            &::before
+                                content: ""
+                                position: absolute
+                                left: 0
+                                top: 108%
+                                width: 70px
+                                height: 5px
+                                background: $primary
+                            p:first-child
+                                font-weight: 600
+                                color: $black
+                                font-size: 20px
+                            p:last-child
+                                font-weight: 400
+                                font-size: 16px
+                        .desc
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 20px
+                            margin-top: 20px
+                .flex-box-item:last-child
+                    max-width: 35%
+                    

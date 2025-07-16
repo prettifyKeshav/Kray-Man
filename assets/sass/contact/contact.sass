@@ -1,0 +1,162 @@
+@import '../_var'
+
+body
+    font-family: ttrg-bd
+
+.contact-banner
+    position: relative
+    color: white
+    overflow: hidden
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include media(1024)
+        height: 70vh
+    @include media(991)
+        height: 40vh
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0.85) 100%)
+    .video-background 
+        video 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            z-index: -1
+    .bg-wrapper
+        position: absolute
+        top: 75%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        width: 100%
+        h1
+            font-weight: 700
+            font-size: 48px
+            line-height: 45px
+            text-align: center
+            margin-bottom: 18px
+            @include media(540)
+                font-size: 38px
+                margin-bottom: 7px
+
+        p
+            font-family: $Poppins
+            font-weight: 500
+            font-size: 16px
+            line-height: 100%
+            color: $white
+            @include media(540)
+                font-size: 14px 
+                max-width: 80%
+                margin: auto
+    
+.contact-secA
+    padding: 90px 0
+    @include media(540)
+        padding: 50px 0
+    .grid-box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 30px
+        overflow: hidden
+        @include media(540)
+            grid-template-columns: repeat(1, 1fr)
+        .grid-box-item
+            width: 100%
+            height: 221px
+            border-radius: 15px
+            border: 1px solid black
+            padding: 21px 28px
+            text-align: center
+            @include media(991)
+                padding: 21px 8px
+            @include media(540)
+                height: auto
+            .title
+                color: black
+                font-weight: 700
+                font-size: 18px
+                line-height: 50px
+            p 
+                @include media(1024)
+                    font-size: 14px
+                @include media(991)
+                    font-size: 12px
+                a
+                    font-family: Poppins
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 24px
+                    text-align: center
+                    color: $text
+                    @include media(1024)
+                        font-size: 14px
+                    @include media(991)
+                        font-size: 12px
+.contact-secB
+    padding: 50px 0 20px 0
+    background: #EAEAEA
+    h2
+        font-weight: 700
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        max-width: 40%
+        margin: auto
+        @include media(1024)
+            max-width: 60%
+        @include media(991)
+            max-width: 70%
+        @include media(540)
+            max-width: 100%
+            font-size: 25px
+            line-height: 1.2
+
+    form
+        padding: 50px 0 
+        width: 55%
+        margin: auto
+        --item: 2
+        @include media(1024)
+            width: 85%
+        @include media(540)
+            --item: 1
+        .form-group
+            label,input,textarea
+                font-family: Poppins
+                font-weight: 400
+                line-height: 24px
+        .btn
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: auto
+            font-weight: 600
+            font-family: "Poppins"
+            &:hover
+                background: $black
+                color: $primary
+                border-color: $black 
+.contact-secC
+    overflow: hidden
+    height: auto
+    margin-bottom: -6.9px
+    iframe
+        width: 100%
+        margin-bottom: 0
+        height: 656px
+        @include media(991)
+            height: 50vh
+        @include media(540)
+            height: 60vh

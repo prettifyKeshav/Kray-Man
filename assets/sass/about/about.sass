@@ -1,0 +1,475 @@
+@import '../_var'
+
+body
+    font-family: ttrg-bd
+
+.about-banner
+    position: relative
+    color: white
+    overflow: hidden
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include media(1024)
+        height: 70vh
+    @include media(991)
+        height: 40vh
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0.85) 100%)
+    .video-background 
+        video 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            z-index: -1
+    .bg-wrapper
+        position: absolute
+        top: 75%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        width: 100%
+        h1
+            font-weight: 700
+            font-size: 48px
+            line-height: 45px
+            text-align: center
+            margin-bottom: 18px
+            @include media(991)
+                font-size: 43px
+                line-height: 34px
+            @include media(540)
+                font-size: 30px
+                margin-bottom: 7px
+                line-height: 1
+        p
+            font-family: $Poppins
+            font-weight: 500
+            font-size: 16px
+            line-height: 100%
+            color: $white
+            @include media(540)
+                font-size: 14px
+                margin: auto
+                color: #ffffffd1
+
+.about-secA
+    padding: 50px 0
+    position: relative
+    overflow: hidden
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        background: linear-gradient(90deg, #FFFFFF 0%, rgba(153, 153, 153, 0.21) 100%)
+        z-index: -1
+        top: 0
+        left: 0
+    .flex-box
+        display: flex
+        justify-content: space-between
+        @include media(540)
+            display: block
+        .flex-box-item:nth-child(1)
+            width: 50%
+            padding: 0 20px 0 0px
+            @include media(540)
+                width: 100%
+                padding: 0
+                text-align: center
+                margin: 0
+            h2
+                font-weight: 700
+                font-size: 40px
+                line-height: 45px
+                margin: 0 0 20px 0
+                max-width: 80%
+                @include media(991)
+                    max-width: 100%
+                    line-height: 1.1
+                    font-size: 30px    
+                @include media(540)
+                    font-size: 21px
+                    line-height: 1.2
+                    text-align: center
+            p
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                margin: 0 0 40px 0
+                @include media(991)
+                    margin: 0 0 20px 0
+                    font-size: 14px
+                    line-height: 1.5
+                @include media(540)
+                    font-size: 12px 
+                    line-height: 1.5
+                    margin: 0 0 30px 0
+            .counter-flex
+                width: 100%
+                display: flex
+                justify-content: left 
+                align-items: center
+                gap: 30px
+                @include media(991)
+                    align-items: unset
+                @include media(540)
+                    align-items: unset
+                    justify-content: space-around
+                    gap: 0
+                .counter-item
+                    h5
+                        @include media(540)
+                            margin-bottom: 4px
+                    p   
+                        font-family: Poppins
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 25px
+                        @include media(991)
+                            font-size: 10px
+                            line-height: 1.3
+                            justify-content: space-between
+                        @include media(540)
+                            font-size: 10px
+                            line-height: 1.3
+
+            .btn 
+                background-color: var(--primary)
+                color: #fff
+                font-family: $Poppins
+                font-weight: 500
+                &:hover
+                    background-color: $black
+                    border: 1px solid $black
+                    color: $primary
+                    font-weight: 500
+    
+                    
+        .flex-box-item:nth-child(2)
+            width: 45%
+            padding: 0 20px
+            @include media(991)
+                padding: 0
+            @include media(540)
+                width: 100%
+                padding: 0
+            .grid-box
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 10px
+                line-height: 0
+                @include media(540)
+                    gap: 5px    
+                .grid-box-item
+                    border-radius: 9px
+                    overflow: hidden
+                    img
+                        width: 100%
+
+.about-secB
+    background: #EAEAEA
+    .wrapper
+        max-width: 80%
+        line-height: 0
+        margin: auto
+
+.about-secC
+    padding: 15px 0 50px 0
+    h2
+        font-weight: 700
+        font-size: 100px
+        line-height: 150px
+        text-align: center
+        vertical-align: middle
+        @include media(991)
+            font-size: 70px
+            line-height: 1.7
+        @include media(540)
+            font-size: 44px
+    
+    .proficiencies-swiper
+        width: 100%
+        padding: 20px 20px
+        @include media(540)
+            padding: 10px 0
+        .swiper-wrapper
+            .swiper-slide
+                .figinfo
+                    // width: 380px
+                    height: 205px
+                    top: 1902px
+                    left: 50px
+                    border: 1px solid #666666
+                    border-radius: 10px
+                    padding: 20px
+                    overflow: hidden
+                    
+                    span
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                    h5
+                        max-width: 60%
+                        font-size: 24px
+                        margin: 0 0 10px 0
+                        color: black
+                        @include media(1024)
+                            font-size: 20px
+                    p
+                        max-width: 80%
+                        font-family: Poppins
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 24px
+                        vertical-align: middle
+                        @include media(1024)
+                            font-size: 12px
+                            line-height: 1.5
+                            
+        .swiper-nav
+            .swiper-prev,.swiper-next
+                background: none
+                border-color: black
+                &:hover
+                    background: var(--primary)
+                    border-color: var(--primary)
+                svg
+                    stroke: black
+                    overflow: hidden
+                    padding: 6px
+
+.about-secD
+    padding: 80px 0 
+    background: #EAEAEA
+    position: relative
+    @include media(540)
+        padding: 50px 0 0px 0
+    .container
+        max-width: 1080px
+    .flex-box
+        display: flex
+        justify-content: center 
+        align-items: center
+        gap: 120px
+        overflow: hidden
+        @include media(991)
+            gap: 30px
+        @include media(540)
+            display: block
+        .flex-box-item:first-child
+            // width: 40%
+            width: 398px
+            aspect-ratio: 1
+            border-radius: 10px
+            overflow: hidden
+            @include media(991)
+                gap: 30px
+                width: 318px
+            @include media(540)
+                width: 100%
+                margin-bottom: 20px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+        .flex-box-item:last-child
+            width: 40%
+            @include media(540)
+                width: 100%
+                text-align: center
+            h2
+                font-weight: 700
+                font-size: 36px
+                color: black
+                margin-bottom: 10px
+                @include media(991)
+                    font-size: 30px
+            p
+                font-family: Poppins
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                margin: 0 0 30px 0
+                @include media(991)
+                    font-size: 14px
+                    line-height: 1.4
+                @include media(540)
+                    font-size: 12px
+
+            span
+                h5
+                    font-family: Poppins
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 24px
+                p
+                    font-family: Poppins
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 24px
+                    color: black
+    .coma
+        position: absolute
+        bottom: 0
+        right: 10%
+        @include media(1024)
+            width: 200px
+        @include media(991)
+            width: 100px
+        @include media(540)
+            width: 60px
+
+.about-secE
+    padding: 70px 0 80px 0
+    background-color: #F0F0F0
+    @include media(540)
+        padding: 40px 0 70px 0px
+    .heading
+        text-align: center
+        position: relative
+        h2
+            font-family: ttrg-bd
+            font-weight: 700
+            font-size: 48px
+            text-align: center
+            vertical-align: middle
+            line-height: 1
+        p
+            font-family: Poppins
+            font-weight: 500
+            font-size: 16px
+            line-height: 16px
+            text-align: center
+        .swiper-nav
+            position: absolute
+            right: 0
+            bottom: 0
+            z-index: 2
+            @include media(540)
+                display: none
+    .about-slider
+        padding: 50px 0 0px 0
+        @include media(540)
+            padding: 30px 0 0px 0
+        .news-col
+            display: flex
+            flex-direction: column
+            // background: $white
+            border-radius: 15px
+            overflow: hidden
+            box-shadow: 0px 3px 8px 0px #0000003D
+            &:has(.figure:is(a):hover,.figcaption .ttl:is(a):hover, .figcaption .read-more-btn:is(a):hover)
+                .figure
+                    &::before
+                        animation: shine 0.4s linear
+                    img
+                        transform: scale(1.04)
+                        width: 100%
+                .figcaption
+                    .ttl
+                        color: $primary
+                    .desc
+                        color: $black
+                    .date
+                        color: $text
+                    .read-more-btn
+                        border-color: $primary
+                        background: $primary
+                        color: $black
+            .figure
+                height: 380px
+                line-height: 0
+                display: block
+                overflow: hidden
+                @include shine
+                background:#00000080
+                @include media(991)
+                    height: 280px
+                img
+                    width: 100%
+                    height: 100%
+                    aspect-ratio: 1.2
+                    transition: .5s ease
+                    position: relative
+                    z-index: -1
+                    object-fit: cover
+            .figinfo
+                position: absolute
+                color: white
+                text-align: center
+                width: 90%
+                height: 100%
+                top: 50%
+                left: 50%
+                -ms-transform: translate(-50%, -50%)
+                transform: translate(-50%, -50%)
+                h5
+                    font-weight: 700
+                    font-size: 36px
+                    line-height: 35px
+                    max-width: 100%
+                    text-align: right
+                    margin-bottom: 15px
+
+                    position: absolute
+                    right: 10px
+                    top: 30px
+                p
+                    color: var(--white)
+                    text-align: left
+                    max-width: 100% 
+                    font-family: Poppins
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 35px
+                    position: absolute
+                    left: 10px
+                    bottom: 30px
+                    @include media(991)
+                        line-height: 1.3
+            .figcaption
+                --pdt: 18px
+                --pdlr: 24px
+                --pdb: -40px
+                --btnsize: 40px
+                --btnmargin: 27px
+                padding: var(--pdt) var(--pdlr) calc(var(--pdb) + var(--btnmargin) + var(--btnsize))
+                position: relative
+                flex: 1
+                .btn-div
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    z-index: 1
+                    padding: 0 var(--pdlr) var(--pdb)
+                .ttl
+                    display: block
+                    font-size: 22px
+                    @include font(600)
+                    line-height: 1.5
+                    color: $black
+                    margin-bottom: 10px
+                .desc,.date
+                    @include font(500)
+                    transition: .5s ease
+                .desc
+                    color: rgb(0 0 0 / .7)
+                    margin-bottom: 16px
+                .date
+                    color: $primary
+                    line-height: 1.375
