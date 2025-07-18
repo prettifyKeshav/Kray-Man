@@ -286,6 +286,7 @@
 
 .home-secB {
   padding: 100px 0 150px 0;
+  overflow: hidden;
 }
 .home-secB .flex-box {
   display: flex;
@@ -469,6 +470,7 @@
   display: flex;
   justify-content: space-around;
   padding: 70px 0;
+  overflow: hidden;
 }
 .home-secC .container .flex-box .flex-box-item:first-child {
   width: 100%;
@@ -727,4 +729,91 @@
 }
 .home-secF .heading {
   text-align: center;
+}
+.home-secF .grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 50px 0;
+}
+@media only screen and (max-width: 991px) {
+  .home-secF .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secF .grid-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.home-secF .grid-box .grid-box-item {
+  width: 100%;
+  border-radius: 10px;
+  background: var(--white);
+  overflow: hidden;
+  position: relative;
+}
+.home-secF .grid-box .grid-box-item .content {
+  padding: 30px;
+}
+.home-secF .grid-box .grid-box-item .content span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #43ADFF;
+}
+.home-secF .grid-box .grid-box-item .content h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--black);
+  padding: 30px 0 8px 0;
+}
+.home-secF .grid-box .grid-box-item .content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text);
+  padding-bottom: 60px;
+}
+.home-secF .grid-box .grid-box-item figure {
+  height: 224px;
+  overflow: hidden;
+}
+.home-secF .grid-box .grid-box-item figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.home-secF .grid-box .grid-box-item:hover img {
+  transform: scale(1.1);
+}
+.home-secF .view-btn {
+  margin: 30px 0;
+  text-align: center;
+}
+.home-secF .view-btn a {
+  opacity: 1;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: var(--white);
+  border: 1px solid var(--primary);
+  align-items: center;
+  background: var(--primary);
+}
+.home-secF .view-btn a svg {
+  padding-left: 10px;
+  transition: 0.3s ease;
+  width: 30px;
+}
+.home-secF .view-btn a:hover {
+  background: var(--white);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+.home-secF .view-btn a:hover svg {
+  padding-left: 6px;
+}
+.home-secF .view-btn a:hover svg path {
+  fill: var(--primary);
 }/*# sourceMappingURL=home.css.map */

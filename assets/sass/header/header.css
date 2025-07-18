@@ -2423,6 +2423,18 @@ footer .bottom-sec .grid-box .grid-box-item:nth-child(3) .location .two a {
 footer .bottom-sec .grid-box .grid-box-item:nth-child(3) .location .two a:hover {
   color: var(--primary);
 }
+footer .bottom-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .bottom-footer p {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 14px;
+}
 
 .ham-pop {
   right: 0;

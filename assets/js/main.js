@@ -321,12 +321,12 @@ $(function () {
                 speed: 500,
             },
             675: {
-                slidesPerView: 2,
+                slidesPerView: 2.2,
                 spaceBetween: 12,
                 speed: 1000,
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 3.7,
                 spaceBetween: 20,
                 speed: 1000,
             }

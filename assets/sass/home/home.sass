@@ -214,6 +214,7 @@
                      
 .home-secB
     padding: 100px 0 150px 0
+    overflow: hidden
     .flex-box
         display: flex
         justify-content: space-between
@@ -354,6 +355,7 @@
             display: flex
             justify-content: space-around
             padding: 70px 0 
+            overflow: hidden
             .flex-box-item:first-child
                 width: 100%
                 max-width: 45%
@@ -568,3 +570,70 @@
     background: #F4F4F4
     .heading
         text-align: center
+    .grid-box
+        display: grid
+        grid-template-columns: repeat(3 , 1fr)
+        grid-gap: 20px
+        padding: 50px 0
+        @include media(991)
+            grid-template-columns: repeat(2 , 1fr)
+        @include media(540)
+            grid-template-columns: repeat(1 , 1fr)
+            
+        .grid-box-item
+            width: 100%
+            border-radius: 10px
+            background: $white
+            overflow: hidden
+            position: relative
+            .content
+                padding: 30px
+                span
+                    font-weight: 500
+                    font-size: 16px
+                    color: #43ADFF
+                h4
+                    font-weight: 500
+                    font-size: 20px
+                    color: $black
+                    padding: 30px 0 8px 0
+                p
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 24px
+                    color: $text
+                    padding-bottom: 60px 
+            figure
+                height: 224px
+                overflow: hidden
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: cover
+                    transition: 0.5s        
+            &:hover img
+                transform: scale(1.1)
+    .view-btn
+        margin: 30px 0
+        text-align: center
+        a
+            opacity: 1
+            border-radius: 5px
+            padding: 8px 15px
+            color: $white
+            border: 1px solid $primary
+            align-items: center
+            background: $primary
+            svg
+                padding-left: 10px
+                transition: 0.3s ease
+                width: 30px
+                
+            &:hover
+                background: $white
+                border: 1px solid $primary
+                color: $primary
+                svg
+                    padding-left: 6px
+                    path
+                        fill: $primary
