@@ -1166,3 +1166,171 @@ button
     100%
         transform: translateY(10px)
   
+
+// Eninformation Pop
+.information-pop
+    max-width: 70%
+    background: var(--white)
+    transition: 0.7s ease
+    z-index: 9999
+    top: 50%
+    left: 50%
+    bottom: auto
+    border-radius: 10px
+    transform: translate(-50%, -50%)
+    transform-origin: left center
+    scale: 0
+    max-height: 70vh
+    overflow: auto
+    &::-webkit-scrollbar
+        width: 4px
+    &::-webkit-scrollbar-track
+        box-shadow: unset
+        background: #fff
+    &::-webkit-scrollbar-thumb
+        background-color: var(--primary)
+    @include media(540)
+        max-width: 90%
+    &::before
+        z-index: 2
+    &.is-open
+        scale: 1
+    .close
+        display: flex
+        align-items: center
+        gap: 0 10px
+        top: 40px
+        right: 40px
+        @include media(675)
+            top: 20px
+            right: 20px
+        path
+            stroke: $black !important
+    .model-body
+        padding: 40px
+        height: 100%
+        overflow-y: auto
+        // @include scrollbar(6px,none,$pink,25px)
+        @include media(675)
+            padding: 40px 25px 50px
+        .flex-box
+            display: flex
+            justify-content: start 
+            gap: 30px
+            @include media(540)
+                display: block
+            .flex-box-item:first-child
+                width: 30%
+                position: relative
+                @include media(540)
+                    width: 100%
+                .user-image
+                    position: sticky
+                    top: 0
+                    background: #D2EBFF
+                    border-radius: 10px
+                    line-height: 0
+                    @include media(540)
+                        max-width: 20%
+                        margin: auto
+                .social-icon
+                    display: flex
+                    justify-content: center
+                    gap: 10px
+                    position: absolute
+                    top: 10px
+                    right: 10px
+                    img
+                        width: 80%
+                    @include media(540)
+                        margin-top: 0
+            .flex-box-item:last-child
+                width: 70%
+                @include media(540)
+                    width: 100%
+                    text-align: center
+                .user-name
+                    p
+                        font-size: 22px
+                        color: black
+                .degination
+                    border-bottom: 1px solid #6666668c
+                    padding-bottom: 4px
+                    margin-bottom: 15px
+                    p
+                        font-size: 12px
+                .description-text p
+                    color: $text
+                    font-size: 12px
+                    text-align: justify
+
+
+// Subscription Pop
+.subscription-pop
+    max-width: 50%
+    background: var(--white)
+    transition: 0.7s ease
+    z-index: 9999
+    top: 50%
+    left: 50%
+    bottom: auto
+    border-radius: 10px
+    transform: translate(-50%, -50%)
+    transform-origin: left center
+    scale: 0
+    max-height: 70vh
+    overflow: auto
+    &::-webkit-scrollbar
+        width: 4px
+    &::-webkit-scrollbar-track
+        box-shadow: unset
+        background: #fff
+    &::-webkit-scrollbar-thumb
+        background-color: var(--primary)
+    @include media(540)
+        max-width: 90%
+    &::before
+        z-index: 2
+    &.is-open
+        scale: 1
+    .close
+        display: flex
+        align-items: center
+        gap: 0 10px
+        top: 40px
+        right: 40px
+        @include media(675)
+            top: 20px
+            right: 20px
+        path
+            stroke: $black !important
+    .model-body
+        padding: 30px 40px
+        height: 100%
+        overflow-y: auto
+        @include media(675)
+            padding: 40px 25px 50px
+        .heading
+            h2
+                font-size: 25px
+                text-align: left
+            p
+                font-size: 14px
+        .form-grid
+            padding: 30px 0 0 0 
+            --item: 2
+            --borderafter: var(--primary)
+            button
+                opacity: 1
+                border-radius: 5px
+                padding: 8px 15px
+                color: var(--white)
+                border: 1px solid var(--primary)
+                align-items: center
+                background: var(--primary)
+                transition: 0.5s ease
+                &:hover
+                    background: var(--white)
+                    border: 1px solid var(--primary)
+                    color: var(--primary)
+

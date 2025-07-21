@@ -86,7 +86,7 @@ body
         display: flex
         justify-content: center 
         align-items: center
-        gap: 30px
+        gap: 70px
         @include media(991)
             align-items: unset
         @include media(540)
@@ -216,10 +216,228 @@ body
                     height: 100%
                     object-fit: cover
                     line-height: 0
-        
+
+.about-secB
+    background: #03052E
+    .bg
+        background-image: url(../../../assets/images/about/vision-mission.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        height: 100vh
+        mix-blend-mode: plus-lighter
+        position: relative
+        figcaption
+            position: absolute
+            top: 50%
+            left: 20%
+            transform: translate(-50%, -50%)
+        .container
+            height: 100%
+            position: relative
+            max-width: 1180px
+            .tab-section
+                position: absolute
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                max-width: 50%
+                .tab-nav
+                    display: flex
+                    justify-content: start
+                    gap: 50px
+                    li
+                        position: relative
+                        &::before
+                            content: ""
+                            position: absolute
+                            left: 0
+                            bottom: 0
+                            width: 0%
+                            height: 2px
+                            background-color: #5393C5
+                        a
+                            color: $white
+                            font-weight: 600
+                            font-size: 36px
+                        &.active
+                            position: relative
+                            &::before
+                                content: ""
+                                position: absolute
+                                width: 100%
+                                height: 2px
+                                background-color: #5393C5 
+                                transition: 0.5s ease
+
+                            a
+                                color: #5393C5
+                .tab-nav-content
+                    padding: 50px 0
+                    p
+                        font-weight: 400
+                        font-size: 18px
+                        line-height: 1.5
+                        margin-bottom: 20px
+                        color: #FFFFFFB2
+                        opacity: 0
+                        transition: 0.5s ease
+                    .active p
+                        opacity: 1
+
+.home-secD
+    position: relative
+    overflow: hidden
+    padding: 100px 0
+    @include media(540)
+        padding: 50px 0
+    
+    .homeTeam-swiper-slider
+        width: 100%
+        @include media(540)
+            margin-bottom: 0px
+            margin-top: 30px
+        .heading
+            text-align: center
+            position: relative
+            h2
+                font-weight: 300
+                font-size: 48px
+            p
+                font-family: Poppins
+                font-weight: 500
+                font-size: 16px
+                line-height: 16px
+                text-align: center
+            .swiper-nav
+                position: absolute
+                right: 0
+                bottom: 0
+                z-index: 2
+                @include media(540)
+                    display: none
+            .swiper-nav
+                .swiper-prev,.swiper-next
+                    border: 1px solid $primary
+                    svg path
+                        stroke: $primary
+                    &:hover
+                        svg path
+                            stroke: $secondary
+
+        .swiper-nav
+            .swiper-prev,.swiper-next
+                border: 1px solid $primary
+                svg path
+                    stroke: $primary
+                &:hover
+                    svg path
+                        stroke: $secondary
+
+        .homeTeam-slider
+            padding: 50px 0 0 0
+            .swiper-wrapper
+
+                .swiper-slide-prev
+                    opacity: 50%
+                    background: #F4F4F4
+                    cursor: pointer
+                    .flex-box
+                        mix-blend-mode: Luminosity
+                        .flex-box-item:last-child
+                            figure
+                                &::before
+                                    content: none
+                                &::after
+                                    content: none
+
+                .swiper-slide-active
+                    opacity: 1
+
+                .swiper-slide-next
+                    opacity: 50%
+                    background: #F4F4F4
+                    cursor: pointer
+                    .flex-box
+                        mix-blend-mode: Luminosity
+                        .flex-box-item:first-child
+                            display: none
+                        .flex-box-item:last-child
+                            figure
+                                &::before
+                                    content: none
+                                &::after
+                                    content: none
+
+        .swiper-slide
+            background: #D2EBFF
+            border-radius: 10px
+            overflow: hidden
+            .flex-box
+                display: flex
+                justify-content: space-between  
+                .flex-box-item:first-child
+                    max-width: 65%
+                    .user-content
+                        padding: 30px 0 0 40px
+                        .user-heading
+                            position: relative
+                            &::before
+                                content: ""
+                                position: absolute
+                                left: 0
+                                top: 108%
+                                width: 70px
+                                height: 5px
+                                background: $primary
+                            p:first-child
+                                font-weight: 600
+                                color: $black
+                                font-size: 20px
+                            p:last-child
+                                font-weight: 400
+                                font-size: 16px
+                        .desc
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 20px
+                            margin-top: 20px
+                        a
+                            display: flex
+                            align-items: center
+                            gap: 10px
+                            color: #5393C5
+                            font-size: 16px
+                            font-weight: 500
+                            margin: 40px 0 0 0
+                
+                .flex-box-item:last-child
+                    max-width: 35%
+                    figure
+                        position: relative
+                        line-height: 0
+                        &::before
+                            content: ""
+                            position: absolute
+                            width: 330px
+                            height: 330px
+                            background: #ADDBFF
+                            border-radius: 50%
+                            bottom: -42%
+                            right: -13%
+                            z-index: -1
+                        &::after
+                            content: ""
+                            position: absolute
+                            width: 360px
+                            height: 360px
+                            border: 3px solid #5393C5
+                            border-radius: 50%
+                            bottom: -48%
+                            right: -19%
+                            z-index: -1
+
 .about-secE
-    padding: 70px 0 80px 0
-    background-color: #F0F0F0
+    padding: 0 0 20px 0
     @include media(540)
         padding: 40px 0 70px 0px
     .heading
@@ -242,7 +460,15 @@ body
             z-index: 2
             @include media(540)
                 display: none
-    .about-slider
+        .swiper-nav
+            .swiper-prev,.swiper-next
+                border: 1px solid $primary
+                svg path
+                    stroke: $primary
+                &:hover
+                    svg path
+                        stroke: $secondary
+    .about-slider1
         padding: 50px 0 0px 0
         @include media(540)
             padding: 30px 0 0px 0
@@ -252,112 +478,87 @@ body
                     figure
                         background: #D2EBFF
                         border-radius: 10px
-        // .news-col
-        //     display: flex
-        //     flex-direction: column
-        //     // background: $white
-        //     border-radius: 15px
-        //     overflow: hidden
-        //     box-shadow: 0px 3px 8px 0px #0000003D
-        //     &:has(.figure:is(a):hover,.figcaption .ttl:is(a):hover, .figcaption .read-more-btn:is(a):hover)
-        //         .figure
-        //             &::before
-        //                 animation: shine 0.4s linear
-        //             img
-        //                 transform: scale(1.04)
-        //                 width: 100%
-        //         .figcaption
-        //             .ttl
-        //                 color: $primary
-        //             .desc
-        //                 color: $black
-        //             .date
-        //                 color: $text
-        //             .read-more-btn
-        //                 border-color: $primary
-        //                 background: $primary
-        //                 color: $black
-        //     .figure
-        //         height: 380px
-        //         line-height: 0
-        //         display: block
-        //         overflow: hidden
-        //         @include shine
-        //         background:#00000080
-        //         @include media(991)
-        //             height: 280px
-        //         img
-        //             width: 100%
-        //             height: 100%
-        //             aspect-ratio: 1.2
-        //             transition: .5s ease
-        //             position: relative
-        //             z-index: -1
-        //             object-fit: cover
-        //     .figinfo
-        //         position: absolute
-        //         color: white
-        //         text-align: center
-        //         width: 90%
-        //         height: 100%
-        //         top: 50%
-        //         left: 50%
-        //         -ms-transform: translate(-50%, -50%)
-        //         transform: translate(-50%, -50%)
-        //         h5
-        //             font-weight: 700
-        //             font-size: 36px
-        //             line-height: 35px
-        //             max-width: 100%
-        //             text-align: right
-        //             margin-bottom: 15px
+                        padding: 20px 20px 0 20px
+                        line-height: 0
+                        position: relative
+                        overflow: hidden
+                        img
+                            transition: 0.5s ease
+                    figcaption
+                        padding: 10px 
+                        text-align: center
+                        h5
+                            font-weight: 600
+                            font-size: 18px
+                            color: black
+                            margin-bottom: 4px
+                        p
+                            font-weight: 400
+                            font-size: 16px
+                    &:hover
+                        figure img
+                            transform: scale(1.1)
 
-        //             position: absolute
-        //             right: 10px
-        //             top: 30px
-        //         p
-        //             color: var(--white)
-        //             text-align: left
-        //             max-width: 100% 
-        //             font-family: Poppins
-        //             font-weight: 600
-        //             font-size: 20px
-        //             line-height: 35px
-        //             position: absolute
-        //             left: 10px
-        //             bottom: 30px
-        //             @include media(991)
-        //                 line-height: 1.3
-        //     .figcaption
-        //         --pdt: 18px
-        //         --pdlr: 24px
-        //         --pdb: -40px
-        //         --btnsize: 40px
-        //         --btnmargin: 27px
-        //         padding: var(--pdt) var(--pdlr) calc(var(--pdb) + var(--btnmargin) + var(--btnsize))
-        //         position: relative
-        //         flex: 1
-        //         .btn-div
-        //             position: absolute
-        //             bottom: 0
-        //             left: 0
-        //             right: 0
-        //             bottom: 0
-        //             z-index: 1
-        //             padding: 0 var(--pdlr) var(--pdb)
-        //         .ttl
-        //             display: block
-        //             font-size: 22px
-        //             @include font(600)
-        //             line-height: 1.5
-        //             color: $black
-        //             margin-bottom: 10px
-        //         .desc,.date
-        //             @include font(500)
-        //             transition: .5s ease
-        //         .desc
-        //             color: rgb(0 0 0 / .7)
-        //             margin-bottom: 16px
-        //         .date
-        //             color: $primary
-        //             line-height: 1.375
+.about-secF
+    padding: 70px 0 
+    @include media(540)
+        padding: 40px 0 70px 0px
+    .heading
+        text-align: center
+        position: relative
+        h2
+            font-weight: 300
+            font-size: 48px
+
+        p
+            font-family: Poppins
+            font-weight: 500
+            font-size: 16px
+            line-height: 16px
+            text-align: center
+        .swiper-nav
+            position: absolute
+            right: 0
+            bottom: 0
+            z-index: 2
+            @include media(540)
+                display: none
+        .swiper-nav
+            .swiper-prev,.swiper-next
+                border: 1px solid $primary
+                svg path
+                    stroke: $primary
+                &:hover
+                    svg path
+                        stroke: $secondary
+    .about-slider2
+        padding: 50px 0 0px 0
+        @include media(540)
+            padding: 30px 0 0px 0
+        .swiper-wrapper
+            .swiper-slide
+                a
+                    figure
+                        background: #F4F4F4
+                        border-radius: 10px
+                        padding: 20px 20px 0 20px
+                        line-height: 0
+                        position: relative
+                        overflow: hidden
+                        img
+                            transition: 0.5s ease
+                    figcaption
+                        padding: 10px 
+                        text-align: center
+                        h5
+                            font-weight: 600
+                            font-size: 18px
+                            color: black
+                            margin-bottom: 4px
+                        p
+                            font-weight: 400
+                            font-size: 16px
+                    &:hover
+                        figure img
+                            transform: scale(1.1)
+        

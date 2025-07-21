@@ -306,13 +306,12 @@ $(function () {
     });
     // MORE  SLIDER END ======================>
 
-    // MORE  SLIDER START ======================>
-
-    new Swiper('.about-slider', {
+    // About  SLIDER START ======================>
+    new Swiper('.about-slider1', {
         loop: false,
         navigation: {
-            prevEl: '.about-prev',
-            nextEl: '.about-next',
+            prevEl: '.about-prev1',
+            nextEl: '.about-next1',
         },
         breakpoints: {
             0: {
@@ -326,13 +325,38 @@ $(function () {
                 speed: 1000,
             },
             992: {
-                slidesPerView: 3.7,
+                slidesPerView: 3.6,
                 spaceBetween: 20,
                 speed: 1000,
             }
         }
     });
-    // MORE  SLIDER END ======================>
+
+    new Swiper('.about-slider2', {
+        loop: false,
+        navigation: {
+            prevEl: '.about-prev2',
+            nextEl: '.about-next2',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+                speed: 500,
+            },
+            675: {
+                slidesPerView: 2.2,
+                spaceBetween: 12,
+                speed: 1000,
+            },
+            992: {
+                slidesPerView: 3.6,
+                spaceBetween: 20,
+                speed: 1000,
+            }
+        }
+    });
+    // About  SLIDER END ======================>
 
     // MORE  SLIDER START ======================>
     new Swiper('.homeTeam-slider', {

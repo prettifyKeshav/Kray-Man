@@ -398,19 +398,32 @@
                                 transform: rotate(0.50turn)
                                 svg
                                     path
-                                        stroke: $primary !important
-
-                            
+                                        stroke: $primary !important                            
             .flex-box-item:last-child
                 max-width: 45%
-                img
-                    border-radius: 5px
+                width: 478px
+                height: 521px
+                border-radius: 5px
+                overflow: hidden
+                .tabs
+                    figure
+                        img
+                            transition: 0.9s ease
+                            height: 100%
+                            width: 100%
+                            transform: scale(0)
+                .active
+                    figure
+                        img
+                            transform: scale(1)
+
 
 .home-secD
     background: #03052E
     position: relative
     height: 100vh
     overflow: hidden
+    display: none
     .video-sec
         position: absolute
         top: 50%
@@ -467,7 +480,7 @@
             display: flex
             justify-content: space-between
             align-items: center
-            padding: 20px 0 50px 0
+            padding: 20px 0 0 0
             h2
                 font-weight: 700
                 font-size: 36px
@@ -493,11 +506,40 @@
                         stroke: $secondary
 
         .homeTeam-slider
+            padding: 50px 0 50px 0
             .swiper-wrapper
                 .swiper-slide
-                    opacity: 0.56
+                    transition: 0.9s ease
+                .swiper-slide-prev
+                    opacity: 50%
+                    background: #F4F4F4
+                    cursor: pointer
+                    .flex-box
+                        mix-blend-mode: Luminosity
+                        .flex-box-item:last-child
+                            figure
+                                &::before
+                                    content: none
+                                &::after
+                                    content: none
+
                 .swiper-slide-active
                     opacity: 1
+
+                .swiper-slide-next
+                    opacity: 50%
+                    background: #F4F4F4
+                    cursor: pointer
+                    .flex-box
+                        mix-blend-mode: Luminosity
+                        .flex-box-item:first-child
+                            display: none
+                        .flex-box-item:last-child
+                            figure
+                                &::before
+                                    content: none
+                                &::after
+                                    content: none
         .swiper-slide
             background: #D2EBFF
             border-radius: 10px
@@ -531,14 +573,15 @@
                             font-size: 14px
                             line-height: 20px
                             margin-top: 20px
-                        a
+                        .icon
                             display: flex
                             align-items: center
                             gap: 10px
-                            color: #5393C5
-                            font-size: 16px
-                            font-weight: 500
                             margin: 40px 0 0 0
+                            a
+                                color: #5393C5
+                                font-size: 16px
+                                font-weight: 500
                 
                 .flex-box-item:last-child
                     max-width: 35%

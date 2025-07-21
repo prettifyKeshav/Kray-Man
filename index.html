@@ -52,8 +52,8 @@
 
                     <ul class="upper-menu-list">
                         <li>
-                            <a href="tel:+919818937799"><span><img class="svg" src="assets/icon/call-white.svg"
-                                        alt=""></span> +91 - 98189 37799
+                            <a href="tel:+919818937799"><span><img class="svg" height="16px" width="16px"
+                                        src="assets/icon/call-white.svg" alt=""></span> +91 - 98189 37799
                             </a>
                         </li>
                         <ul class="upper-menu-right">
@@ -75,7 +75,7 @@
 
                     <ul class="menu-list">
                         <li>
-                            <a href="javascript:void(0);">About us
+                            <a href="about.html">About us
                                 <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt=""></span>
                             </a>
                         </li>
@@ -254,7 +254,7 @@
                                 <div class="bg"></div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -266,11 +266,13 @@
                     <div class="heading" data-animate="zoom-in">
                         <h2><span>Why</span> <span>Kray</span><span>Man</span></h2>
                     </div>
+
                     <div class="flex-box">
                         <div class="flex-box-item" data-animate="fade-right">
-                            <div class="content">
-                                <div class="summery-detail-content">
-                                    <div class="col active">
+                            <div class="content tab-section">
+                                <div class="summery-detail-content tab-nav">
+
+                                    <div class="col active" data-tab="oneone">
                                         <div class="title">
                                             <h6>Accessible Partners</h6>
                                             <div class="ico">
@@ -290,7 +292,7 @@
                                         </article>
                                     </div>
 
-                                    <div class="col">
+                                    <div class="col" data-tab="twotwo">
                                         <div class="title">
                                             <h6>Solution Oriented</h6>
                                             <div class="ico">
@@ -310,7 +312,7 @@
                                         </article>
                                     </div>
 
-                                    <div class="col">
+                                    <div class="col" data-tab="threethree">
                                         <div class="title">
                                             <h6>Quality Conscious</h6>
                                             <div class="ico">
@@ -330,7 +332,7 @@
                                         </article>
                                     </div>
 
-                                    <div class="col">
+                                    <div class="col" data-tab="fourfour">
                                         <div class="title">
                                             <h6>Proactive approach</h6>
                                             <div class="ico">
@@ -350,7 +352,7 @@
                                         </article>
                                     </div>
 
-                                    <div class="col">
+                                    <div class="col" data-tab="fivefive">
                                         <div class="title">
                                             <h6>Collaboration</h6>
                                             <div class="ico">
@@ -370,13 +372,30 @@
                                         </article>
                                     </div>
 
-
                                 </div>
+
                             </div>
                         </div>
 
-                        <div class="flex-box-item"  data-animate="fade-left">
-                            <figure><img src="assets/images/home/why-img.jpg" alt=""></figure>
+                        <div class="flex-box-item tab-nav-content" data-animate="fade-left">
+                            <div class="tabs active" data-tab="oneone">
+                                <figure>
+                                    <img src="assets/images/home/why-img.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="tabs" data-tab="twotwo">
+                                <figure>
+                                    <img src="assets/images/home/why-2.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="tabs" data-tab="threethree">
+                                <figure>
+                                    <img src="assets/images/home/why-img.jpg" alt="">
+                                </figure>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -420,7 +439,7 @@
                             </div>
                         </div>
 
-                        <div class="homeTeam-slider swiper">
+                        <div class="homeTeam-slider swiper information-slider">
                             <div class="swiper-wrapper" data-animate="fade-up">
 
                                 <div class="swiper-slide">
@@ -442,9 +461,13 @@
                                                     </p>
                                                 </div>
 
-                                                <a href="javascript:void(0)"> <img
-                                                        src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" /> View
-                                                    Profile </a>
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -475,9 +498,13 @@
                                                     </p>
                                                 </div>
 
-                                                <a href="javascript:void(0)"> <img
-                                                        src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" /> View
-                                                    Profile </a>
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -489,11 +516,120 @@
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <div class="user-content">
+                                                <div class="user-heading">
+                                                    <p>Mayank Agarwal</p>
+                                                    <p>Partner Chartered Accountant, Company Secretary</p>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Mayank is a qualified Chartered Accountant and Company
+                                                        Secretary. Mayank is advising and handholding Clients in their
+                                                        Tax & Regulatory matters. Besides, Mayank is providing strategic
+                                                        leadership
+                                                        for the Firm’s operations and pursuits creating business &
+                                                        growth opportunities using his diverse experience.
+                                                    </p>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/home/users/1.png" alt="user-img" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <div class="user-content">
+                                                <div class="user-heading">
+                                                    <p>Mayank Agarwal</p>
+                                                    <p>Partner Chartered Accountant, Company Secretary</p>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Mayank is a qualified Chartered Accountant and Company
+                                                        Secretary. Mayank is advising and handholding Clients in their
+                                                        Tax & Regulatory matters. Besides, Mayank is providing strategic
+                                                        leadership
+                                                        for the Firm’s operations and pursuits creating business &
+                                                        growth opportunities using his diverse experience.
+                                                    </p>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/home/users/1.png" alt="user-img" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <div class="user-content">
+                                                <div class="user-heading">
+                                                    <p>Mayank Agarwal</p>
+                                                    <p>Partner Chartered Accountant, Company Secretary</p>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Mayank is a qualified Chartered Accountant and Company
+                                                        Secretary. Mayank is advising and handholding Clients in their
+                                                        Tax & Regulatory matters. Besides, Mayank is providing strategic
+                                                        leadership
+                                                        for the Firm’s operations and pursuits creating business &
+                                                        growth opportunities using his diverse experience.
+                                                    </p>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/home/users/1.png" alt="user-img" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -570,7 +706,7 @@
                         <p>Stay up to date with our Editor's Picks newsletter.</p>
                     </div>
                     <div class="flex-box-item">
-                        <a href="javascript:void(0);">Subscribe</a>
+                        <a href="javascript:void(0);" data-model=".subscription-pop">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -761,63 +897,82 @@
     </div>
     <!-- End Video Pop -->
 
-    <!--Enquire Pop -->
-    <div class="model enquire-pop">
-        <button class="close"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.5 0.5L25.5 25.5M0.5 25.5L25.5 0.5" stroke="black" stroke-linecap="round"
+    <!-- Information Pop Start-->
+    <div class="model information-pop">
+        <button class="close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 0.75L23.25 23.25M0.75 23.25L23.25 0.75" stroke="black" stroke-linecap="round"
                     stroke-linejoin="round" />
-            </svg></button>
+            </svg>
+        </button>
         <div class="model-body">
-            <div class="title">
-                <h4>Enquire Now</h4>
-                <p>Contact us for expert electrical solutions and reliable after-sales service.</p>
-            </div>
-            <div class="form form-grid">
-                <div class="form-group">
-                    <input type="text" class="form-control" required>
-                    <label for="">Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" required>
-                    <label for="">Phone</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" required>
-                    <label for="">Email</label>
-                </div>
-                <div class="form-group">
-                    <textarea name="" id="" class="form-control"></textarea>
-                    <label for="">Message</label>
+            <div class="flex-box">
+                <div class="flex-box-item">
+                    <div class="user-image">
+                        <img src="" alt="" />
+                    </div>
+
+                    <div class="social-icon">
+                        <a href=""></a>
+                    </div>
                 </div>
 
-                <div class="bottom-btn">
-                    <a href="tel:9000000000">
-                        <button type="button" class="btn-btn">
-                            <span type="button">SUBMIT</span>
-                        </button>
-                    </a>
+                <div class="flex-box-item">
+                    <div class="user-name">
+                        <p></p>
+                    </div>
+                    <div class="degination">
+                        <p></p>
+                    </div>
+                    <div class="description-text">
+                        <p></p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
+    <!-- Information Pop End-->
 
-    <!-- Animate JS File -->
-    <script src="assets/js/animate.js"></script>
+    <!-- Subscription Pop Start-->
+    <div class="model subscription-pop">
+        <button class="close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 0.75L23.25 23.25M0.75 23.25L23.25 0.75" stroke="black" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="model-body">
+            <div class="heading">
+                <h2>Email Subscription Management</h2>
+                <p>By indicating your preferences, you give KrayMan permission to send you reports, newsletters, invitations
+                    to seminars and other relevant marketing materials by email within your preferences.</p>
+            </div>
 
-    <!-- GSAP CDN LINK -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+            <form>
+                <div class="form form-grid">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                        <label for="">Compnay Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control">
+                        <label for="">Email ID</label>
+                    </div>
+                    <div class="bottom-btn full">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- Subscription Pop End-->
 
     <!-- GSAP Core -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
     <!-- GSAP ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-
-
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
@@ -865,6 +1020,46 @@
             ease: "none"
         });
     </script>
+
+    <!-- For information popup START -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.information-slider .swiper-slide .viewprofile').on('click', function () {
+                var slide = $(this).closest('.swiper-slide');
+
+                var imageUrl = slide.find('figure img').attr('src');
+                var name = slide.find('.user-heading p:first-child').text();
+                var degination = slide.find('.user-heading p:last-child').text();
+                var text = slide.find('.desc p').text();
+                var socialIcons = slide.find('.icon a').html();
+
+                $('.information-pop .user-image img').attr('src', imageUrl);
+                $('.information-pop .user-name p').html('<b> ' + name + '</b> ');
+                $('.information-pop .degination p').html(degination);
+                $('.information-pop .description-text p').text(text);
+                $('.information-pop .social-icon').html(socialIcons);
+            });
+
+        });
+
+        
+       $('.swiper-slide-prev, .swiper-slide-next').on('click', function () {
+        // Clear all classes
+        $('.swiper-slide').removeClass('swiper-slide-prev swiper-slide-active swiper-slide-next');
+
+        // Add active class to clicked
+        $(this).addClass('swiper-slide-active');
+
+        // Add prev/next based on siblings
+        $(this).prev('.swiper-slide').addClass('swiper-slide-prev');
+        $(this).next('.swiper-slide').addClass('swiper-slide-next');
+    });
+    </script>
+    <!-- For information popup START -->
+
+    <!-- Animate JS File -->
+    <script src="assets/js/animate.js"></script>
 
     <!-- End Enquire Menu -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
