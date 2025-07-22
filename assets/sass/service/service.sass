@@ -153,22 +153,36 @@
                     padding: 15px 0
             .content-heading
                 padding: 40px 0
-                h3
-                    font-weight: 500
-                    font-size: 16px
-                    color: $white
-                    padding-left: 20px 
-                    margin-bottom: 25px
-                    line-height: 1.4
-                    a
+                ul
+                    li    
+                        font-weight: 500
+                        font-size: 16px
                         color: $white
-                    
+                        padding-left: 20px 
+                        margin-bottom: 25px
+                        line-height: 1.4
+                        a
+                            color: $white
+                        .active
+                            color: #5EB9FF
+                            position: relative
+                            &::before
+                                content: ""
+                                position: absolute
+                                top: 5%
+                                left: -18px
+                                width: 25px
+                                background: url(../../../assets/icon/right-primary.svg)
+                                background-repeat: no-repeat
+                                aspect-ratio: 1
+
+
 
 .service-secB
     .banner
         .bg
             position: relative
-            height: 85vh
+            height: 90vh
             &::before
                 content: ''
                 position: absolute
@@ -177,7 +191,6 @@
                 width: 100%
                 height: 100%
                 background: #000000A6
-
             .banner-wrapper
                 top: 15%
             .heading
@@ -193,7 +206,7 @@
                     font-size: 16px
                     color: $white
             .grid-box
-                margin: 100px 0
+                margin: 100px 0 70px 0
                 display: grid
                 grid-template-columns: repeat(3,1fr)
                 grid-gap: 40px
@@ -212,3 +225,111 @@
                         font-size: 14px
                         color: $white
                         line-height: 1.4
+            .view-btn
+                margin: 30px 0
+                text-align: center
+                a
+                    opacity: 1
+                    border-radius: 5px
+                    padding: 8px 15px
+                    color: $white
+                    display: flex
+                    align-items: center
+                    width: fit-content
+                    justify-content: center
+                    margin: auto
+                    svg
+                        padding-left: 10px
+                        transition: 0.3s ease
+                        width: 35px 
+                        height: 35px
+                    &:hover
+                        background: $primary
+                        svg
+                            padding-left: 14px
+
+.service-secC
+    padding: 50px 0
+    position: relative
+    overflow: hidden
+    .container
+        text-align: center
+        .heading
+            max-width: 50%
+            margin: auto
+            h2
+                color: $black
+            p
+                font-weight: 500
+                font-size: 16px
+        .services-slider
+            padding: 70px 0 50px 0
+            position: relative
+            .swiper-nav
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 104%
+                position: absolute
+                top: 50%
+                left: -2%
+                translate: 0% -50%
+                z-index: 2
+                max-width: 110%
+                @include media(540)
+                    display: none
+                button
+                    width: 45px
+                    height: 45px
+                    background-color: $white
+                    border-radius: 50%
+                    // box-shadow: 0px 5px 15px 0 #00000059
+                    border: none
+                    &.swiper-prev
+                        box-shadow: 0px 3px 8px 0px #0000003D
+                        &:hover
+                            svg
+                                translate: -5px 0
+                    &.swiper-next
+                        box-shadow: 0px 3px 8px 0px #0000003D
+                        &:hover
+                            svg
+                                translate: 5px 0
+                    svg
+                        transition: .3s ease
+                        vertical-align: middle
+                        path 
+                            fill: $black
+            .services-slider-slider
+                .swiper-slide
+                    text-align: center
+                    position: relative
+                    overflow: hidden
+                    border-radius: 8px
+                    padding: 50px 40px
+                    transition: 0.5s ease
+                    border: 1px solid #3E69AC
+                    svg path
+                        stroke: #43ADFF
+                    h5
+                        font-weight: 500
+                        font-size: 20px
+                        padding: 20px 0
+                        color: $black
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        color:#000000B2 
+                    &:hover
+                        background: #3E69AC
+                        svg path
+                            stroke: $white 
+                        h5,p
+                            color: $white
+
+                .swiper-slide-active
+                    background: #3E69AC
+                    svg path
+                        stroke: white
+                    h5,p
+                        color: $white
