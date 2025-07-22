@@ -1,0 +1,431 @@
+@import '../_var'
+
+.career-banner
+    position: relative
+    color: white
+    overflow: hidden
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include media(1024)
+        height: 80vh
+    @include media(991)
+        height: 50vh
+    @include media(540)
+        height: 70vh
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0) 50.48%, rgba(0, 0, 0, 0.98) 100%),linear-gradient(270deg, rgba(0, 0, 0, 0) 57.69%, rgba(0, 0, 0, 0.65) 100%),linear-gradient(180deg, rgba(0, 0, 0, 0) 55.49%, rgba(0, 0, 0, 0.95) 100%)
+        @include media(540)    
+            // background: linear-gradient(360deg, rgba(0, 0, 0, 0) 49.04%, rgba(0, 0, 0, 0.98) 100%)
+    .banner-wrapper 
+        width: 100%
+        .bg-image
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+            width: 100%
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .container
+            @include media(540)
+                padding: 0
+            .bg-wrapper
+                // max-width: 50%
+                position: absolute
+                z-index: 1
+                width: 100%
+                bottom: 20%
+                margin-left: 10px
+                @include media(991)
+                    bottom: 40%
+                @include media(540)
+                    bottom: 25%
+                h1
+                    font-weight: 600
+                    font-size: 48px
+                    line-height: 1.1
+                    text-align: left
+                    margin-bottom: 18px
+                    max-width: 528px
+
+                    @include media(991)
+                        max-width: 70%
+                        line-height: 1.2
+                        font-size: 30px
+                    @include media(540)
+                        max-width: 100%
+                        font-size: 25px
+                        line-height: 1.1
+                        text-align: center
+                        padding: 0 20px
+                        margin-bottom: 8px
+
+                p
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 22px
+                    color: $white
+                    width: 450px
+                    @include media(991)
+                        max-width: 100%
+                        color: #ffffffe0
+                    @include media(540)
+                        max-width: 100%
+                        font-size: 13px
+                        line-height: 1.2
+                        text-align: center
+                        color: #ffffffdb
+
+
+.career-secD
+    padding: 50px 0
+    overflow: hidden
+    .container
+        .title h3
+            margin-bottom: 50px
+            @include media(767)
+                font-size: 28px
+                text-align: center
+        .col
+            border: 1px solid #C1C1C1
+            margin-bottom: 10px
+            position: relative 
+
+            .title
+                position: relative // for absolutely positioning .ico
+                h6
+                    padding: 12px 50px 12px 21px 
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 24px
+                    color: #FFFFFF
+                    // background: #0A3481
+                    cursor: pointer
+                    margin: 0
+                    @include media(767) 
+                        font-size: 28px  
+            article
+                display: none
+                .content-desc
+                    padding: 20px 30px
+                    background: #F1F1F1
+                    .heading
+                        display: flex
+                        justify-content: space-between
+                        .title
+                            font-family: Work Sans
+                            font-weight: 600
+                            font-size: 16px
+                            line-height: 24px
+                        .button
+                            height: 48px
+                            border-radius: 5px
+                            border-width: 1px
+                            padding: 14px 40px
+                            gap: 10px
+                            border: 1px solid black
+                            font-weight: 600
+                            font-size: 16px
+                            line-height: 100%
+                            letter-spacing: 0%
+                            text-align: center
+                            color: black
+                            @include media(767) 
+                                height: 30px 
+                                border-radius: 5px  
+                                border-width: 1px 
+                                padding: 9px 10px 
+                                gap: 10px 
+                                border: 1px solid black  
+                                font-weight: 600  
+                                font-size: 13px
+                                line-height: 100%   
+                             
+                            &:hover
+                                background: #0A3481
+                                color: white
+                                border-color: #0A3481
+                                transition: 0.3s
+                    .job-desc
+                        padding-left: 50px
+                        li
+                            list-style-type: disc
+                            font-weight: 400
+                            font-size: 16px
+                            line-height: 35px
+                            letter-spacing: 0%
+                            color: #666666
+                        p
+                            max-width: 75%
+                            font-weight: 400
+                            font-size: 16px
+                            letter-spacing: 0%
+                            color: #666666
+
+
+                            &::marker
+                                font-size: 22px
+                                color: #000000 
+                            
+// File input end====
+
+.career-secE
+    padding: 50px 0
+    background: #D2EBFF
+    overflow: hidden
+    .box
+        .form-grid
+                --item: 2
+                --gaplr: 20px
+                --gaptb: 20px
+                @include media(540)
+                    --item: 1 
+                .submit-btn
+                    width: 180px
+                    height: 45px
+                    border-radius: 5px
+                    padding: 16px
+                    color: $white
+                    background: #5393C5
+                    border: 1px solid #5393C5
+                    display: flexs
+                    justify-content: center
+                    align-items: center
+                    margin: auto
+                    transition: 0.5s ease
+                    font-weight: 600
+                    font-family: Poppins
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 24px
+                    &:hover
+                        background: transparent
+                        border: 1px solid #5393C5
+                        color: #5393C5
+                        transition: 0.5s ease
+                .form-group
+                    background-color: white
+                    border: none
+                    outline: none
+
+                    border: none
+                    height: 52px
+                    gap: 16px
+                    border-radius: 10px
+                    padding: 5px 17px
+                    padding-left: 17px
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+                    textarea:focus ~ label
+                        font-size: 11px
+                        color: gray
+                        top: -3px
+                    .file-icon
+                        position: absolute
+                        right: 15px
+                        top: 15px
+                        cursor: pointer
+
+                        &:hover
+                            cursor: pointer
+                    &.active
+                        label
+                            font-size: var(--labelfontafter)
+
+                    &::before
+                        background: none
+                    &::after
+                        background: none
+                    label
+                        padding-left: 15px
+                        font-weight: 400
+                        line-height: 24px
+                    &.file-input
+                        input[type="file"]
+                            position: absolute
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            width: 100%
+                            height: 100%
+                            opacity: 0
+                            z-index: 4
+                            cursor: pointer
+                        .file-name
+                            pointer-events: none
+                            height: calc(var(--inputsize) - var(--borderwidth))
+                            position: relative
+                            --filename: 'Attach Resume*'
+                            --image: '/assets/icon/clip-gray.svg'
+                            --filenameinitial: var(--filename)
+                            --color: var(--text)
+                            --background: none
+                            appearance: none
+                            line-height: calc(var(--inputsize) - var(--borderwidth))
+                            &::before,&::after
+                                position: absolute
+                                top: 0
+                                bottom: 0
+                                left: 0
+                                right: 0
+                            &::before
+                                content: var(--filenameinitial)
+                                z-index: 2
+                                font-family: inherit
+                                font-size: inherit
+                                line-height: calc(var(--inputsize) - var(--borderwidth))
+                                padding-left: var(--paddingleftright)
+                                color: var(--color)
+                                width: 80%
+                                overflow: hidden
+                                text-overflow: ellipsis
+                                background: none
+                            &::after
+                                content: ''
+                                right: 0
+                                background: var(--image)
+                                background-repeat: no-repeat
+                                z-index: 1
+                                background-position: calc(100% - var(--paddingleftright,0)) 50%
+                                background-size: auto 50%
+
+                .form-group:last-child
+                    border: none
+                    height: 91px
+                    gap: 16px
+                    border-radius: 10px
+                    resize: none
+                    color: #666666
+                    background: white
+                    margin-bottom: 20px
+                    padding: 10px 10px 10px 18px
+                    color: black
+                    font-family: inherit !important
+                    font-size: 16px
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+                .span-2
+                    grid-column: span 2
+                    height: 100px
+                    @include media(540)
+                        grid-column: span 1 
+        margin: auto
+        max-width: 779px
+        height: auto
+        .heading 
+            text-align: center
+            margin-bottom: 70px
+            h3
+                font-weight: 600
+                font-size: 36px
+                line-height: 60px
+                letter-spacing: 0%
+                text-align: center
+                @include media(540)
+                    font-size: 28px
+                    line-height: 30px
+                    text-align: center
+            p
+                font-weight: 400
+                font-size: 18px
+                line-height: 35px
+                letter-spacing: 0%
+                text-align: center
+                @include media(540)
+                    font-size: 16px
+                    line-height: 24px
+
+        .form-sec
+            .group1,.group2,.group3
+                display: flex
+                gap: 25px
+                margin-bottom: 26px
+            .group4 textarea
+                width: 100%
+                border: none
+                height: 91px
+                gap: 16px
+                border-radius: 10px
+                resize: none
+                color: #666666
+                background: white
+                margin-bottom: 20px
+                padding: 10px 10px 10px 18px
+                color: black
+                font-family: inherit !important
+                font-size: 16px
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                letter-spacing: 0%
+                
+                &:focus-visible
+                    outline: none
+                &::placeholder
+                    color: #666666
+                    font-weight: 400
+                    font-size: 16px
+            .group5 button
+                width: 171px
+                height: 39px
+                gap: 10px
+                border-radius: 25px
+                padding-top: 10px
+                padding-right: 22px
+                padding-bottom: 10px
+                padding-left: 22px
+                background: #0A3481
+                color: white
+            .submit-button
+                text-align: center
+                margin-top: 35px
+
+                
+            input
+                width: 50%
+                border: none
+                width: 362.5
+                height: 52px
+                gap: 16px
+                border-radius: 10px
+                padding-top: 5px
+                padding-right: 17px
+                padding-bottom: 5px
+                padding-left: 17px
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+                &:focus-visible
+                        outline: none
+                &::placeholder
+                    color: #666666
+                    font-weight: 400
+                    font-size: 16px
+            .custom-select
+                display: flex
+                align-items: center
+                width:  50%
+                border: none
+                height: 52px
+                gap: 16px
+                border-radius: 10px
+                padding-top: 5px
+                padding-right: 17px
+                padding-bottom: 5px
+                padding-left: 17px
+                background: white
+                color: #666666
+                &::before
+                    right: 20px
+
+    
+//====================================================================>>>>>>

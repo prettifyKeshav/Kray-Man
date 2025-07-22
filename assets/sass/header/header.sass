@@ -155,6 +155,9 @@ header
                     >a
                         color: $primary
                         position: relative
+                        span
+                            svg
+                                transform: rotate(-90deg)
                         &::after
                             transform: rotate(90deg)
                     .dropdown-menu 
@@ -209,8 +212,8 @@ header
                                 border-radius: 5px
                                 overflow: hidden
                                 &:hover
-                                    background: #E3E3E3
-                                    color: $black
+                                    background: $primary
+                                    color: $white
                                     &::before
                                         opacity: 1
                                 img

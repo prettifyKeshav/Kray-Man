@@ -2578,6 +2578,9 @@ header .ham-btn span {
   color: var(--primary);
   position: relative;
 }
+.colB .menu-list li.hasDropdown:hover > a span svg {
+  transform: rotate(-90deg);
+}
 .colB .menu-list li.hasDropdown:hover > a::after {
   transform: rotate(90deg);
 }
@@ -2642,8 +2645,8 @@ header .ham-btn span {
   overflow: hidden;
 }
 .colB .menu-list li.hasDropdown .dropdown-menu ul li a:hover {
-  background: #E3E3E3;
-  color: var(--black);
+  background: var(--primary);
+  color: var(--white);
 }
 .colB .menu-list li.hasDropdown .dropdown-menu ul li a:hover::before {
   opacity: 1;
