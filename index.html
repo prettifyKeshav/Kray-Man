@@ -38,30 +38,29 @@
 <body class="home-page">
 
     <!-- ================= HEADER START ================= -->
-    <header class="header-fill">
+    <header>
         <div class="container-fluid">
             <div class="header-wrapper">
-
                 <div class="colA">
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.svg" alt="KrayMan" title="KrayMan">
+                        <img src="assets/images/logo.svg" alt="KrayMan" title="KrayMan" />
                     </a>
                 </div>
-
                 <div class="colB">
-
                     <ul class="upper-menu-list">
                         <li>
-                            <a href="tel:+919818937799"><span><img class="svg" height="16px" width="16px"
-                                        src="assets/icon/call-white.svg" alt=""></span> +91 - 98189 37799
+                            <a href="tel:+919818937799">
+                                <span><img class="svg" height="16px" width="16px" src="assets/icon/call-white.svg" alt="" /></span>
+                                +91 - 98189 37799
                             </a>
                         </li>
                         <ul class="upper-menu-right">
                             <li>
                                 <a href="javascript:void(0);">
                                     <span>
-                                        <img src="/assets/icon/globe.svg" alt="">
-                                    </span>English
+                                        <img src="/assets/icon/globe.svg" alt="" />
+                                    </span>
+                                    English
                                 </a>
                             </li>
                             <span>|</span>
@@ -72,27 +71,28 @@
                             </li>
                         </ul>
                     </ul>
-
                     <ul class="menu-list">
                         <li>
-                            <a href="about.html">About us
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt=""></span>
+                            <a href="about.html">
+                                About us
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">Services
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt=""></span>
+                            <a href="service.html">
+                                Services
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
                         </li>
-                        <li><a href="javascript:void(0);">Publications</a></li>
+                        <li><a href="publications.html">Publications</a></li>
                         <li>
-                            <a href="javascript:void(0);">Life at KrayMan
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt=""></span>
+                            <a href="javascript:void(0);">
+                                Life at KrayMan
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
                         </li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
-
                 </div>
 
                 <button type="button" class="ham-btn" data-model=".ham-pop">
@@ -103,6 +103,7 @@
             </div>
         </div>
     </header>
+
     <!-- ================= HEADER END ================= -->
 
     <main>
@@ -426,20 +427,20 @@
         <section>
             <div class="home-secE">
                 <div class="container">
-                    <div class="homeTeam-swiper-slider">
+                    <div class="Leadership-Team-slider">
                         <div class="heading" data-animate="zoom-in">
                             <h2>Meet Our <span>Team</span> <span>Passionate. Proactive. Expert</span></h2>
                             <div class="swiper-nav swiper-group" data-animate="zoom-in">
-                                <button type="button" class="swiper-prev gray-border homeTeam-prev">
+                                <button type="button" class="swiper-prev gray-border Leadership-prev">
                                     <img class="svg" src="assets/icon/next.svg" alt="null" />
                                 </button>
-                                <button type="button" class="swiper-next gray-border homeTeam-next">
+                                <button type="button" class="swiper-next gray-border Leadership-next">
                                     <img class="svg" src="assets/icon/next.svg" alt="null" />
                                 </button>
                             </div>
                         </div>
 
-                        <div class="homeTeam-slider swiper information-slider">
+                        <div class="Leadership-slider swiper information-slider">
                             <div class="swiper-wrapper" data-animate="fade-up">
 
                                 <div class="swiper-slide">
@@ -629,7 +630,7 @@
 
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -794,7 +795,6 @@
     </footer>
     <!-- ================= FOOTER END ================= -->
 
-
     <div class="overlay"></div>
     <div class="footer-strip">
         <ul>
@@ -944,7 +944,8 @@
         <div class="model-body">
             <div class="heading">
                 <h2>Email Subscription Management</h2>
-                <p>By indicating your preferences, you give KrayMan permission to send you reports, newsletters, invitations
+                <p>By indicating your preferences, you give KrayMan permission to send you reports, newsletters,
+                    invitations
                     to seminars and other relevant marketing materials by email within your preferences.</p>
             </div>
 
@@ -1021,42 +1022,6 @@
         });
     </script>
 
-    <!-- For information popup START -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.information-slider .swiper-slide .viewprofile').on('click', function () {
-                var slide = $(this).closest('.swiper-slide');
-
-                var imageUrl = slide.find('figure img').attr('src');
-                var name = slide.find('.user-heading p:first-child').text();
-                var degination = slide.find('.user-heading p:last-child').text();
-                var text = slide.find('.desc p').text();
-                var socialIcons = slide.find('.icon a').html();
-
-                $('.information-pop .user-image img').attr('src', imageUrl);
-                $('.information-pop .user-name p').html('<b> ' + name + '</b> ');
-                $('.information-pop .degination p').html(degination);
-                $('.information-pop .description-text p').text(text);
-                $('.information-pop .social-icon').html(socialIcons);
-            });
-
-        });
-
-        
-       $('.swiper-slide-prev, .swiper-slide-next').on('click', function () {
-        // Clear all classes
-        $('.swiper-slide').removeClass('swiper-slide-prev swiper-slide-active swiper-slide-next');
-
-        // Add active class to clicked
-        $(this).addClass('swiper-slide-active');
-
-        // Add prev/next based on siblings
-        $(this).prev('.swiper-slide').addClass('swiper-slide-prev');
-        $(this).next('.swiper-slide').addClass('swiper-slide-next');
-    });
-    </script>
-    <!-- For information popup START -->
 
     <!-- Animate JS File -->
     <script src="assets/js/animate.js"></script>

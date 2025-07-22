@@ -60,11 +60,11 @@
   z-index: -1;
 }
 @media only screen and (max-width: 540px) {
-  .home-banner .container {
+  .home-banner .video-background .container {
     padding: 0;
   }
 }
-.home-banner .bg-wrapper {
+.home-banner .video-background .container .bg-wrapper {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -72,33 +72,33 @@
   margin-left: 10px;
 }
 @media only screen and (max-width: 991px) {
-  .home-banner .bg-wrapper {
+  .home-banner .video-background .container .bg-wrapper {
     bottom: 40%;
   }
 }
 @media only screen and (max-width: 540px) {
-  .home-banner .bg-wrapper {
+  .home-banner .video-background .container .bg-wrapper {
     bottom: 25%;
   }
 }
-.home-banner .bg-wrapper .play-button {
+.home-banner .video-background .container .bg-wrapper .play-button {
   margin-top: 100px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 @media only screen and (max-width: 540px) {
-  .home-banner .bg-wrapper .play-button {
+  .home-banner .video-background .container .bg-wrapper .play-button {
     display: flex;
     justify-content: center;
   }
 }
-.home-banner .bg-wrapper .play-button p {
+.home-banner .video-background .container .bg-wrapper .play-button p {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
 }
-.home-banner .bg-wrapper h1 {
+.home-banner .video-background .container .bg-wrapper h1 {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.1;
@@ -107,14 +107,14 @@
   max-width: 528px;
 }
 @media only screen and (max-width: 991px) {
-  .home-banner .bg-wrapper h1 {
+  .home-banner .video-background .container .bg-wrapper h1 {
     max-width: 70%;
     line-height: 1.2;
     font-size: 30px;
   }
 }
 @media only screen and (max-width: 540px) {
-  .home-banner .bg-wrapper h1 {
+  .home-banner .video-background .container .bg-wrapper h1 {
     max-width: 100%;
     font-size: 25px;
     line-height: 1.1;
@@ -123,7 +123,7 @@
     margin-bottom: 8px;
   }
 }
-.home-banner .bg-wrapper p {
+.home-banner .video-background .container .bg-wrapper p {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
@@ -132,13 +132,13 @@
   max-width: 50%;
 }
 @media only screen and (max-width: 991px) {
-  .home-banner .bg-wrapper p {
+  .home-banner .video-background .container .bg-wrapper p {
     max-width: 100%;
     color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 @media only screen and (max-width: 540px) {
-  .home-banner .bg-wrapper p {
+  .home-banner .video-background .container .bg-wrapper p {
     max-width: 100%;
     font-size: 13px;
     line-height: 1.2;
@@ -601,16 +601,16 @@
     padding: 50px 0;
   }
 }
-.home-secE .homeTeam-swiper-slider {
+.home-secE .Leadership-Team-slider {
   width: 100%;
 }
 @media only screen and (max-width: 540px) {
-  .home-secE .homeTeam-swiper-slider {
+  .home-secE .Leadership-Team-slider {
     margin-bottom: 0px;
     margin-top: 30px;
   }
 }
-.home-secE .homeTeam-swiper-slider .heading {
+.home-secE .Leadership-Team-slider .heading {
   text-align: left;
   position: relative;
   display: flex;
@@ -618,156 +618,25 @@
   align-items: center;
   padding: 20px 0 0 0;
 }
-.home-secE .homeTeam-swiper-slider .heading h2 {
+.home-secE .Leadership-Team-slider .heading h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
   margin-bottom: 0;
 }
 @media only screen and (max-width: 540px) {
-  .home-secE .homeTeam-swiper-slider .heading h2 {
+  .home-secE .Leadership-Team-slider .heading h2 {
     font-size: 34px;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 5px;
   }
 }
-.home-secE .homeTeam-swiper-slider .heading h2 span:last-child {
+.home-secE .Leadership-Team-slider .heading h2 span:last-child {
   font-weight: 400;
   font-size: 36px;
   color: #A8A6A7;
   display: block;
-}
-.home-secE .homeTeam-swiper-slider .swiper-nav .swiper-prev, .home-secE .homeTeam-swiper-slider .swiper-nav .swiper-next {
-  border: 1px solid var(--primary);
-}
-.home-secE .homeTeam-swiper-slider .swiper-nav .swiper-prev svg path, .home-secE .homeTeam-swiper-slider .swiper-nav .swiper-next svg path {
-  stroke: var(--primary);
-}
-.home-secE .homeTeam-swiper-slider .swiper-nav .swiper-prev:hover svg path, .home-secE .homeTeam-swiper-slider .swiper-nav .swiper-next:hover svg path {
-  stroke: var(--secondary);
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider {
-  padding: 50px 0 50px 0;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide {
-  transition: 0.9s ease;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-prev {
-  opacity: 50%;
-  background: #F4F4F4;
-  cursor: pointer;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-prev .flex-box {
-  mix-blend-mode: Luminosity;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-prev .flex-box .flex-box-item:last-child figure::before {
-  content: none;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-prev .flex-box .flex-box-item:last-child figure::after {
-  content: none;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-active {
-  opacity: 1;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-next {
-  opacity: 50%;
-  background: #F4F4F4;
-  cursor: pointer;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-next .flex-box {
-  mix-blend-mode: Luminosity;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-next .flex-box .flex-box-item:first-child {
-  display: none;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-next .flex-box .flex-box-item:last-child figure::before {
-  content: none;
-}
-.home-secE .homeTeam-swiper-slider .homeTeam-slider .swiper-wrapper .swiper-slide-next .flex-box .flex-box-item:last-child figure::after {
-  content: none;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide {
-  background: #D2EBFF;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box {
-  display: flex;
-  justify-content: space-between;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child {
-  max-width: 65%;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content {
-  padding: 30px 0 0 40px;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading {
-  position: relative;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 108%;
-  width: 70px;
-  height: 5px;
-  background: var(--primary);
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading p:first-child {
-  font-weight: 600;
-  color: var(--black);
-  font-size: 20px;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading p:last-child {
-  font-weight: 400;
-  font-size: 16px;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .desc {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 20px;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .icon {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 40px 0 0 0;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .icon a {
-  color: #5393C5;
-  font-size: 16px;
-  font-weight: 500;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:last-child {
-  max-width: 35%;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:last-child figure {
-  position: relative;
-  line-height: 0;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:last-child figure::before {
-  content: "";
-  position: absolute;
-  width: 330px;
-  height: 330px;
-  background: #ADDBFF;
-  border-radius: 50%;
-  bottom: -42%;
-  right: -13%;
-  z-index: -1;
-}
-.home-secE .homeTeam-swiper-slider .swiper-slide .flex-box .flex-box-item:last-child figure::after {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  border: 3px solid #5393C5;
-  border-radius: 50%;
-  bottom: -48%;
-  right: -19%;
-  z-index: -1;
 }
 
 .home-secF {

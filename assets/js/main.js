@@ -239,7 +239,7 @@ $(function () {
 
 
 
-    
+
     // services-slider start
     const sliders = document.querySelectorAll('.services-slider-slider');
     sliders.forEach((slider) => {
@@ -358,12 +358,12 @@ $(function () {
     });
     // About  SLIDER END ======================>
 
-    // MORE  SLIDER START ======================>
-    new Swiper('.homeTeam-slider', {
+    // center slide START ======================>
+    const swiper = new Swiper('.Leadership-slider', {
         loop: true,
         navigation: {
-            prevEl: '.homeTeam-prev',
-            nextEl: '.homeTeam-next',
+            prevEl: '.Leadership-prev',
+            nextEl: '.Leadership-next',
         },
         breakpoints: {
             0: {
@@ -372,16 +372,73 @@ $(function () {
                 spaceBetween: 20,
                 speed: 1000,
             },
-
             992: {
                 slidesPerView: 1.6,
                 centeredSlides: true,
                 spaceBetween: 20,
                 speed: 1000,
             }
+        },
+        on: {
+            slideChangeTransitionEnd: function () {
+                $('.Leadership-slider .swiper-slide').removeClass('custom-active custom-prev custom-next');
+                const activeSlide = this.slides[this.activeIndex];
+                const prevSlide = this.slides[this.activeIndex - 1];
+                const nextSlide = this.slides[this.activeIndex + 1];
+                if (activeSlide) activeSlide.classList.add('custom-active');
+                if (prevSlide) prevSlide.classList.add('custom-prev');
+                if (nextSlide) nextSlide.classList.add('custom-next');
+            },
+            init: function () {
+                const swiperInstance = this;
+                setTimeout(() => {
+                    swiperInstance.emit('slideChangeTransitionEnd');
+                }, 0);
+            }
         }
     });
-    // MORE whatWeDo SLIDER END ======================->
+
+    $('.Leadership-slider').on('click', '.swiper-slide', function () {
+        const index = $(this).index(); 
+        swiper.slideTo(index); 
+    });
+    // center slide START ======================>
+
+    $(document).ready(function () {
+        $('.information-slider .swiper-slide .viewprofile').on('click', function () {
+            var slide = $(this).closest('.swiper-slide');
+
+            var imageUrl = slide.find('figure img').attr('src');
+            var name = slide.find('.user-heading p:first-child').text();
+            var degination = slide.find('.user-heading p:last-child').text();
+            var text = slide.find('.desc p').text();
+            var socialIcons = slide.find('.icon a').html();
+
+            $('.information-pop .user-image img').attr('src', imageUrl);
+            $('.information-pop .user-name p').html('<b> ' + name + '</b> ');
+            $('.information-pop .degination p').html(degination);
+            $('.information-pop .description-text p').text(text);
+            $('.information-pop .social-icon').html(socialIcons);
+        });
+    });
+        
+    $(document).ready(function () {
+        $('.information-slider-second .swiper-slide a').on('click', function () {
+            var slide = $(this).closest('.swiper-slide');
+
+            var imageUrl = slide.find('figure img').attr('src');
+            var name = slide.find('figcaption h5').text();
+            var degination = slide.find('figcaption p').text();
+            var text = slide.find('.desc p').text();
+            var socialIcons = slide.find('.icon a').html();
+
+            $('.information-pop .user-image img').attr('src', imageUrl);
+            $('.information-pop .user-name p').html('<b> ' + name + '</b> ');
+            $('.information-pop .degination p').html(degination);
+            $('.information-pop .description-text p').text(text);
+            $('.information-pop .social-icon').html(socialIcons);
+        });
+    });
 
     // About Us Slider One ===========================->
     new Swiper(".proficiencies-swiper", {

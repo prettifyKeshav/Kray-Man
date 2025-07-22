@@ -1,6 +1,5 @@
 @import '../_var'
 
-
 .home-banner
     position: relative
     color: white
@@ -35,68 +34,68 @@
             height: 100%
             object-fit: cover
             z-index: -1
-    .container
-        @include media(540)
-            padding: 0
-    .bg-wrapper
-        // max-width: 50%
-        position: absolute
-        z-index: 1
-        width: 100%
-        bottom: 15%
-        margin-left: 10px
-        @include media(991)
-            bottom: 40%
-        @include media(540)
-            bottom: 25%
-        .play-button
-            margin-top: 100px
-            display: flex
-            align-items: center
-            gap: 20px
+        .container
             @include media(540)
-                display: flex
-                justify-content: center
-            p
-                text-transform: uppercase
-                font-size: 14px
-                font-weight: 600
-        h1
-            font-weight: 600
-            font-size: 48px
-            line-height: 1.1
-            text-align: left
-            margin-bottom: 18px
-            max-width: 528px
+                padding: 0
+            .bg-wrapper
+                // max-width: 50%
+                position: absolute
+                z-index: 1
+                width: 100%
+                bottom: 15%
+                margin-left: 10px
+                @include media(991)
+                    bottom: 40%
+                @include media(540)
+                    bottom: 25%
+                .play-button
+                    margin-top: 100px
+                    display: flex
+                    align-items: center
+                    gap: 20px
+                    @include media(540)
+                        display: flex
+                        justify-content: center
+                    p
+                        text-transform: uppercase
+                        font-size: 14px
+                        font-weight: 600
+                h1
+                    font-weight: 600
+                    font-size: 48px
+                    line-height: 1.1
+                    text-align: left
+                    margin-bottom: 18px
+                    max-width: 528px
 
-            @include media(991)
-                max-width: 70%
-                line-height: 1.2
-                font-size: 30px
-            @include media(540)
-                max-width: 100%
-                font-size: 25px
-                line-height: 1.1
-                text-align: center
-                padding: 0 20px
-                margin-bottom: 8px
+                    @include media(991)
+                        max-width: 70%
+                        line-height: 1.2
+                        font-size: 30px
+                    @include media(540)
+                        max-width: 100%
+                        font-size: 25px
+                        line-height: 1.1
+                        text-align: center
+                        padding: 0 20px
+                        margin-bottom: 8px
 
-        p
-            font-family: $Poppins
-            font-weight: 500
-            font-size: 16px
-            line-height: 100%
-            color: $white
-            max-width: 50%
-            @include media(991)
-                max-width: 100%
-                color: #ffffffe0
-            @include media(540)
-                max-width: 100%
-                font-size: 13px
-                line-height: 1.2
-                text-align: center
-                color: #ffffffdb
+                p
+                    font-family: $Poppins
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 100%
+                    color: $white
+                    max-width: 50%
+                    @include media(991)
+                        max-width: 100%
+                        color: #ffffffe0
+                    @include media(540)
+                        max-width: 100%
+                        font-size: 13px
+                        line-height: 1.2
+                        text-align: center
+                        color: #ffffffdb
 
 .home-secA
     padding: 50px 0
@@ -319,7 +318,6 @@
                             background: $white
                             &::after
                                 border-left: calc(var(--btnsize) / 5.6) solid  #1C499B
-
                 .bg
                     position: absolute
                     background: #5393C5
@@ -417,7 +415,6 @@
                         img
                             transform: scale(1)
 
-
 .home-secD
     background: #03052E
     position: relative
@@ -468,8 +465,7 @@
     padding: 50px 0
     @include media(540)
         padding: 50px 0
-    
-    .homeTeam-swiper-slider
+    .Leadership-Team-slider
         width: 100%
         @include media(540)
             margin-bottom: 0px
@@ -496,118 +492,7 @@
                     font-size: 36px
                     color: #A8A6A7
                     display: block
-        .swiper-nav
-            .swiper-prev,.swiper-next
-                border: 1px solid $primary
-                svg path
-                    stroke: $primary
-                &:hover
-                    svg path
-                        stroke: $secondary
 
-        .homeTeam-slider
-            padding: 50px 0 50px 0
-            .swiper-wrapper
-                .swiper-slide
-                    transition: 0.9s ease
-                .swiper-slide-prev
-                    opacity: 50%
-                    background: #F4F4F4
-                    cursor: pointer
-                    .flex-box
-                        mix-blend-mode: Luminosity
-                        .flex-box-item:last-child
-                            figure
-                                &::before
-                                    content: none
-                                &::after
-                                    content: none
-
-                .swiper-slide-active
-                    opacity: 1
-
-                .swiper-slide-next
-                    opacity: 50%
-                    background: #F4F4F4
-                    cursor: pointer
-                    .flex-box
-                        mix-blend-mode: Luminosity
-                        .flex-box-item:first-child
-                            display: none
-                        .flex-box-item:last-child
-                            figure
-                                &::before
-                                    content: none
-                                &::after
-                                    content: none
-        .swiper-slide
-            background: #D2EBFF
-            border-radius: 10px
-            overflow: hidden
-            .flex-box
-                display: flex
-                justify-content: space-between  
-                .flex-box-item:first-child
-                    max-width: 65%
-                    .user-content
-                        padding: 30px 0 0 40px
-                        .user-heading
-                            position: relative
-                            &::before
-                                content: ""
-                                position: absolute
-                                left: 0
-                                top: 108%
-                                width: 70px
-                                height: 5px
-                                background: $primary
-                            p:first-child
-                                font-weight: 600
-                                color: $black
-                                font-size: 20px
-                            p:last-child
-                                font-weight: 400
-                                font-size: 16px
-                        .desc
-                            font-weight: 400
-                            font-size: 14px
-                            line-height: 20px
-                            margin-top: 20px
-                        .icon
-                            display: flex
-                            align-items: center
-                            gap: 10px
-                            margin: 40px 0 0 0
-                            a
-                                color: #5393C5
-                                font-size: 16px
-                                font-weight: 500
-                
-                .flex-box-item:last-child
-                    max-width: 35%
-                    figure
-                        position: relative
-                        line-height: 0
-                        &::before
-                            content: ""
-                            position: absolute
-                            width: 330px
-                            height: 330px
-                            background: #ADDBFF
-                            border-radius: 50%
-                            bottom: -42%
-                            right: -13%
-                            z-index: -1
-                        &::after
-                            content: ""
-                            position: absolute
-                            width: 360px
-                            height: 360px
-                            border: 3px solid #5393C5
-                            border-radius: 50%
-                            bottom: -48%
-                            right: -19%
-                            z-index: -1
 .home-secF
     padding: 50px 0
     background: #F4F4F4

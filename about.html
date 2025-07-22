@@ -30,10 +30,6 @@
     <!-- ================= Fucntion JS FILE ================= -->
     <script type="text/javascript" src="assets/js/function.js"></script>
 
-    <style>
-
-    </style>
-
 </head>
 
 <body>
@@ -186,7 +182,7 @@
                 <div class="bg">
                     <div class="container">
                         <div class="tab-section">
-                            <ul class="tab-nav">
+                            <ul class="tab-nav" data-animate="zoom-in">
                                 <li data-tab="VisionVision" class="active">
                                     <a href="javascript:void(0)">Vision</a>
                                 </li>
@@ -195,7 +191,7 @@
                                     <a href="javascript:void(0)">Mission</a>
                                 </li>
                             </ul>
-                            <div class="tab-nav-content">
+                            <div class="tab-nav-content" data-animate="fade-up">
                                 <div class="tabs active" data-tab="VisionVision">
                                     <p>
                                         Our Vision is to be the trusted partner and advisor to international entities
@@ -223,34 +219,93 @@
             </div>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="about-secC">
-                <div class="banner-wrapper">
-                    <div class="banner">
-                        <video src=""></video>
-                    </div>
-                    <h2>Core Values</h2>
+                <div class="banner">
+                    <figure>
+                        <img src="/assets/images/about/core-value/1.jpg" alt="Core Value Banner 1" id="banner-image">
+                    </figure>
+                    <figcaption>
+                        <div class="grid-container">
+                            <div class="grid-box" data-image="/assets/images/about/core-value/1.jpg">
+                                <div class="inner-box">
+                                    <img src="assets/images/about/core-value/1.svg" alt="">
+                                    <h3>Act with Integrity</h3>
+                                    <p>Upholding highest professional standards by doing business fairly & honestly, we
+                                        express a culture of transparency. Integrity is our foundation. </p>
+                                </div>
+                            </div>
+
+                            <div class="grid-box" data-image="/assets/images/about/core-value/2.jpg">
+                                <h2>Core Values</h2>
+                                <div class="inner-box">
+                                    <img src="assets/images/about/core-value/2.svg" alt="">
+                                    <h3>Accountability</h3>
+                                    <p>We take personal responsibility and ownership for own work. Commit to deliver on
+                                        time
+                                        and with high quality to our Clients.</p>
+                                </div>
+                            </div>
+                            <div class="grid-box" data-image="/assets/images/about/core-value/3.jpg">
+                                <div class="inner-box">
+                                    <img src="assets/images/about/core-value/3.svg" alt="">
+                                    <h3>Respect for Stakeholders</h3>
+                                    <p>We are respectful, open and honest, and build relationships based on trust.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </figcaption>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="about-secC" id="propertySection">
+            <div class="property-column active" data-bg="assets/images/about/core-value/1.jpg">
+                <img src="assets/images/about/core-value/1.svg" alt="Logo" />
+                <h3>Act with Integrity</h3>
+                <div class="property-content">
+                    <p>Upholding highest professional standards by doing business fairly & honestly, we
+                        express a culture of transparency. Integrity is our foundation. </p>
+                </div>
+            </div>
+
+            <div class="property-column" data-bg="assets/images/about/core-value/2.jpg">
+                <img src="assets/images/about/core-value/2.svg" alt="Logo" />
+                <h3>Accountability</h3>
+                <div class="property-content">
+                    <p>We take personal responsibility and ownership for own work. Commit to deliver on
+                        time
+                        and with high quality to our Clients.</p>
+                </div>
+            </div>
+
+            <div class="property-column" data-bg="assets/images/about/core-value/3.jpg">
+                <img src="assets/images/about/core-value/3.svg" alt="Logo" />
+                <h3>Respect for Stakeholders</h3>
+                <div class="property-content">
+                    <p>We are respectful, open and honest, and build relationships based on trust.</p>
                 </div>
             </div>
         </section>
 
+
         <section>
-            <div class="home-secD">
+            <div class="about-secD">
                 <div class="container">
-                    <div class="homeTeam-swiper-slider">
-                        <div class="heading" data-animate="zoom-in">
+                    <div class="Leadership-Team-slider">
+                        <div class="heading" data-animate="fade-up">
                             <h2 data-animate="fade-up">Leadership Team</h2>
                             <div class="swiper-nav swiper-group" data-animate="zoom-in">
-                                <button type="button" class="swiper-prev gray-border homeTeam-prev">
+                                <button type="button" class="swiper-prev gray-border Leadership-prev">
                                     <img class="svg" src="assets/icon/next.svg" alt="null" />
                                 </button>
-                                <button type="button" class="swiper-next gray-border homeTeam-next">
+                                <button type="button" class="swiper-next gray-border Leadership-next">
                                     <img class="svg" src="assets/icon/next.svg" alt="null" />
                                 </button>
                             </div>
                         </div>
 
-                        <div class="homeTeam-slider swiper">
+                        <div class="Leadership-slider swiper information-slider" data-animate="fade-up">
                             <div class="swiper-wrapper" data-animate="fade-up">
 
                                 <div class="swiper-slide">
@@ -258,7 +313,7 @@
                                         <div class="flex-box-item">
                                             <div class="user-content">
                                                 <div class="user-heading">
-                                                    <p>Mayank Agarwal</p>
+                                                    <p>Agarwal Mayank</p>
                                                     <p>Partner Chartered Accountant, Company Secretary</p>
                                                 </div>
                                                 <div class="desc">
@@ -272,9 +327,13 @@
                                                     </p>
                                                 </div>
 
-                                                <a href="javascript:void(0)"> <img
-                                                        src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" /> View
-                                                    Profile </a>
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -305,9 +364,13 @@
                                                     </p>
                                                 </div>
 
-                                                <a href="javascript:void(0)"> <img
-                                                        src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" /> View
-                                                    Profile </a>
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -338,9 +401,50 @@
                                                     </p>
                                                 </div>
 
-                                                <a href="javascript:void(0)"> <img
-                                                        src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" /> View
-                                                    Profile </a>
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/home/users/1.png" alt="user-img" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <div class="user-content">
+                                                <div class="user-heading">
+                                                    <p>Mayank Agarwal</p>
+                                                    <p>Partner Chartered Accountant, Company Secretary</p>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Mayank is a qualified Chartered Accountant and Company
+                                                        Secretary. Mayank is advising and handholding Clients in their
+                                                        Tax & Regulatory matters. Besides, Mayank is providing strategic
+                                                        leadership
+                                                        for the Firm’s operations and pursuits creating business &
+                                                        growth opportunities using his diverse experience.
+                                                    </p>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <a href="javascript:void(0)" class="social-icon"> <img
+                                                            src="assets/icon/devicon_linkedin.svg" alt="linkdin-ico" />
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="viewprofile"
+                                                        data-model=".information-pop">View Profile</a>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -376,11 +480,11 @@
                         </div>
                     </div>
 
-                    <div class="about-slider1 swiper">
+                    <div class="about-slider1 swiper information-slider-second">
                         <div class="swiper-wrapper" data-animate="fade-up">
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Advicer/1.png" alt="">
                                     </figure>
@@ -388,11 +492,30 @@
                                         <h5 class="username">Hiroshi Matsuda</h5>
                                         <p>Japan Desk</p>
                                     </figcaption>
+                                    <div class="desc">
+                                        <p>
+                                            Mr. Hiroshi Matsuda is a Certified Public Accountant (CPA) from Japan. He
+                                            has more than 25 years of work experience as a CPA. He specializes in tax
+                                            advisory, due diligence and financial advisory services for clients. He is
+                                            based in Japan and is proficient in English, Chinese and Japanese languages.
+                                        </p>
+
+                                        <p>
+                                            Prior to joining KrayMan, Mr. Hiroshi Matsuda has worked for reputed
+                                            organizations such as GCA Advisors (for 4 years), Ernst & Young (EY) (for 13
+                                            years) and Pricewaterhouse Coopers (PwC) (for 11 years). He has worked in
+                                            different locations of India, China, Hong Kong and Malaysia. He is also a
+                                            Partner with NoHaRa Audit Corporation, Japan. From 2024 onwards, he is a
+                                            Certified Management Consultant, working on business improvement projects
+                                            for corporate revitalization and small scale M&A for SMEs’ business
+                                            succession in Japan.
+                                        </p>
+                                    </div>
                                 </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Advicer/1.png" alt="">
                                     </figure>
@@ -400,11 +523,30 @@
                                         <h5 class="username">Hiroshi Matsuda</h5>
                                         <p>Japan Desk</p>
                                     </figcaption>
+                                    <div class="desc">
+                                        <p>
+                                            Mr. Hiroshi Matsuda is a Certified Public Accountant (CPA) from Japan. He
+                                            has more than 25 years of work experience as a CPA. He specializes in tax
+                                            advisory, due diligence and financial advisory services for clients. He is
+                                            based in Japan and is proficient in English, Chinese and Japanese languages.
+                                        </p>
+
+                                        <p>
+                                            Prior to joining KrayMan, Mr. Hiroshi Matsuda has worked for reputed
+                                            organizations such as GCA Advisors (for 4 years), Ernst & Young (EY) (for 13
+                                            years) and Pricewaterhouse Coopers (PwC) (for 11 years). He has worked in
+                                            different locations of India, China, Hong Kong and Malaysia. He is also a
+                                            Partner with NoHaRa Audit Corporation, Japan. From 2024 onwards, he is a
+                                            Certified Management Consultant, working on business improvement projects
+                                            for corporate revitalization and small scale M&A for SMEs’ business
+                                            succession in Japan.
+                                        </p>
+                                    </div>
                                 </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Advicer/1.png" alt="">
                                     </figure>
@@ -412,11 +554,30 @@
                                         <h5 class="username">Hiroshi Matsuda</h5>
                                         <p>Japan Desk</p>
                                     </figcaption>
+                                    <div class="desc">
+                                        <p>
+                                            Mr. Hiroshi Matsuda is a Certified Public Accountant (CPA) from Japan. He
+                                            has more than 25 years of work experience as a CPA. He specializes in tax
+                                            advisory, due diligence and financial advisory services for clients. He is
+                                            based in Japan and is proficient in English, Chinese and Japanese languages.
+                                        </p>
+
+                                        <p>
+                                            Prior to joining KrayMan, Mr. Hiroshi Matsuda has worked for reputed
+                                            organizations such as GCA Advisors (for 4 years), Ernst & Young (EY) (for 13
+                                            years) and Pricewaterhouse Coopers (PwC) (for 11 years). He has worked in
+                                            different locations of India, China, Hong Kong and Malaysia. He is also a
+                                            Partner with NoHaRa Audit Corporation, Japan. From 2024 onwards, he is a
+                                            Certified Management Consultant, working on business improvement projects
+                                            for corporate revitalization and small scale M&A for SMEs’ business
+                                            succession in Japan.
+                                        </p>
+                                    </div>
                                 </a>
                             </div>
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Advicer/1.png" alt="">
                                     </figure>
@@ -424,11 +585,31 @@
                                         <h5 class="username">Hiroshi Matsuda</h5>
                                         <p>Japan Desk</p>
                                     </figcaption>
+                                    <div class="desc">
+                                        <p>
+                                            Mr. Hiroshi Matsuda is a Certified Public Accountant (CPA) from Japan. He
+                                            has more than 25 years of work experience as a CPA. He specializes in tax
+                                            advisory, due diligence and financial advisory services for clients. He is
+                                            based in Japan and is proficient in English, Chinese and Japanese languages.
+                                        </p>
+
+                                        <p>
+                                            Prior to joining KrayMan, Mr. Hiroshi Matsuda has worked for reputed
+                                            organizations such as GCA Advisors (for 4 years), Ernst & Young (EY) (for 13
+                                            years) and Pricewaterhouse Coopers (PwC) (for 11 years). He has worked in
+                                            different locations of India, China, Hong Kong and Malaysia. He is also a
+                                            Partner with NoHaRa Audit Corporation, Japan. From 2024 onwards, he is a
+                                            Certified Management Consultant, working on business improvement projects
+                                            for corporate revitalization and small scale M&A for SMEs’ business
+                                            succession in Japan.
+                                        </p>
+                                    </div>
                                 </a>
                             </div>
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -450,11 +631,11 @@
                         </div>
                     </div>
 
-                    <div class="about-slider2 swiper">
+                    <div class="about-slider2 swiper information-slider-second">
                         <div class="swiper-wrapper" data-animate="fade-up">
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Specialists/1.png" alt="">
                                     </figure>
@@ -466,7 +647,7 @@
                             </div>
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Specialists/1.png" alt="">
                                     </figure>
@@ -478,7 +659,7 @@
                             </div>
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Specialists/1.png" alt="">
                                     </figure>
@@ -490,7 +671,7 @@
                             </div>
 
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-model=".information-pop">
                                     <figure>
                                         <img src="assets/images/about/Specialists/1.png" alt="">
                                     </figure>
@@ -500,7 +681,6 @@
                                     </figcaption>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -612,7 +792,6 @@
     </footer>
     <!-- ================= FOOTER END ================= -->
 
-
     <div class="overlay"></div>
     <div class="footer-strip">
         <ul>
@@ -650,6 +829,7 @@
             </li>
         </ul>
     </div>
+
     <!--Hamburger Menu -->
     <div class="model ham-pop">
         <button class="close"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
@@ -715,48 +895,41 @@
     </div>
     <!-- End Video Pop -->
 
-    <!--Enquire Pop -->
-    <div class="model enquire-pop">
-        <button class="close"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.5 0.5L25.5 25.5M0.5 25.5L25.5 0.5" stroke="black" stroke-linecap="round"
+    <!-- Information Pop Start-->
+    <div class="model information-pop">
+        <button class="close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 0.75L23.25 23.25M0.75 23.25L23.25 0.75" stroke="black" stroke-linecap="round"
                     stroke-linejoin="round" />
-            </svg></button>
+            </svg>
+        </button>
         <div class="model-body">
-            <div class="title">
-                <h4>Enquire Now</h4>
-                <p>Contact us for expert electrical solutions and reliable after-sales service.</p>
-            </div>
-            <div class="form form-grid">
-                <div class="form-group">
-                    <input type="text" class="form-control" required>
-                    <label for="">Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" required>
-                    <label for="">Phone</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" required>
-                    <label for="">Email</label>
-                </div>
-                <div class="form-group">
-                    <textarea name="" id="" class="form-control"></textarea>
-                    <label for="">Message</label>
+            <div class="flex-box">
+                <div class="flex-box-item">
+                    <div class="user-image">
+                        <img src="" alt="" />
+                    </div>
+
+                    <div class="social-icon">
+                        <a href=""></a>
+                    </div>
                 </div>
 
-                <div class="bottom-btn">
-                    <a href="tel:9000000000">
-                        <button type="button" class="btn-btn">
-                            <span type="button">SUBMIT</span>
-                        </button>
-                    </a>
+                <div class="flex-box-item">
+                    <div class="user-name">
+                        <p></p>
+                    </div>
+                    <div class="degination">
+                        <p></p>
+                    </div>
+                    <div class="description-text">
+                        <p></p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-
+    <!-- Information Pop End-->
 
     <!-- Animate JS File -->
     <script src="assets/js/animate.js"></script>
@@ -771,24 +944,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script type="text/javascript" src="assets/js/main.js"></script>
 
-    <script>
+    <script type="text/javascript">
+        // Select section and columns
+        const propertySection = document.getElementById("propertySection");
+        const columns = document.querySelectorAll(".property-column");
 
-       $('.swiper-slide-prev, .swiper-slide-next').on('click', function () {
-        // Clear all classes
-        $('.swiper-slide').removeClass('swiper-slide-prev swiper-slide-active swiper-slide-next');
-
-        // Add active class to clicked
-        $(this).addClass('swiper-slide-active');
-
-        // Add prev/next based on siblings
-        $(this).prev('.swiper-slide').addClass('swiper-slide-prev');
-        $(this).next('.swiper-slide').addClass('swiper-slide-next');
-    });
-
-
+        // Add hover effect to change section background
+        columns.forEach((column) => {
+            column.addEventListener("mouseenter", () => {
+                const bgImage = column.getAttribute("data-bg");
+                propertySection.style.backgroundImage = `url('${bgImage}')`;
+            });
+        });
     </script>
 
 </body>
