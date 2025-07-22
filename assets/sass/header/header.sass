@@ -140,8 +140,86 @@ header
                     span
                         svg
                             transform: rotate(-90deg)
-
-
+            &.hasDropdown
+                position: relative
+                >a
+                    &::after
+                        content: ""
+                        background-image: url(/assets/icon/arrow-down-white.svg)
+                        background-repeat: no-repeat
+                        background-position-x: 100%
+                        background-position-y: 50%
+                        background-size: var(--arrowsize) auto
+                        padding-right: calc(var(--arrowsize) + var(--space))
+                &:hover
+                    >a
+                        color: $primary
+                        position: relative
+                        &::after
+                            transform: rotate(90deg)
+                    .dropdown-menu 
+                        opacity: 1
+                        transform: scale3d(1, 1, 1) 
+                .dropdown-menu
+                    --triangle: 10px
+                    position: absolute
+                    top: calc(100% + var(--triangle))
+                    left: 50%
+                    translate: -50% 0
+                    transform: perspective(2000px) translate3d(0px, 0px, 50px) rotateX(-90deg) scale3d(0.86, 0.75, 1) translateY(50px)
+                    transform-origin: top
+                    transition: .4s ease
+                    opacity: 0
+                    width: 100%
+                    min-width: fit-content
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        bottom: calc(100% - (var(--triangle) / 2))
+                        left: 50%
+                        translate: -50% 0
+                        width: var(--triangle)
+                        height: var(--triangle)
+                        background: #E3E3E3
+                        transform: rotate(45deg)
+                        z-index: -1
+                    ul
+                        display: grid
+                        grid-template-columns: repeat(2, 1fr)
+                        column-gap: 30px
+                        background: #fff
+                        padding: 16px 12px
+                        box-shadow: rgb(0 0 0 / 1%) -2px 6px 2px 3px
+                        border-radius: 5px
+                        text-align: left
+                        white-space: nowrap
+                        li
+                            display: block
+                            &:not(:last-child)
+                                margin-right: 0
+                                margin-bottom: 2px
+                            a
+                                font-size: 14px
+                                display: flex
+                                align-items: center
+                                gap: 5px
+                                color: $black
+                                padding: 10px 14px
+                                border-radius: 5px
+                                overflow: hidden
+                                &:hover
+                                    background: #E3E3E3
+                                    color: $black
+                                    &::before
+                                        opacity: 1
+                                img
+                                    width: 20px
+                                    object-fit: cover
+                                span
+                                    display: block
+                                    width: 24px
+                                    line-height: 0
 
 .cl-wht-icon
   display: inline-block

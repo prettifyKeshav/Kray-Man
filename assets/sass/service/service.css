@@ -153,9 +153,27 @@
   margin-bottom: 25px;
   color: var(--text);
 }
+.service-secA .flex-box .flex-box-item:first-child .content h2 {
+  font-weight: 600;
+  font-size: 25px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
 .service-secA .flex-box .flex-box-item:first-child .content h3 {
   font-weight: 600;
   font-size: 18px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
+.service-secA .flex-box .flex-box-item:first-child .content h4 {
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
+.service-secA .flex-box .flex-box-item:first-child .content h5 {
+  font-weight: 600;
+  font-size: 14px;
   color: black;
   margin: 40px 0 10px 0;
 }
@@ -187,7 +205,7 @@
   border-radius: 10px;
   background: linear-gradient(0deg, #3154AE 0%, #1A1D5B 100%);
   position: Sticky;
-  top: var(--headerheight);
+  top: 125px;
   padding: 25px;
   overflow: auto;
 }
@@ -241,7 +259,7 @@
 
 .service-secB .banner .bg {
   position: relative;
-  height: 90vh;
+  height: 100vh;
 }
 .service-secB .banner .bg::before {
   content: "";
