@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSR Section</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background: #fff;
+        }
+
+        .csr-section {
+            display: flex;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            overflow: hidden;
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+
+        .tab-title {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 20px 10px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .tab-title.left {
+            background-color: #052a5f;
+            color: #fff;
+        }
+
+        .tab-title.right {
+            background-color: #1f6fb2;
+            transform: rotate(0);
+            color: #fff;
+        }
+
+        .tab-content {
+            overflow: hidden;
+            height: 0;
+            transition: height 0.5s ease;
+            flex: 1;
+            background-color: #e6f2ff;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tab-content-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .tab-text {
+            flex: 1;
+        }
+
+        .tab-text h3 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .tab-text p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .tab-image img {
+            width: 180px;
+            border-radius: 8px;
+        }
+
+        .csr-init {
+            text-align: center;
+            margin-top: 40px;
+            max-width: 700px;
+            margin-inline: auto;
+        }
+
+        .csr-init h2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .csr-init p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="csr-section">
+        <!-- Left Vertical Tab -->
+        <div class="tab-title left" data-tab="tab1">Grow & Thrive Together</div>
+
+        <!-- Tab 1 Content -->
+        <div class="tab-content" id="tab1">
+            <div class="tab-content-inner">
+                <div class="tab-text">
+                    <h3>Grow & Thrive Together</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                        feugiat tincidunt. Non justo vivamus donec tortor dolor varius tortor
+                        eu. Integer semper facilisis rhoncus cursus ut mattis eget potenti.
+                        Eros auctor amet egestas risus dictum.
+                    </p>
+                </div>
+                <div class="tab-image">
+                    <img src="https://images.unsplash.com/photo-1542435503-956c469947f6" alt="Hands holding plants" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2 Content -->
+        <div class="tab-content" id="tab2">
+            <div class="tab-content-inner">
+                <div class="tab-text">
+                    <h3>Discover Our Vibrant Workplace</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Quisque faucibus odio sit amet
+                        dictum convallis. Donec facilisis magna in feugiat mattis. Etiam vel
+                        orci ac purus iaculis consectetur sed nec sem.
+                    </p>
+                </div>
+                <div class="tab-image">
+                    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Office workspace" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Vertical Tab -->
+        <div class="tab-title right" data-tab="tab2">
+            Discover Our Vibrant Workplace<br />Passion Drives Our People
+        </div>
+    </div>
+
+    <!-- Bottom Text Section -->
+    <div class="csr-init">
+        <h2>CSR Initative</h2>
+        <p>
+            At Prayas, we are dedicated to making a lasting positive impact on society
+            and the environment. As a vital part of our community, we believe it is our
+            moral duty to actively contribute towards a brighter future for all. Our
+            commitment is centered around three key focus areas.
+        </p>
+    </div>
+
+    <!-- JavaScript for Sliding Tabs -->
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-title');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        function slideUp(element) {
+            element.style.height = element.scrollHeight + 'px'; // Start from full height
+            requestAnimationFrame(() => {
+                element.style.height = '0';
+            });
+        }
+
+        function slideDown(element) {
+            const inner = element.querySelector('.tab-content-inner');
+            const height = inner.offsetHeight;
+            element.style.display = 'flex';
+            element.style.height = '0'; // Start collapsed
+            requestAnimationFrame(() => {
+                element.style.height = height + 'px';
+            });
+        }
+
+        function collapseAll() {
+            tabContents.forEach(content => {
+                slideUp(content);
+            });
+        }
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-tab');
+                const targetContent = document.getElementById(targetId);
+
+                // If already open, do nothing
+                if (targetContent.style.height && targetContent.style.height !== '0px') return;
+
+                collapseAll();
+                slideDown(targetContent);
+            });
+        });
+
+        // Initialize first tab open on load
+        window.addEventListener('load', () => {
+            const firstTab = document.getElementById('tab1');
+            const inner = firstTab.querySelector('.tab-content-inner');
+            firstTab.style.height = inner.offsetHeight + 'px';
+        });
+    </script>
+</body>
+
+</html>

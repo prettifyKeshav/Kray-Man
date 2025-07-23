@@ -482,7 +482,7 @@ body, html {
   line-height: 1.5;
   font-optical-sizing: auto;
   font-style: normal;
-  font-family: "Poppins";
+  font-family: "Graphik";
   font-weight: normal;
 }
 
@@ -491,12 +491,12 @@ b {
 }
 
 h2 {
-  font-family: "Poppins";
+  font-family: "Graphik";
 }
 
 p {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Graphik";
 }
 
 small {
@@ -650,7 +650,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 64px;
   line-height: 1.05;
-  font-family: "Poppins";
+  font-family: "Graphik";
 }
 @media only screen and (max-width: 1024px) {
   h1 {
@@ -685,7 +685,7 @@ h3 {
   font-size: 48px;
   line-height: 1.25;
   color: var(--black);
-  font-family: "Poppins";
+  font-family: "Graphik";
   font-weight: 600;
 }
 @media only screen and (max-width: 1230px) {
@@ -1445,7 +1445,7 @@ button {
   font-size: 48px;
   margin-bottom: 45px;
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Graphik";
   font-weight: normal;
 }
 @media only screen and (max-width: 675px) {
@@ -1638,7 +1638,7 @@ button {
   color: var(--white);
 }
 .banner .content.content-font2 h1 {
-  font-family: "Poppins";
+  font-family: "Graphik";
   color: var(--black-light);
   font-weight: 600;
   line-height: 1.25;
@@ -1661,7 +1661,7 @@ button {
   font-size: 36px;
   line-height: 45px;
   max-width: 527px;
-  font-family: "Poppins";
+  font-family: "Graphik";
   font-weight: 600;
 }
 @media only screen and (max-width: 1152px) {

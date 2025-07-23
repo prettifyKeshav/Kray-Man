@@ -352,7 +352,7 @@
         .flex-box
             display: flex
             justify-content: space-around
-            padding: 70px 0 
+            padding: 70px 0 0 0 
             overflow: hidden
             .flex-box-item:first-child
                 width: 100%
@@ -420,7 +420,7 @@
     position: relative
     height: 100vh
     overflow: hidden
-    display: none
+    // display: none
     .video-sec
         position: absolute
         top: 50%
@@ -430,7 +430,7 @@
         figure
             position: relative
             width: 350px
-            transition: 0.5s ease   
+            transition: 0.5s ease-in-out
             background: #03052E
             video
                 width: 100%
@@ -446,6 +446,37 @@
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
+
+            .upper
+                h2
+                    font-weight: 600
+                    font-size: 48px
+                    text-align: center
+                    color: $white
+                p
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 24px
+                    text-align: center
+                    color: $white
+            .bottom
+                display: flex
+                justify-content: center
+                gap: 80px
+                span
+                    display: flex
+                    justify-content: start
+                    gap: 15px
+                    img
+                        width: 20px
+                    p
+                        font-weight: 500
+                        font-size: 18px
+                        line-height: 24px
+                        text-align: center
+                        color: $white
+
+
     .scroll-btn
         position: absolute
         top: 80%

@@ -33,6 +33,95 @@
     <!-- ================= For Scroll to Section jquery cdn ================= -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <style>
+        .csr-section {
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .csr-tabs {
+            display: flex;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .tab-title {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            background-color: #052a5f;
+            color: white;
+            padding: 20px 10px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tab-title.right {
+            writing-mode: vertical-rl;
+            transform: rotate(0);
+            background-color: #1f6fb2;
+        }
+
+        .tab-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            flex: 1;
+            background-color: #e6f2ff;
+        }
+
+        .tab-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .tab-text h3 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .tab-text p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .tab-image {
+            flex-shrink: 0;
+        }
+
+        .tab-image img {
+            width: 180px;
+            border-radius: 8px;
+        }
+
+        .csr-init {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .csr-init h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .csr-init p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #333;
+        }
+    </style>
+
 </head>
 
 <body class="home-page">
@@ -127,13 +216,364 @@
             </div>
         </section>
 
-        <section class="career-secD" id="CurrentOpenings">
-            <div class="container">
-                <div class="title" data-animate="zoom-in">
-                    <h3>Current Openings</h3>
+        <section>
+            <div class="career-secA">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Our culture is one of our most valuable assets</h2>
+                    </div>
+
+                    <div class="grid-box">
+                        <div class="grid-box-item">
+                            <figure>
+                                <img src="assets/images/gallary/1.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="grid-box-item">
+                            <figure>
+                                <img src="assets/images/gallary/2.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="grid-box-item">
+                            <figure>
+                                <img src="assets/images/gallary/3.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="career-secB">
+                <div class="container">
+                    <div class="flex-box">
+                        <div class="flex-box-item" data-animate="fade-right">
+                            <div class="heading">
+                                <h2><span>Live at</span> <span>Kray</span><span>Man</span></h2>
+                            </div>
+                        </div>
+                        <div class="flex-box-item" data-animate="fade-left">
+                            <p>Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a feugiat tincidunt.
+                                Non
+                                justo vivamus donec tortor dolor varius tortor eu. Integer semper facilisi rhoncus
+                                cursus ut
+                                mattis eget potenti.
+                            </p>
+                            <a href="javascript:void(0);">View current openings <img class="svg"
+                                    src="assets/icon/right-arrow.svg" alt="" /></a>
+                        </div>
+                    </div>
+
+                    <div class="according" data-animate="fade-up">
+                        <div class="according-fn">
+
+                            <div class="tabs active">
+                                <div class="tabs-title">
+                                    <p>Grow & Thrive Together</p>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-text">
+                                        <h3>Grow & Thrive Together</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius
+                                            tortor eu. Integer semper facilisis rhoncus cursus ut mattis eget
+                                            potenti. Eros auctor amet egestas risus dictum. Non justo vivamus
+                                            donec tortor dolor varius tortor eu.
+                                        </p>
+                                    </div>
+                                    <div class="tab-image">
+                                        <figure>
+                                            <img src="assets/images/accor-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs">
+                                <div class="tabs-title">
+                                    <p>Discover Our Vibrant Workplace</p>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-text">
+                                        <h3>Discover Our Vibrant Workplace</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius
+                                            tortor eu. Integer semper facilisis rhoncus cursus ut mattis eget
+                                            potenti. Eros auctor amet egestas risus dictum. Non justo vivamus
+                                            donec tortor dolor varius tortor eu.
+                                        </p>
+                                    </div>
+                                    <div class="tab-image">
+                                        <figure>
+                                            <img src="assets/images/accor-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs">
+                                <div class="tabs-title">
+                                    <p> Passion Drives Our People</p>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-text">
+                                        <h3> Passion Drives Our People</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius
+                                            tortor eu. Integer semper facilisis rhoncus cursus ut mattis eget
+                                            potenti. Eros auctor amet egestas risus dictum. Non justo vivamus
+                                            donec tortor dolor varius tortor eu.
+                                        </p>
+                                    </div>
+                                    <div class="tab-image">
+                                        <figure>
+                                            <img src="assets/images/accor-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="colB">
+
+            </div>
+        </section>
+
+        <section>
+            <div class="career-secC">
+                <div class="container">
+                    <div class="heading" data-animate="zoom-in">
+                        <h2>CSR Initative</h2>
+                        <p>At Prayas, we are dedicated to making a lasting positive impact on society and the
+                            environment. As a vital part of our community, we believe it is our moral duty to actively
+                            contribute towards a brighter future for all. Our commitment is centered around three key
+                            focus areas:
+                        </p>
+                    </div>
+
+                    <div class="grid-box" data-animate="fade-up">
+                        <a href="javascript:void(0);" class="grid-box-item">
+                            <figure>
+                                <img src="assets/images/csr/1.jpg" alt="">
+                                <div class="figinfo">
+                                    <h3>Education</h3>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <p>Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a feugiat
+                                    tincidunt. Non justo vivamus donec tortor dolor varius tortor eu. Integer semper
+                                    facilisi rhoncus cursus ut mattis eget potenti.
+                                </p>
+                            </figcaption>
+                        </a>
+
+                        <a href="javascript:void(0);" class="grid-box-item">
+                            <figure>
+                                <img src="assets/images/csr/2.png" alt="">
+                                <div class="figinfo">
+                                    <h3>Education</h3>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <p>Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a feugiat
+                                    tincidunt. Non justo vivamus donec tortor dolor varius tortor eu. Integer semper
+                                    facilisi rhoncus cursus ut mattis eget potenti.
+                                </p>
+                            </figcaption>
+                        </a>
+
+                        <a href="javascript:void(0);" class="grid-box-item">
+                            <figure>
+                                <img src="assets/images/csr/3.png" alt="">
+                                <div class="figinfo">
+                                    <h3>Education</h3>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <p>Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a feugiat
+                                    tincidunt. Non justo vivamus donec tortor dolor varius tortor eu. Integer semper
+                                    facilisi rhoncus cursus ut mattis eget potenti.
+                                </p>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="career-secD">
+                <div class="container">
+                    <div class="heading" data-animate="zoom-in">
+                        <h2>Employee Review</h2>
+                    </div>
+
+                    <div class="review-swiper-slide" data-animate="fade-up">
+                        <div class="swiper-nav center-full">
+                            <button type="button" class="swiper-prev review-prev">
+                                <img src="/assets/icon/next-arrow.svg" class="svg" alt="" />
+                            </button>
+                            <button type="button" class="swiper-next review-next">
+                                <img src="/assets/icon/next-arrow.svg" class="svg" alt="" />
+                            </button>
+                        </div>
+                        <div class="swiper review-slider">
+                            <div class="swiper-wrapper">
+                                <a href="javascript:void(0);" class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/user-img.png" alt="user-image">
+                                            </figure>
+                                            <div class="info">
+                                                <h4>Name Here</h4>
+                                                <p>Manager</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <img src="assets/images/qoma.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius tortor eu.
+                                            Integer semper facilisi rhoncus cursus ut mattis eget potenti.
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="javascript:void(0);" class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/user-img.png" alt="user-image">
+                                            </figure>
+                                            <div class="info">
+                                                <h4>Name Here</h4>
+                                                <p>Manager</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <img src="assets/images/qoma.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius tortor eu.
+                                            Integer semper facilisi rhoncus cursus ut mattis eget potenti.
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="javascript:void(0);" class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/user-img.png" alt="user-image">
+                                            </figure>
+                                            <div class="info">
+                                                <h4>Name Here</h4>
+                                                <p>Manager</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <img src="assets/images/qoma.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius tortor eu.
+                                            Integer semper facilisi rhoncus cursus ut mattis eget potenti.
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="javascript:void(0);" class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/user-img.png" alt="user-image">
+                                            </figure>
+                                            <div class="info">
+                                                <h4>Name Here</h4>
+                                                <p>Manager</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <img src="assets/images/qoma.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius tortor eu.
+                                            Integer semper facilisi rhoncus cursus ut mattis eget potenti.
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a href="javascript:void(0);" class="swiper-slide">
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <figure>
+                                                <img src="assets/images/user-img.png" alt="user-image">
+                                            </figure>
+                                            <div class="info">
+                                                <h4>Name Here</h4>
+                                                <p>Manager</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <img src="assets/images/qoma.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur. Sit purus dignissim egestas a
+                                            feugiat tincidunt. Non justo vivamus donec tortor dolor varius tortor eu.
+                                            Integer semper facilisi rhoncus cursus ut mattis eget potenti.
+                                        </p>
+                                    </div>
+                                </a>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="career-secE">
+                <div class="container">
+                    <div class="title" data-animate="zoom-in">
+                        <h2>Current Openings</h2>
+                    </div>
+
                     <div class="summery-detail-content" data-animate="fade-up">
                         <div class="col active">
                             <div class="title">
@@ -142,18 +582,23 @@
                             </div>
                             <article style="display: block;">
                                 <div class="content-desc">
-                                    <div class="heading">
-                                        <div class="">Job Description</div>
-                                        <!-- <button class="button" type="submit">Apply Now</button> -->
-                                        <a href="#applynowform" class="button" type="submit">Apply Now</a>
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <div class="heading">
+                                                <h4>Job Description</h4>
+                                            </div>
+                                            <ul>
+                                                <li>Providing advisory service to clients for property.</li>
+                                                <li>Strong sales, negotiation and communication skills</li>
+                                                <li>Leadership Quality</li>
+                                                <li>Liaison with Client</li>
+                                                <li>Team Management</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <a href="#applynowform" class="button" type="submit">Apply Now</a>
+                                        </div>
                                     </div>
-                                    <ul class="job-desc">
-                                        <li>Providing advisory service to clients for property.</li>
-                                        <li>Strong sales, negotiation and communication skills</li>
-                                        <li>Leadership Quality</li>
-                                        <li>Liaison with Client</li>
-                                        <li>Team Management</li>
-                                    </ul>
                                 </div>
                             </article>
                         </div>
@@ -163,24 +608,27 @@
                                 <h6>Web/Graphic Designer</h6>
                                 <div class="ico"></div>
                             </div>
-                            <article style="display: none;">
+                            <article>
                                 <div class="content-desc">
-                                    <div class="heading">
-                                        <div class="">Job Description</div>
-                                        <!-- <button class="button" type="submit">Apply Now</button> -->
-                                        <a href="#applynowform" class="button" type="submit">Apply Now</a>
-                                    </div>
-                                    <!-- <ul class="job-desc">
-                                        <li>Providing advisory service to clients for property.</li>
-                                        <li>Strong sales, negotiation and communication skills</li>
-                                        <li>Leadership Quality</li>
-                                        <li>Liaison with Client</li>
-                                        <li>Team Management</li>
-                                    </ul> -->
-                                    <div class="job-desc">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt, iste
-                                            cupiditate iure deserunt doloremque? Quis, harum culpa suscipit eum sunt ut
-                                            consequuntur.</p>
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <div class="heading">
+                                                <h4>Job Description</h4>
+                                            </div>
+                                            <ul>
+                                                <li>Providing advisory service to clients for property.</li>
+                                                <li>Strong sales, negotiation and communication skills</li>
+                                                <li>Leadership Quality</li>
+                                                <li>Liaison with Client</li>
+                                                <li>Team Management</li>
+                                            </ul>
+
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi eveniet
+                                                dolorem architecto saepe quod a.</p>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <a href="#applynowform" class="button" type="submit">Apply Now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </article>
@@ -188,90 +636,96 @@
 
                         <div class="col">
                             <div class="title">
-                                <h6>Frontend Developer</h6>
+                                <h6>Sr. Front End Developer</h6>
                                 <div class="ico"></div>
                             </div>
-                            <article style="display: none;">
+                            <article>
                                 <div class="content-desc">
-                                    <div class="heading">
-                                        <div class="">Job Description</div>
-                                        <!-- <button class="button" type="submit">Apply Now</button> -->
-                                        <a href="#applynowform" class="button" type="submit">Apply Now</a>
+                                    <div class="flex-box">
+                                        <div class="flex-box-item">
+                                            <div class="heading">
+                                                <h4>Job Description</h4>
+                                            </div>
+                                            <ul>
+                                                <li>Providing advisory service to clients for property.</li>
+                                                <li>Strong sales, negotiation and communication skills</li>
+                                                <li>Leadership Quality</li>
+                                                <li>Liaison with Client</li>
+                                                <li>Team Management</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex-box-item">
+                                            <a href="#applynowform" class="button" type="submit">Apply Now</a>
+                                        </div>
                                     </div>
-                                    <ul class="job-desc">
-                                        <li>Providing advisory service to clients for property.</li>
-                                        <li>Strong sales, negotiation and communication skills</li>
-                                        <li>Leadership Quality</li>
-                                        <li>Liaison with Client</li>
-                                        <li>Team Management</li>
-                                    </ul>
                                 </div>
                             </article>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section class="career-secE" id="applynowform">
-            <div class="container">
-                <div class="box" data-animate="zoom-in">
-                    <div class="heading">
-                        <h3>Interested in joining us?</h3>
-                        <p>Submit your CV, we will contact you as soon as we have relevant openings</p>
-                    </div>
-                    
-                    <form>
-                        <div class="form form-grid">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="FirstName" id="FirstName">
-                                <label for="txtNormalFullName">First Name</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="LastName" id="LastName">
-                                <label for="txtNormalFullName">Last Name</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" id="txtNormalPhoneNo" name="NormalPhoneNo" maxlength="10">
-                                <label for="txtNormalPhoneNo">Phone</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="" id="">
-                                <label for="AttachResume">Email</label>
-                            </div>
-
-                            <div class="form-group">
-                                <select id="position" name="position">
-                                    <option value="frontend">Apply For</option>
-                                    <option value="frontend">Frontend Developer</option>
-                                    <option value="backend">Backend Developer</option>
-                                    <option value="Fullstack">Fullstack Developer</option>
-                                    <option value="swd">Software Ingineer</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group file-input">
-                                <input type="file" name="CareerResume" id="careerResume" class="form-control"
-                                    accept=".pdf">
-                                <div class="file-name"></div>
-                                <img class="file-icon" src="assets/images/careers/file-icon.svg" alt="file-icon">
-                            </div>
-
-                            <div class="form-group span-2">
-                                <textarea class="form-control" id="Normaltextarea1" name="NormalMessage"></textarea>
-                                <label>Message*</label>
-                            </div>
-                            <input type="hidden" name="NormalPageName" value="https://bbps.hellopci.com/contact-us">
-                            <input type="hidden" name="NormalEnquiryType" value="Normal Inquiry">
-                            <input type="hidden" name="NormalEnquiryFor" value="Normal Inquiry">
-
-                            <div class="sbmt-grp text-center full">
-                                <button type="submit" class="btn submit-btn">SUBMIT</button>
-                            </div>
+        <section>
+            <div class="career-secF">
+                <div class="container">
+                    <div class="box" data-animate="zoom-in">
+                        <div class="heading">
+                            <h2>INTERESTED IN JOINING US?</h2>
+                            <p>Submit your CV, we will contact you as soon as we have relevant openings</p>
                         </div>
-                    </form>
 
+                        <form>
+                            <div class="form form-grid">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="FirstName" id="FirstName">
+                                    <label for="txtNormalFullName">First Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="LastName" id="LastName">
+                                    <label for="txtNormalFullName">Last Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="txtNormalPhoneNo" name="NormalPhoneNo"
+                                        maxlength="10">
+                                    <label for="txtNormalPhoneNo">Phone</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="" id="">
+                                    <label for="AttachResume">Email</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <select id="position" name="position">
+                                        <option value="frontend">Apply For</option>
+                                        <option value="frontend">Frontend Developer</option>
+                                        <option value="backend">Backend Developer</option>
+                                        <option value="Fullstack">Fullstack Developer</option>
+                                        <option value="swd">Software Ingineer</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group file-input">
+                                    <input type="file" name="CareerResume" id="CareerResume" class="form-control"
+                                        accept=".pdf" />
+                                    <div class="file-name" style="--filenameinitial: var(--filename);"></div>
+                                </div>
+
+                                <div class="form-group span-2">
+                                    <textarea class="form-control" id="Normaltextarea1" name="NormalMessage"></textarea>
+                                    <label>Message*</label>
+                                </div>
+                                <input type="hidden" name="NormalPageName" value="https://bbps.hellopci.com/contact-us">
+                                <input type="hidden" name="NormalEnquiryType" value="Normal Inquiry">
+                                <input type="hidden" name="NormalEnquiryFor" value="Normal Inquiry">
+
+                                <div class="sbmt-grp text-center full">
+                                    <button type="submit" class="btn submit-btn">SUBMIT</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -375,7 +829,6 @@
 
     </footer>
     <!-- ================= FOOTER END ================= -->
-
 
     <div class="overlay"></div>
     <div class="footer-strip">
@@ -503,7 +956,14 @@
     <!-- Subscription Pop End-->
 
 
-
+    <script>
+        $(document).ready(function () {
+            $('.according-fn .tabs-title').click(function () {
+                $('.according-fn .tabs').removeClass('active');
+                $(this).closest('.tabs').addClass('active');
+            });
+        });
+    </script>
 
     <!-- Animate JS File -->
     <script src="assets/js/animate.js"></script>

@@ -279,6 +279,7 @@ $(function () {
     });
     // services-slider End
 
+
     // MORE SLIDER START ======================>
     new Swiper('.project-detail-slider', {
         loop: false,
@@ -358,6 +359,34 @@ $(function () {
     });
     // About  SLIDER END ======================>
 
+    // Review Slider Start ====================>
+    new Swiper('.review-slider', {
+        loop: false,
+        navigation: {
+            prevEl: '.review-prev',
+            nextEl: '.review-next',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+                speed: 500,
+            },
+            675: {
+                slidesPerView: 2.2,
+                spaceBetween: 12,
+                speed: 1000,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                speed: 1000,
+            }
+        }
+    });
+    // Review Slider End ====================>
+
+
     // center slide START ======================>
     const swiper = new Swiper('.Leadership-slider', {
         loop: true,
@@ -399,8 +428,8 @@ $(function () {
     });
 
     $('.Leadership-slider').on('click', '.swiper-slide', function () {
-        const index = $(this).index(); 
-        swiper.slideTo(index); 
+        const index = $(this).index();
+        swiper.slideTo(index);
     });
     // center slide START ======================>
 
@@ -421,7 +450,7 @@ $(function () {
             $('.information-pop .social-icon').html(socialIcons);
         });
     });
-        
+
     $(document).ready(function () {
         $('.information-slider-second .swiper-slide a').on('click', function () {
             var slide = $(this).closest('.swiper-slide');
