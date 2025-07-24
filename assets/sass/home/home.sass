@@ -45,7 +45,7 @@
                 bottom: 15%
                 margin-left: 10px
                 @include media(991)
-                    bottom: 40%
+                    bottom: 10%
                 @include media(540)
                     bottom: 10%
                     margin-left: 0
@@ -73,7 +73,7 @@
                     @include media(991)
                         max-width: 70%
                         line-height: 1.2
-                        font-size: 30px
+                        font-size: 40px
                     @include media(540)
                         max-width: 100%
                         font-size: 27px
@@ -231,22 +231,31 @@
 .home-secB
     padding: 100px 0 150px 0
     overflow: hidden
+    @include media(768)
+        padding: 50px 0 70px 0
     @include media(540)
         padding: 50px 0 70px 0
     .flex-box
         display: flex
         justify-content: space-between
         align-items: center
+        @include media(768)
+            display: block
         @include media(540)
             display: block
         .flex-box-item:first-child
             max-width: 45%
+            @include media(768)
+                max-width: 100%
+                margin-bottom: 40px
             @include media(540)
                 max-width: 100%
                 margin-bottom: 40px
             .heading
                 text-align: left
                 position: relative
+                @include media(768)
+                    text-align: center
                 h2
                     font-weight: 700
                     font-size: 48px
@@ -266,6 +275,10 @@
                 margin: 30px 0
                 @include media(991)
                     align-items: unset
+                @include media(768)
+                    align-items: unset
+                    justify-content: center
+                    gap: 45px
                 @include media(540)
                     align-items: unset
                     justify-content: center
@@ -306,6 +319,9 @@
                     align-items: center
                     width: fit-content
                     font-weight: 500
+                    @include media(768)
+                        margin: auto
+                        padding: 1px 15px
                     @include media(540)
                         margin: auto
                         padding: 1px 15px
@@ -326,6 +342,9 @@
                 justify-content: start
                 align-items: center
                 gap: 40px
+                @include media(768)
+                    gap: 22px
+                    justify-content: center
                 @include media(540)
                     gap: 22px
                     justify-content: center
@@ -339,9 +358,12 @@
                     width: 500px
                     height: 415px
                     border-top-left-radius: 50px
+                    @include media(768)
+                        margin: auto
                     @include media(540)
                         width: 100%
                         height: 235px
+                    
                     video
                         transform: translate(-10%,0%)
                         border-top-left-radius: 50px
@@ -366,8 +388,10 @@
                     top: 10%
                     left: 0%
                     z-index: -1
+                    @include media(768)
+                        top: 7%
+                        left: 13%
                     @include media(504)
-                        // display: none
                         height: 235px
                         top: 7%
                         left: 6%
@@ -382,6 +406,8 @@
 .home-secC
     padding: 100px 0
     background: #F4F4F4
+    @include media(768)
+        padding: 60px 0
     @include media(540)
         padding: 60px 0
     .container
@@ -425,6 +451,8 @@
                                     font-size: 30px
                                     color: $text
                                     transition: 0.5s ease
+                                    @include media(768)
+                                        font-size: 22px
                                     @include media(540)
                                         font-size: 22px
                                 .ico
@@ -443,6 +471,8 @@
                                 p
                                     font-weight: 400
                                     font-size: 16px
+                                    @include media(768)
+                                        font-size: 14px
                                     @include media(540)
                                         font-size: 14px
 
@@ -519,6 +549,8 @@
             display: grid
             gap: 130px
             width: 45vw
+            @include media(768)
+                width: 100vw
             @include media(540)
                 width: 100vw
             .upper
@@ -582,10 +614,15 @@
     position: relative
     overflow: hidden
     padding: 50px 0
+    @include media(768)
+        padding: 60px 0
     @include media(540)
         padding: 60px 0
     .Leadership-Team-slider
         width: 100%
+        @include media(768)
+            margin-bottom: 0px
+            margin-top: 0px
         @include media(540)
             margin-bottom: 0px
             margin-top: 0px
@@ -599,6 +636,9 @@
             @include media(540)
                 justify-content: center
                 padding: 0
+            @include media(768)
+                justify-content: center
+                padding: 0
 
             h2
                 font-weight: 700
@@ -610,15 +650,22 @@
                     line-height: 1.2
                     text-align: center
                     margin-bottom: 5px
+                @include media(768)
+                    font-size: 34px
+                    line-height: 1.2
+                    text-align: center
+                    margin-bottom: 5px
                 span:last-child
                     font-weight: 400
                     font-size: 36px
                     color: #A8A6A7
                     display: block
+                    @include media(768)
+                        font-size: 20px
                     @include media(540)
                         font-size: 20px
             .swiper-nav
-                @include media(540)
+                @include media(768)
                     display: none
 .home-secF
     padding: 50px 0

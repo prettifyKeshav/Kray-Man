@@ -73,7 +73,7 @@
 }
 @media only screen and (max-width: 991px) {
   .home-banner .video-background .container .bg-wrapper {
-    bottom: 40%;
+    bottom: 10%;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -112,7 +112,7 @@
   .home-banner .video-background .container .bg-wrapper h1 {
     max-width: 70%;
     line-height: 1.2;
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -319,6 +319,11 @@
   padding: 100px 0 150px 0;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .home-secB {
+    padding: 50px 0 70px 0;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secB {
     padding: 50px 0 70px 0;
@@ -329,6 +334,11 @@
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box {
+    display: block;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secB .flex-box {
     display: block;
@@ -336,6 +346,12 @@
 }
 .home-secB .flex-box .flex-box-item:first-child {
   max-width: 45%;
+}
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box .flex-box-item:first-child {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secB .flex-box .flex-box-item:first-child {
@@ -346,6 +362,11 @@
 .home-secB .flex-box .flex-box-item:first-child .heading {
   text-align: left;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box .flex-box-item:first-child .heading {
+    text-align: center;
+  }
 }
 .home-secB .flex-box .flex-box-item:first-child .heading h2 {
   font-weight: 700;
@@ -372,6 +393,13 @@
 @media only screen and (max-width: 991px) {
   .home-secB .flex-box .flex-box-item:first-child .counter-flex {
     align-items: unset;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box .flex-box-item:first-child .counter-flex {
+    align-items: unset;
+    justify-content: center;
+    gap: 45px;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -431,6 +459,12 @@
   width: fit-content;
   font-weight: 500;
 }
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box .flex-box-item:first-child .more-btn a {
+    margin: auto;
+    padding: 1px 15px;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secB .flex-box .flex-box-item:first-child .more-btn a {
     margin: auto;
@@ -458,6 +492,12 @@
   align-items: center;
   gap: 40px;
 }
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box .flex-box-item:first-child .logo {
+    gap: 22px;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secB .flex-box .flex-box-item:first-child .logo {
     gap: 22px;
@@ -475,6 +515,11 @@
   width: 500px;
   height: 415px;
   border-top-left-radius: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box .flex-box-item:last-child .video-sec figure {
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secB .flex-box .flex-box-item:last-child .video-sec figure {
@@ -517,6 +562,12 @@
   left: 0%;
   z-index: -1;
 }
+@media only screen and (max-width: 768px) {
+  .home-secB .flex-box .flex-box-item:last-child .video-sec .bg {
+    top: 7%;
+    left: 13%;
+  }
+}
 @media only screen and (max-width: 504px) {
   .home-secB .flex-box .flex-box-item:last-child .video-sec .bg {
     height: 235px;
@@ -535,6 +586,11 @@
 .home-secC {
   padding: 100px 0;
   background: #F4F4F4;
+}
+@media only screen and (max-width: 768px) {
+  .home-secC {
+    padding: 60px 0;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secC {
@@ -595,6 +651,11 @@
   color: var(--text);
   transition: 0.5s ease;
 }
+@media only screen and (max-width: 768px) {
+  .home-secC .container .flex-box .flex-box-item:first-child .content .summery-detail-content .col .title h6 {
+    font-size: 22px;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secC .container .flex-box .flex-box-item:first-child .content .summery-detail-content .col .title h6 {
     font-size: 22px;
@@ -620,6 +681,11 @@
 .home-secC .container .flex-box .flex-box-item:first-child .content .summery-detail-content .col article p {
   font-weight: 400;
   font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .home-secC .container .flex-box .flex-box-item:first-child .content .summery-detail-content .col article p {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secC .container .flex-box .flex-box-item:first-child .content .summery-detail-content .col article p {
@@ -714,6 +780,11 @@
   gap: 130px;
   width: 45vw;
 }
+@media only screen and (max-width: 768px) {
+  .home-secD .video-sec .figinfo2 {
+    width: 100vw;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secD .video-sec .figinfo2 {
     width: 100vw;
@@ -795,6 +866,11 @@
   overflow: hidden;
   padding: 50px 0;
 }
+@media only screen and (max-width: 768px) {
+  .home-secE {
+    padding: 60px 0;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secE {
     padding: 60px 0;
@@ -802,6 +878,12 @@
 }
 .home-secE .Leadership-Team-slider {
   width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .home-secE .Leadership-Team-slider {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secE .Leadership-Team-slider {
@@ -823,6 +905,12 @@
     padding: 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  .home-secE .Leadership-Team-slider .heading {
+    justify-content: center;
+    padding: 0;
+  }
+}
 .home-secE .Leadership-Team-slider .heading h2 {
   font-weight: 700;
   font-size: 36px;
@@ -837,18 +925,31 @@
     margin-bottom: 5px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .home-secE .Leadership-Team-slider .heading h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
 .home-secE .Leadership-Team-slider .heading h2 span:last-child {
   font-weight: 400;
   font-size: 36px;
   color: #A8A6A7;
   display: block;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .home-secE .Leadership-Team-slider .heading h2 span:last-child {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 540px) {
+  .home-secE .Leadership-Team-slider .heading h2 span:last-child {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
   .home-secE .Leadership-Team-slider .heading .swiper-nav {
     display: none;
   }

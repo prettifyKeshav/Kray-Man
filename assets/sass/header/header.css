@@ -2276,7 +2276,7 @@ button {
 .Leadership-Team-slider .Leadership-slider {
   padding: 50px 0 50px 0;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .Leadership-slider {
     padding: 30px 0 0 0;
   }
@@ -2324,7 +2324,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box {
     flex-direction: column-reverse;
   }
@@ -2332,7 +2332,7 @@ button {
 .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child {
   max-width: 65%;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child {
     max-width: 100%;
   }
@@ -2340,7 +2340,7 @@ button {
 .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content {
   padding: 30px 0 0 40px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content {
     padding: 20px;
   }
@@ -2348,7 +2348,7 @@ button {
 .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading {
   position: relative;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading {
     text-align: center;
   }
@@ -2362,7 +2362,7 @@ button {
   height: 5px;
   background: var(--primary);
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading::before {
     content: none;
   }
@@ -2376,7 +2376,7 @@ button {
   font-weight: 400;
   font-size: 16px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .user-heading p:last-child {
     font-size: 14px;
     line-height: 1.2;
@@ -2389,7 +2389,7 @@ button {
   line-height: 20px;
   margin-top: 20px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .desc {
     display: none;
   }
@@ -2400,13 +2400,13 @@ button {
   gap: 10px;
   margin: 40px 0;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .icon {
     margin: 20px 0 0px 0;
     justify-content: center;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:first-child .user-content .icon a:first-child {
     display: none;
   }
@@ -2419,7 +2419,7 @@ button {
 .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:last-child {
   max-width: 35%;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:last-child {
     max-width: 100%;
   }
@@ -2428,7 +2428,7 @@ button {
   position: relative;
   line-height: 0;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:last-child figure {
     background: #e3e3e3;
   }
@@ -2444,7 +2444,7 @@ button {
   right: -13%;
   z-index: -1;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:last-child figure::before {
     content: none;
   }
@@ -2460,7 +2460,7 @@ button {
   right: -19%;
   z-index: -1;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .Leadership-Team-slider .swiper-slide .flex-box .flex-box-item:last-child figure::after {
     content: none;
   }
@@ -2929,13 +2929,12 @@ footer .bottom-sec .grid-box {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 768px) {
   footer .bottom-sec .grid-box {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 40px;
   }
 }
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 768px) {
   footer .bottom-sec .grid-box .grid-box-item:nth-child(1) {
     text-align: center;
   }
@@ -2944,11 +2943,17 @@ footer .bottom-sec .grid-box .grid-box-item:nth-child(2) {
   display: flex;
   gap: 90px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   footer .bottom-sec .grid-box .grid-box-item:nth-child(2) {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 768px) {
+  footer .bottom-sec .grid-box .grid-box-item:nth-child(2) {
+    justify-content: space-evenly;
+    gap: 0;
   }
 }
 footer .bottom-sec .grid-box .grid-box-item:nth-child(2) h6 {
@@ -2981,6 +2986,13 @@ footer .bottom-sec .grid-box .grid-box-item:nth-child(3) h6 {
   color: var(--white);
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 768px) {
+  footer .bottom-sec .grid-box .grid-box-item:nth-child(3) h6 {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
 @media only screen and (max-width: 675px) {
   footer .bottom-sec .grid-box .grid-box-item:nth-child(3) h6 {
     margin-left: 50px;
@@ -2989,6 +3001,20 @@ footer .bottom-sec .grid-box .grid-box-item:nth-child(3) h6 {
 @media only screen and (max-width: 540px) {
   footer .bottom-sec .grid-box .grid-box-item:nth-child(3) h6 {
     margin-left: 36px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer .bottom-sec .grid-box .grid-box-item:nth-child(3) .location {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 540px) {
+  footer .bottom-sec .grid-box .grid-box-item:nth-child(3) .location {
+    width: 100%;
+    margin: none;
   }
 }
 footer .bottom-sec .grid-box .grid-box-item:nth-child(3) .location .one {
