@@ -2651,8 +2651,9 @@ header .ham-btn span {
 .colB .menu-list li.hasDropdown .dropdown-menu ul li a:hover::before {
   opacity: 1;
 }
-.colB .menu-list li.hasDropdown .dropdown-menu ul li a img {
+.colB .menu-list li.hasDropdown .dropdown-menu ul li a svg {
   width: 20px;
+  height: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2660,6 +2661,9 @@ header .ham-btn span {
   display: block;
   width: 24px;
   line-height: 0;
+}
+.colB .menu-list li.single ul {
+  grid-template-columns: repeat(1, 1fr) !important;
 }
 
 .cl-wht-icon {

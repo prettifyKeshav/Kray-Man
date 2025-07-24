@@ -140,6 +140,7 @@ header
                     span
                         svg
                             transform: rotate(-90deg)
+                
             &.hasDropdown
                 position: relative
                 >a
@@ -216,13 +217,19 @@ header
                                     color: $white
                                     &::before
                                         opacity: 1
-                                img
+                                svg
                                     width: 20px
+                                    height: 20px
                                     object-fit: cover
                                 span
                                     display: block
                                     width: 24px
                                     line-height: 0
+            &.single
+                ul
+                    grid-template-columns: repeat(1, 1fr) !important
+
+
 
 .cl-wht-icon
   display: inline-block

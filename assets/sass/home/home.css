@@ -565,43 +565,56 @@
      object-fit: cover;
   mix-blend-mode: Lighten;
 }
-.home-secD .video-sec figure h3 {
-  font-size: 48px;
-  color: var(--white);
-  transition: 0.5s ease;
-  font-weight: 600;
+.home-secD .video-sec .figinfo1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.home-secD .video-sec figure .upper h2 {
+.home-secD .video-sec .figinfo1 h3 {
+  font-size: 48px;
+  color: var(--white);
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+.home-secD .video-sec .figinfo2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 130px;
+  width: 45vw;
+}
+.home-secD .video-sec .figinfo2 .upper h2 {
   font-weight: 600;
   font-size: 48px;
   text-align: center;
   color: var(--white);
 }
-.home-secD .video-sec figure .upper p {
+.home-secD .video-sec .figinfo2 .upper p {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
   color: var(--white);
 }
-.home-secD .video-sec figure .bottom {
+.home-secD .video-sec .figinfo2 .bottom {
   display: flex;
   justify-content: center;
   gap: 80px;
 }
-.home-secD .video-sec figure .bottom span {
+.home-secD .video-sec .figinfo2 .bottom span {
   display: flex;
   justify-content: start;
+  align-items: center;
   gap: 15px;
 }
-.home-secD .video-sec figure .bottom span img {
-  width: 20px;
+.home-secD .video-sec .figinfo2 .bottom span img {
+  width: 25px;
+  height: 17px;
 }
-.home-secD .video-sec figure .bottom span p {
+.home-secD .video-sec .figinfo2 .bottom span p {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
