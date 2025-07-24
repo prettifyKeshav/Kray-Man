@@ -135,9 +135,7 @@ $(function () {
 
 
     // ============ SCROLL TO SECTION START ================>>>>
-
     var headerheight = parseInt($(':root').css('--headerheight'));
-
     function scrollToSection() {
         var pathname = window.location.hash.slice(1);
         if (pathname) {
@@ -146,9 +144,7 @@ $(function () {
             }, 600); // 600ms animation
         }
     }
-
     scrollToSection();
-
     $(window).on('hashchange', function () {
         scrollToSection();
         if (typeof closeModel === "function") {
@@ -156,6 +152,7 @@ $(function () {
         }
     });
     // ============ SCROLL TO SECTION END ================>>>>
+    
 
     // ============ ABOUT POPUP START ================>>>>
     $(document).on('click', '[data-video]', function () {
@@ -397,7 +394,7 @@ $(function () {
         breakpoints: {
             0: {
                 slidesPerView: 1.2,
-                centeredSlides: true,
+                // centeredSlides: true,
                 spaceBetween: 20,
                 speed: 1000,
             },
@@ -832,6 +829,111 @@ $(function () {
             nextEl: '.about-journey-next',
         },
     });
+
+
+
+    // GSAP ON SCROLL START===============================================>>>>>>>
+
+    gsap.from("header ul li", {
+        y: 50,
+        duration: 1,
+        opacity: 0,
+        // delay: 1,
+        stagger: 0.1
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".home-secD", {
+        scrollTrigger: {
+            trigger: ".home-secD",
+            start: "top top",
+            end: "+=150%",
+            scrub: true,
+            pin: true,
+            // markers: true
+        },
+        ease: "none"
+    });
+
+    // Increase width of figure (entire scroll duration)
+    gsap.to(".video-sec .animationfigure", {
+        scrollTrigger: {
+            trigger: ".home-secD",
+            start: "top top",
+            end: "+=70%",
+            scrub: true,
+            // markers: true
+        },
+        width: "100vw",
+        ease: "none"
+    });
+
+    // // Increase font-size of h3 (first half of scroll)
+    gsap.to(".video-sec .figinfo1 h3", {
+        scrollTrigger: {
+            trigger: ".home-secD",
+            start: "top top",
+            end: "+=70%",
+            scrub: true,
+        },
+        fontSize: "200px", // adjust as needed
+        ease: "none"
+    });
+
+    // // Fade out h3 (second half of scroll)
+    gsap.to(".video-sec h3", {
+        scrollTrigger: {
+            trigger: ".home-secD",
+            start: "top top",
+            end: "+70%",
+            scrub: true,
+        },
+        opacity: 0,
+        ease: "none"
+    });
+
+    //  Animate .upper from top to center
+    gsap.fromTo(".video-sec .upper",
+        {
+            y: -700,
+            opacity: 0
+        },
+        {
+            scrollTrigger: {
+                trigger: ".home-secD",
+                start: "center center",
+                end: "+140%",
+                scrub: true
+            },
+            y: 0,
+            opacity: 1,
+            ease: "none"
+        }
+    );
+
+    // Animate .bottom from bottom to center
+    gsap.fromTo(".video-sec .bottom",
+        {
+            y: 700,
+            opacity: 0
+        },
+        {
+            scrollTrigger: {
+                trigger: ".home-secD",
+                start: "center center",
+                end: "+140%",
+                scrub: true
+            },
+            y: 0,
+            opacity: 1,
+            ease: "none"
+        }
+    );
+    // GSAP ON SCROLL END ===============================================>>>>>>>
+
+
+
 });
 
 

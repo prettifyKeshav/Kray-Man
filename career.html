@@ -33,95 +33,6 @@
     <!-- ================= For Scroll to Section jquery cdn ================= -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <style>
-        .csr-section {
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .csr-tabs {
-            display: flex;
-            border: 2px solid #007bff;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .tab-title {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            text-align: center;
-            font-weight: 600;
-            font-size: 14px;
-            background-color: #052a5f;
-            color: white;
-            padding: 20px 10px;
-            width: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tab-title.right {
-            writing-mode: vertical-rl;
-            transform: rotate(0);
-            background-color: #1f6fb2;
-        }
-
-        .tab-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            flex: 1;
-            background-color: #e6f2ff;
-        }
-
-        .tab-text {
-            flex: 1;
-            padding-right: 20px;
-        }
-
-        .tab-text h3 {
-            margin-top: 0;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .tab-text p {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .tab-image {
-            flex-shrink: 0;
-        }
-
-        .tab-image img {
-            width: 180px;
-            border-radius: 8px;
-        }
-
-        .csr-init {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .csr-init h2 {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .csr-init p {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 14px;
-            line-height: 1.8;
-            color: #333;
-        }
-    </style>
-
 </head>
 
 <body class="home-page">
@@ -139,8 +50,7 @@
                     <ul class="upper-menu-list">
                         <li>
                             <a href="tel:+919818937799">
-                                <span><img class="svg" height="16px" width="16px" src="assets/icon/call-white.svg"
-                                        alt="" /></span>
+                                <span><img class="svg" height="16px" width="16px" src="assets/icon/call-white.svg" alt="" /></span>
                                 +91 - 98189 37799
                             </a>
                         </li>
@@ -165,23 +75,20 @@
                         <li>
                             <a href="about.html">
                                 About us
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg"
-                                        alt="" /></span>
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
                         </li>
                         <li>
                             <a href="service.html">
                                 Services
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg"
-                                        alt="" /></span>
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
                         </li>
                         <li><a href="publications.html">Publications</a></li>
                         <li>
                             <a href="javascript:void(0);">
                                 Life at KrayMan
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg"
-                                        alt="" /></span>
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
                         </li>
                         <li><a href="contact.html">Contact Us</a></li>
@@ -196,6 +103,7 @@
             </div>
         </div>
     </header>
+
     <!-- ================= HEADER END ================= -->
 
     <main>
@@ -217,7 +125,7 @@
         </section>
 
         <section>
-            <div class="career-secA">
+            <div class="career-secA" id="OurCulture">
                 <div class="container">
                     <div class="heading">
                         <h2>Our culture is one of our most valuable assets</h2>
@@ -261,7 +169,7 @@
                                 cursus ut
                                 mattis eget potenti.
                             </p>
-                            <a href="javascript:void(0);">View current openings <img class="svg"
+                            <a href="#openings">View current openings <img class="svg"
                                     src="assets/icon/right-arrow.svg" alt="" /></a>
                         </div>
                     </div>
@@ -351,7 +259,7 @@
         </section>
 
         <section>
-            <div class="career-secC">
+            <div class="career-secC" id="CSR">
                 <div class="container">
                     <div class="heading" data-animate="zoom-in">
                         <h2>CSR Initative</h2>
@@ -413,7 +321,7 @@
         </section>
 
         <section>
-            <div class="career-secD">
+            <div class="career-secD" id="Review">
                 <div class="container">
                     <div class="heading" data-animate="zoom-in">
                         <h2>Employee Review</h2>
@@ -554,11 +462,6 @@
                                         </p>
                                     </div>
                                 </a>
-
-
-
-
-
                             </div>
                         </div>
                     </div>
@@ -568,7 +471,7 @@
         </section>
 
         <section>
-            <div class="career-secE">
+            <div class="career-secE" id="openings">
                 <div class="container">
                     <div class="title" data-animate="zoom-in">
                         <h2>Current Openings</h2>
@@ -667,7 +570,7 @@
         </section>
 
         <section>
-            <div class="career-secF">
+            <div class="career-secF" id="ApplyNow">
                 <div class="container">
                     <div class="box" data-animate="zoom-in">
                         <div class="heading">
@@ -964,6 +867,10 @@
             });
         });
     </script>
+
+    <!-- GSAP CDN File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
 
     <!-- Animate JS File -->
     <script src="assets/js/animate.js"></script>

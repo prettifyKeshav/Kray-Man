@@ -1348,6 +1348,8 @@ button
 
     .Leadership-slider
         padding: 50px 0 50px 0
+        @include media(540)
+            padding: 30px 0 0 0 
         .swiper-wrapper
             .swiper-slide
                 // transition: 0.9s ease
@@ -1387,13 +1389,21 @@ button
         overflow: hidden
         .flex-box
             display: flex
-            justify-content: space-between  
+            justify-content: space-between 
+            @include media(540)
+                flex-direction: column-reverse
             .flex-box-item:first-child
                 max-width: 65%
+                @include media(540)
+                    max-width: 100%
                 .user-content
                     padding: 30px 0 0 40px
+                    @include media(540)
+                        padding: 20px
                     .user-heading
                         position: relative
+                        @include media(540)
+                            text-align: center
                         &::before
                             content: ""
                             position: absolute
@@ -1402,6 +1412,8 @@ button
                             width: 70px
                             height: 5px
                             background: $primary
+                            @include media(540)
+                                content: none
                         p:first-child
                             font-weight: 600
                             color: $black
@@ -1409,16 +1421,28 @@ button
                         p:last-child
                             font-weight: 400
                             font-size: 16px
+                            @include media(540)
+                                font-size: 14px
+                                line-height: 1.2
+                                margin-top: 7px
                     .desc
                         font-weight: 400
                         font-size: 14px
                         line-height: 20px
                         margin-top: 20px
+                        @include media(540)
+                            display: none
                     .icon
                         display: flex
                         align-items: center
                         gap: 10px
                         margin: 40px 0
+                        @include media(540)
+                            margin: 20px 0 0px 0
+                            justify-content: center
+                        a:first-child
+                            @include media(540)
+                                display: none
                         a
                             color: #5393C5
                             font-size: 16px
@@ -1426,9 +1450,13 @@ button
             
             .flex-box-item:last-child
                 max-width: 35%
+                @include media(540)
+                    max-width: 100%
                 figure
                     position: relative
                     line-height: 0
+                    @include media(540)
+                        background: #e3e3e3
                     &::before
                         content: ""
                         position: absolute
@@ -1439,6 +1467,8 @@ button
                         bottom: -42%
                         right: -13%
                         z-index: -1
+                        @include media(540)
+                            content: none
                     &::after
                         content: ""
                         position: absolute
@@ -1449,4 +1479,17 @@ button
                         bottom: -48%
                         right: -19%
                         z-index: -1
+                        @include media(540)
+                            content: none 
 // Leadership-Team-slider End
+
+.heading 
+    h2
+        @include media(540)
+            font-size: 34px !important
+            line-height: 1.1 !important
+            text-align: center !important
+    p
+        @include media(540)
+            font-size: 14px
+            text-align: center

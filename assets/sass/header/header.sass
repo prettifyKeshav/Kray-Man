@@ -314,20 +314,34 @@ footer
     .upper-sec
         background: #8ECEFF
         padding: 30px 
+        @include media(540)
+            padding: 20px 0
         .flex-box
             display: flex
             justify-content: space-between
             align-items: center
+            @include media(540)
+                display: block
             .flex-box-item:first-child 
+                @include media(540)
+                    text-align: center
+                    margin-bottom: 20px
                 h5
                     font-weight: 600
                     color: $black
                     font-size: 28px
+                    @include media(540)
+                        font-size: 25px
+                        margin-bottom: 5px
                 p
                     color: #00000099
                     font-size: 16px
                     font-weight: 500
+                    @include media(540)
+                        font-size: 14px
             .flex-box-item:last-child
+                @include media(540)
+                    text-align: center
                 a
                     border-radius: 5px
                     padding: 12px 27px
@@ -335,6 +349,9 @@ footer
                     background: $white
                     color: $black
                     font-weight: 600
+                    @include media(540)
+                        padding: 7px 27px
+                        font-size: 14px
     .bottom-sec
         padding: 50px 0
         .grid-box
@@ -355,6 +372,10 @@ footer
             .grid-box-item:nth-child(2)
                 display: flex
                 gap: 90px
+                @include media(540)
+                    display: flex
+                    justify-content: space-between
+                    gap: 30px
                 h6
                     font-family: Poppins
                     font-weight: 500
@@ -383,6 +404,8 @@ footer
                     margin-bottom: 20px
                     @include media(675)
                         margin-left: 50px
+                    @include media(540)
+                        margin-left: 36px
                 .location
                     .one
                         margin-bottom: 30px
@@ -414,6 +437,8 @@ footer
         display: flex
         justify-content: center
         align-items: center
+        @include media(540)
+            padding-bottom: 100px
         p
             font-weight: 500
             color: #FFFFFFB2

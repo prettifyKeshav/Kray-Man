@@ -138,7 +138,7 @@
         </section>
 
         <section>
-            <div class="about-secA">
+            <div class="about-secA" id="story">
                 <div class="container">
                     <div class="left-line"></div>
                     <div class="flex-box">
@@ -178,7 +178,7 @@
         </section>
 
         <section>
-            <div class="about-secB">
+            <div class="about-secB" id="visionmistion">
                 <div class="bg">
                     <div class="container">
                         <div class="tab-section">
@@ -219,47 +219,7 @@
             </div>
         </section>
 
-        <!-- <section>
-            <div class="about-secC">
-                <div class="banner">
-                    <figure>
-                        <img src="/assets/images/about/core-value/1.jpg" alt="Core Value Banner 1" id="banner-image">
-                    </figure>
-                    <figcaption>
-                        <div class="grid-container">
-                            <div class="grid-box" data-image="/assets/images/about/core-value/1.jpg">
-                                <div class="inner-box">
-                                    <img src="assets/images/about/core-value/1.svg" alt="">
-                                    <h3>Act with Integrity</h3>
-                                    <p>Upholding highest professional standards by doing business fairly & honestly, we
-                                        express a culture of transparency. Integrity is our foundation. </p>
-                                </div>
-                            </div>
-
-                            <div class="grid-box" data-image="/assets/images/about/core-value/2.jpg">
-                                <h2>Core Values</h2>
-                                <div class="inner-box">
-                                    <img src="assets/images/about/core-value/2.svg" alt="">
-                                    <h3>Accountability</h3>
-                                    <p>We take personal responsibility and ownership for own work. Commit to deliver on
-                                        time
-                                        and with high quality to our Clients.</p>
-                                </div>
-                            </div>
-                            <div class="grid-box" data-image="/assets/images/about/core-value/3.jpg">
-                                <div class="inner-box">
-                                    <img src="assets/images/about/core-value/3.svg" alt="">
-                                    <h3>Respect for Stakeholders</h3>
-                                    <p>We are respectful, open and honest, and build relationships based on trust.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </figcaption>
-                </div>
-            </div>
-        </section> -->
-
-        <section class="about-secC" id="propertySection">
+        <section class="about-secC" id="coreValues">
             <div class="property-column active" data-bg="assets/images/about/core-value/1.jpg">
                 <img src="assets/images/about/core-value/1.svg" alt="Logo" />
                 <h3>Act with Integrity</h3>
@@ -290,7 +250,7 @@
 
 
         <section>
-            <div class="about-secD">
+            <div class="about-secD" id="leadershipTeam">
                 <div class="container">
                     <div class="Leadership-Team-slider">
                         <div class="heading" data-animate="fade-up">
@@ -931,6 +891,11 @@
     </div>
     <!-- Information Pop End-->
 
+
+    <!-- GSAP CDN File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
     <!-- Animate JS File -->
     <script src="assets/js/animate.js"></script>
 
@@ -948,14 +913,14 @@
 
     <script type="text/javascript">
         // Select section and columns
-        const propertySection = document.getElementById("propertySection");
+        const coreValues = document.getElementById("coreValues");
         const columns = document.querySelectorAll(".property-column");
 
         // Add hover effect to change section background
         columns.forEach((column) => {
             column.addEventListener("mouseenter", () => {
                 const bgImage = column.getAttribute("data-bg");
-                propertySection.style.backgroundImage = `url('${bgImage}')`;
+                coreValues.style.backgroundImage = `url('${bgImage}')`;
             });
         });
     </script>
