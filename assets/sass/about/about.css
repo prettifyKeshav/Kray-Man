@@ -388,6 +388,11 @@
   position: relative;
   background-image: url("../../../assets/images/about/core-value/1.jpg");
 }
+@media only screen and (max-width: 540px) {
+  .about-secC {
+    height: 100vh;
+  }
+}
 .about-secC:before {
   content: "";
   position: absolute;
