@@ -118,7 +118,7 @@
 @media only screen and (max-width: 540px) {
   .home-banner .video-background .container .bg-wrapper h1 {
     max-width: 100%;
-    font-size: 27px;
+    font-size: 35px;
     line-height: 1.1;
     text-align: center;
     padding: 0 20px;
@@ -146,6 +146,7 @@
     line-height: 1.2;
     text-align: center;
     color: rgba(255, 255, 255, 0.8588235294);
+    display: none;
   }
 }
 
@@ -787,7 +788,7 @@
 }
 @media only screen and (max-width: 540px) {
   .home-secD .video-sec .figinfo2 {
-    width: 100vw;
+    width: 90vw;
   }
 }
 .home-secD .video-sec .figinfo2 .upper h2 {
@@ -851,6 +852,7 @@
   top: 80%;
   left: 49%;
   animation: scroll 1.5s ease-in-out infinite forwards;
+  display: none;
 }
 .home-secD .scroll-btn p {
   font-weight: 500;

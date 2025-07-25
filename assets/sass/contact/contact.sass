@@ -11,7 +11,7 @@
     @include media(1024)
         height: 70vh
     @include media(991)
-        height: 40vh
+        height: 60vh
     &::before
         content: ''
         position: absolute
@@ -36,6 +36,8 @@
         transform: translate(-50%, -50%)
         text-align: center
         width: 100%
+        @include media(540)
+            top: 70%
         h1
             font-weight: 700
             font-size: 48px
@@ -53,8 +55,8 @@
             line-height: 100%
             color: $white
             @include media(540)
-                font-size: 14px 
-                max-width: 80%
+                font-size: 13px 
+                max-width: 100%
                 margin: auto
     .scroll-btn
         position: absolute
@@ -71,8 +73,10 @@
         // gap: 40px
         overflow: hidden
         @include media(540)
-            display: block
+            flex-direction: column-reverse
         .flex-box-item:first-child
+            @include media(768)
+                display: none
             figure
                 width: 446px
                 height: 475px
@@ -84,6 +88,8 @@
                     object-fit: cover
         .flex-box-item:last-child
             width: 496px
+            @include media(540)
+                width: 100%
             .heading
                 text-align: left
                 position: relative
@@ -103,7 +109,7 @@
                     display: flex
                     justify-content: start
                     gap: 20px
-                    margin-bottom: 30px
+                    margin-bottom: 20px
                     a
                         display: flex
                         justify-content: start
@@ -111,7 +117,8 @@
                         align-items: center
                         p
                             transition: 0.5s ease-in-out
-
+                            @include media(540)
+                                font-size: 13px
                         &:hover
                             p
                                 color:  #00498E
@@ -121,8 +128,13 @@
                             border: 1px solid #00498E
                             border-radius: 50%
                             padding: 16px
+                            @include media(540)
+                                width: 39px
+                                padding: 9px
             .view-btn
-                margin: 45px 0 0 0 
+                margin: 25px 0 10px 0
+                @include media(768)
+                    text-align: center
                 a
                     opacity: 1
                     border-radius: 5px
@@ -144,6 +156,8 @@
     position: relative
     overflow: hidden
     background: var(--gradient-a)
+    @include media(540)
+        padding: 50px 0
     &::before
         content: ""
         position: absolute
@@ -152,6 +166,9 @@
         width: 357px
         height: 285px
         background: url("../../images/home/dot-bg.png")
+        @include media(540)
+            width: 90px
+            height: 135px
     &::after
         content: ""
         position: absolute
@@ -160,6 +177,9 @@
         width: 357px
         height: 285px
         background: url("../../images/home/dot-bg.png")
+        @include media(540)
+            width: 107px
+            height: 225px
     .box
         // border: 1px solid red
         margin: auto
@@ -174,6 +194,9 @@
                 font-size: 36px
                 max-width: 60%
                 margin: auto
+                @include media(540)
+                    max-width: 100%
+                    font-size: 22px !important
 
         .form-sec
             .group1,.group2,.group3
@@ -256,6 +279,8 @@
                 --item: 2
                 --gaplr: 20px
                 --gaptb: 20px
+                @include media(540)
+                    --item: 1
                 button
                     padding: 20px 62px
                 .form-group
@@ -297,6 +322,8 @@
                 .span-2
                     grid-column: span 2
                     height: 100px
+                    @include media(540)
+                        grid-column: span 1
                 .submit-btn
                     width: 180px
                     height: 45px
@@ -341,8 +368,13 @@
         left: 50%
         transform: translate(-50%, -50%)
         text-align: center
+        @include media(540)
+            height: fit-content
+            width: 100%
         img
             margin-bottom: 20px
+            @include media(540)
+                width: 30px
         .address
             padding: 30px
             background: $white
@@ -352,8 +384,15 @@
             border-radius: 10px
             text-align: center
             position: relative
+            @include media(540)
+                height: fit-content
+                width: 80%
+                margin: auto
+
             p
                 margin-bottom: 20px
+                @include media(540)
+                    font-size: 12px
             a
                 font-weight: 600
                 font-size: 16px

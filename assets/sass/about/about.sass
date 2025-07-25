@@ -12,6 +12,8 @@
         height: 70vh
     @include media(991)
         height: 40vh
+    @include media(540)
+        height: 60vh
     &::before
         content: ''
         position: absolute
@@ -49,9 +51,9 @@
                 font-size: 43px
                 line-height: 34px
             @include media(540)
-                font-size: 30px
+                font-size: 40px
                 margin-bottom: 7px
-                line-height: 1
+                line-height: 1.1
         p
             font-family: $Poppins
             font-weight: 500
@@ -86,11 +88,17 @@
         gap: 70px
         @include media(991)
             align-items: unset
+        @include media(768)
+            align-items: unset
+            justify-content: center
+            gap: 45px
         @include media(540)
             align-items: unset
             justify-content: space-around
             gap: 0
         .counter-item
+            @include media(540)
+                text-align: center
             h5
                 font-weight: 500
                 font-size: 20px
@@ -113,17 +121,11 @@
 .about-secA
     padding: 100px 0 0 0
     position: relative
+    overflow: hidden
+    @include media(768)
+        padding: 60px 0 90px 0 
     h2
-        font-weight: 700
-        font-size: 36px
-        line-height: 24px
         margin: 0 0 30px 0
-        @include media(540)
-            font-size: 34px
-            line-height: 1.2
-            text-align: center
-            margin: 0 0 20px 0
-    h2
         font-weight: 700
         font-size: 48px
         line-height: 45px
@@ -133,29 +135,38 @@
             color: #666666
         span:nth-child(3)
             color: $black
+        @include media(540)
+            font-size: 34px 
+            line-height: 1.1 
+            text-align: center 
+            margin-bottom: 20px
     .flex-box
         display: flex   
         justify-content: space-between
         // align-items: center
         gap: 40px
+        @include media(768)
+            flex-direction: column
+            gap: 0px
         @include media(540)
             flex-direction: column
             gap: 0px
         .flex-box-item:first-child
             width: 47%
-            @include media(991)
-                padding: 60px 0 20px 45px
-                width: 55%
-            @include media(540)
+            @include media(768)
                 width: 100%
             ul 
                 border-left: 1px solid #5393C5
                 padding-left: 46px
                 margin-left: 20px
                 padding-top: 10px
+                @include media(540)
+                    padding-left: 35px
                 li:last-child   
                     padding: 0 0 100px 0
                     margin: 0
+                    @include media(768)
+                        padding: 0 0 50px 0
                 li
                     font-family: Poppins
                     font-weight: 400
@@ -169,6 +180,7 @@
                     @include media(991)
                         font-size: 14px
                         margin: 0 0 17px 0
+                        text-align: left
                     &::before
                         content: ""
                         position: absolute
@@ -179,6 +191,8 @@
                         border-radius: 50%
                         background: $white
                         border: 4px solid var(--primary)
+                        @include media(540)
+                            left: -44px
         .flex-box-item:last-child
             .video-sec
                 position: relative
@@ -186,9 +200,15 @@
                     width: 500px
                     height: 415px
                     border-top-left-radius: 50px
+                    line-height: 0
+                    @include media(768)
+                        width: 100%
+                        height: 100%
                     video
                         transform: translate(-10%,0%)
                         border-top-left-radius: 50px
+                        @include media(768)
+                            transform: translate(0%, 0%)
                     .play-button
                         position: absolute
                         top: 50%
@@ -207,7 +227,10 @@
                     top: 10%
                     left: 0
                     z-index: -1
-
+                    @include media(768)
+                        width: 100%
+                        height: 100%
+                        left: 5%
                 video
                     width: 100%
                     height: 100%
@@ -223,25 +246,41 @@
         height: 100vh
         mix-blend-mode: plus-lighter
         position: relative
+        @include media(768)
+            height: 60vh
         figcaption
             position: absolute
             top: 50%
             left: 20%
             transform: translate(-50%, -50%)
+            @include media(768)
+                left: 50%
         .container
             height: 100%
             position: relative
             max-width: 1180px
+            @include media(768)
+                height: 60vh
             .tab-section
                 position: absolute
                 left: 0
                 top: 50%
                 transform: translateY(-50%)
                 max-width: 50%
+                @include media(768)
+                    width: 100%
+                    max-width: 90%
+                    margin: auto
+                    height: fit-content
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
                 .tab-nav
                     display: flex
                     justify-content: start
                     gap: 50px
+                    @include media(768)
+                        justify-content: center
                     li
                         position: relative
                         &::before
@@ -256,6 +295,8 @@
                             color: $white
                             font-weight: 600
                             font-size: 36px
+                            @include media(768)
+                                font-size: 30px
                         &.active
                             position: relative
                             &::before
@@ -265,11 +306,18 @@
                                 height: 2px
                                 background-color: #5393C5 
                                 transition: 0.5s ease
-
                             a
                                 color: #5393C5
                 .tab-nav-content
                     padding: 50px 0
+                    @include media(768)
+                        padding: 20px 0
+                        max-width: 60%
+                        margin: auto
+                    @include media(540)
+                        padding: 20px 0
+                        max-width: 100%
+                        margin: auto
                     p
                         font-weight: 400
                         font-size: 18px
@@ -278,6 +326,9 @@
                         color: #FFFFFFB2
                         opacity: 0
                         transition: 0.5s ease
+                        @include media(768)
+                            font-size: 16px
+                            text-align: center
                     .active p
                         opacity: 1
 
@@ -339,6 +390,8 @@
         &:nth-child(2)
             border-left: 1px solid rgba(255, 255, 255, 0.29)
             border-right: 1px solid rgba(255, 255, 255, 0.29)
+            @include media(540)
+                border-top: 1px solid rgba(255, 255, 255, 0.29)
         @include media(768)
             flex: 1 1 50%
             min-height: 250px
@@ -401,7 +454,7 @@
         width: 100%
         @include media(540)
             margin-bottom: 0px
-            margin-top: 30px
+            margin-top: 0
         .heading
             text-align: center
             position: relative
@@ -433,7 +486,7 @@
 .about-secE
     padding: 0 0 20px 0
     @include media(540)
-        padding: 40px 0 70px 0px
+        padding: 20px 0 60px 0px
     .heading
         text-align: center
         position: relative
@@ -500,7 +553,7 @@
 .about-secF
     padding: 70px 0 
     @include media(540)
-        padding: 40px 0 70px 0px
+        padding: 0px 0 70px 0px
     .heading
         text-align: center
         position: relative

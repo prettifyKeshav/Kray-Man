@@ -32,7 +32,7 @@
 }
 @media only screen and (max-width: 540px) {
   .career-banner {
-    height: 70vh;
+    height: 60vh;
   }
 }
 .career-banner::before {
@@ -44,6 +44,11 @@
   height: 100%;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0) 50.48%, rgba(0, 0, 0, 0.98) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 57.69%, rgba(0, 0, 0, 0.65) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 55.49%, rgba(0, 0, 0, 0.95) 100%);
 }
+@media only screen and (max-width: 540px) {
+  .career-banner::before {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 50.48%, rgba(0, 0, 0, 0.98) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 57.69%, rgba(0, 0, 0, 0.65) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 35.49%, rgba(0, 0, 0, 0.95) 100%);
+  }
+}
 .career-banner .banner-wrapper {
   width: 100%;
 }
@@ -52,6 +57,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  height: 100%;
   width: 100%;
 }
 .career-banner .banner-wrapper .bg-image img {
@@ -79,7 +85,8 @@
 }
 @media only screen and (max-width: 540px) {
   .career-banner .banner-wrapper .container .bg-wrapper {
-    bottom: 25%;
+    bottom: 14%;
+    margin-left: 0;
   }
 }
 .career-banner .banner-wrapper .container .bg-wrapper h1 {
@@ -139,11 +146,26 @@
   max-width: 40%;
   margin: auto;
 }
+@media only screen and (max-width: 991px) {
+  .career-secA .heading {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-secA .heading {
+    max-width: 100%;
+  }
+}
 .career-secA .heading h2 {
   color: var(--black);
   font-weight: 600;
   font-size: 36px;
   text-align: center;
+}
+@media only screen and (max-width: 540px) {
+  .career-secA .heading h2 {
+    font-size: 27px !important;
+  }
 }
 .career-secA .heading p {
   font-weight: 500;
@@ -155,6 +177,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   padding: 70px 0 0 0;
+}
+@media only screen and (max-width: 540px) {
+  .career-secA .grid-box {
+    padding: 40px 0 0 0;
+  }
 }
 .career-secA .grid-box .grid-box-item {
   width: 100%;
@@ -176,9 +203,24 @@
   position: relative;
   overflow: hidden;
 }
+@media only screen and (max-width: 540px) {
+  .career-secB {
+    padding: 0 0 50px 0;
+  }
+}
 .career-secB .flex-box {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 540px) {
+  .career-secB .flex-box {
+    display: block;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-secB .flex-box .flex-box-item .heading {
+    margin-bottom: 20px;
+  }
 }
 .career-secB .flex-box .flex-box-item .heading h2 {
   font-weight: 700;
@@ -197,10 +239,21 @@
 .career-secB .flex-box .flex-box-item {
   width: 638px;
 }
+@media only screen and (max-width: 540px) {
+  .career-secB .flex-box .flex-box-item {
+    width: 100%;
+  }
+}
 .career-secB .flex-box .flex-box-item p {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 15px;
+}
+@media only screen and (max-width: 540px) {
+  .career-secB .flex-box .flex-box-item p {
+    text-align: center;
+    font-size: 14px;
+  }
 }
 .career-secB .flex-box .flex-box-item a {
   color: #5393C5;
@@ -210,6 +263,11 @@
   gap: 10px;
   align-items: center;
   transition: 0.5s ease-in-out;
+}
+@media only screen and (max-width: 540px) {
+  .career-secB .flex-box .flex-box-item a {
+    justify-content: center;
+  }
 }
 .career-secB .flex-box .flex-box-item a img {
   padding-left: 10px;
@@ -316,9 +374,24 @@
   position: relative;
   overflow: hidden;
 }
+@media only screen and (max-width: 540px) {
+  .career-secC {
+    padding: 20px 0 50px 0;
+  }
+}
 .career-secC .heading {
   max-width: 50%;
   margin: auto;
+}
+@media only screen and (max-width: 991px) {
+  .career-secC .heading {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-secC .heading {
+    max-width: 100%;
+  }
 }
 .career-secC .heading h2 {
   color: var(--black);
@@ -331,11 +404,30 @@
   font-size: 16px;
   text-align: center;
 }
+@media only screen and (max-width: 540px) {
+  .career-secC .heading p {
+    font-size: 14px;
+  }
+}
 .career-secC .grid-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   padding: 70px 0 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .career-secC .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .career-secC .grid-box .grid-box-item:last-child {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-secC .grid-box {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px 0 0 0;
+  }
 }
 .career-secC .grid-box .grid-box-item {
   width: 100%;
@@ -394,9 +486,19 @@
   position: relative;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .career-secD {
+    padding: 0 0 50px 0;
+  }
+}
 .career-secD .container .heading {
   max-width: 50%;
   margin: auto;
+}
+@media only screen and (max-width: 769px) {
+  .career-secD .container .heading {
+    max-width: 100%;
+  }
 }
 .career-secD .container .heading h2 {
   color: var(--black);
@@ -455,6 +557,11 @@
   padding: 70px 0 50px 0;
   position: relative;
 }
+@media only screen and (max-width: 540px) {
+  .career-secD .container .review-swiper-slide .review-slider {
+    padding: 40px 0 30px 0;
+  }
+}
 .career-secD .container .review-swiper-slide .review-slider .swiper-slide {
   border-radius: 10px;
   padding: 30px;
@@ -503,6 +610,11 @@
   padding: 0 0 100px 0;
   overflow: hidden;
 }
+@media only screen and (max-width: 540px) {
+  .career-secE {
+    padding: 0 0 50px 0;
+  }
+}
 .career-secE .container .title h2 {
   margin-bottom: 50px;
   font-weight: 600;
@@ -513,6 +625,7 @@
   .career-secE .container .title h2 {
     font-size: 28px;
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 .career-secE .container .col {
@@ -544,15 +657,20 @@
   margin: 0;
   transition: 0.3s ease-in-out;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 540px) {
   .career-secE .container .col .title h6 {
-    font-size: 28px;
+    font-size: 16px;
   }
 }
 .career-secE .container .col .title .ico {
   position: absolute;
   right: 4%;
   top: 50%;
+}
+@media only screen and (max-width: 540px) {
+  .career-secE .container .col .title .ico {
+    right: 12.5%;
+  }
 }
 .career-secE .container .col .title .ico::before {
   content: "";
@@ -578,9 +696,19 @@
   padding: 20px 30px;
   background: #F1F1F1;
 }
+@media only screen and (max-width: 540px) {
+  .career-secE .container .col article .content-desc {
+    padding: 20px;
+  }
+}
 .career-secE .container .col article .content-desc .flex-box {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 540px) {
+  .career-secE .container .col article .content-desc .flex-box {
+    display: block;
+  }
 }
 .career-secE .container .col article .content-desc .flex-box .flex-box-item:first-child h4 {
   font-weight: 600;
@@ -598,6 +726,11 @@
   padding-left: 30px;
   margin-bottom: 10px;
   color: var(--text);
+}
+@media only screen and (max-width: 540px) {
+  .career-secE .container .col article .content-desc .flex-box .flex-box-item:first-child ul li {
+    font-size: 14px;
+  }
 }
 .career-secE .container .col article .content-desc .flex-box .flex-box-item:first-child ul li::before {
   content: "";
@@ -630,6 +763,12 @@
   display: flex;
   align-items: start;
 }
+@media only screen and (max-width: 540px) {
+  .career-secE .container .col article .content-desc .flex-box .flex-box-item:last-child .button {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
 .career-secE .container .col article .content-desc .flex-box .flex-box-item:last-child .button:hover {
   background: #5393C5;
   border: 1px solid #5393C5;
@@ -644,6 +783,16 @@
 }
 .career-secE .container .active .title .ico {
   right: 4.1%;
+}
+@media only screen and (max-width: 991px) {
+  .career-secE .container .active .title .ico {
+    right: 6%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-secE .container .active .title .ico {
+    right: 15%;
+  }
 }
 .career-secE .container .active .title .ico::before {
   content: "";
@@ -676,6 +825,17 @@
   font-size: 36px;
   line-height: 60px;
   text-transform: lowercase;
+}
+@media only screen and (max-width: 540px) {
+  .career-secF .box .heading h2 {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-secF .box .heading p {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+  }
 }
 .career-secF .box .form-grid {
   --item: 2;
@@ -779,6 +939,11 @@
 .career-secF .box .heading {
   text-align: center;
   margin-bottom: 70px;
+}
+@media only screen and (max-width: 540px) {
+  .career-secF .box .heading {
+    margin-bottom: 40px;
+  }
 }
 .career-secF .box .heading h3 {
   font-weight: 600;

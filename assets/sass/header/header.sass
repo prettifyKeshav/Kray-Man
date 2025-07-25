@@ -353,7 +353,7 @@ footer
                         padding: 7px 27px
                         font-size: 14px
     .bottom-sec
-        padding: 50px 0
+        padding: 50px 0 0 0 
         .grid-box
             display: grid
             grid-template-columns: 0.7fr 1.4fr 1fr
@@ -364,6 +364,8 @@ footer
                 grid-template-columns: repeat(2, 1fr)
             @include media(768)
                 grid-template-columns: repeat(1, 1fr)
+            @include media(540)
+                gap: 40px
             // @include media(675)
             //     grid-template-columns: repeat(1,1fr)
             //     grid-gap: 40px
@@ -399,6 +401,8 @@ footer
                         font-size: 16px
                         line-height: 16px
                         color: #FFFFFFB2
+                        @include media(540)
+                            font-size: 14px
                         &:hover
                             color: $primary
                             padding-left: 1px
@@ -417,7 +421,7 @@ footer
                     @include media(675)
                         margin-left: 50px
                     @include media(540)
-                        margin-left: 36px
+                        margin-left: 0
                         max-width: 100%
                         margin-bottom: 20px
                 .location
@@ -449,6 +453,8 @@ footer
                             font-weight: 400
                             font-size: 16px
                             line-height: 16px
+                            @include media(540)
+                                font-size: 14px
                             &:hover
                                 color: $primary
     .bottom-footer
@@ -484,10 +490,10 @@ footer
         flex-direction: column
         @include scrollbar(6px,$white,#5e5e5e,8px)
         @include media(520)
-            padding: 40px 20px
+            padding: 20px 20px
 
         .logo
-            margin-bottom: 50px
+            margin-bottom: 20px
         .ico
             max-width: 70px
             margin-bottom: 55px
@@ -505,7 +511,7 @@ footer
                 >a
                     font-size: 28px
                     line-height: 1.06
-                    color: $white
+                    color: #444
                     display: inline-block
                     transition: 0.5s ease
                     font-family: $Poppins
@@ -516,16 +522,56 @@ footer
                         font-size: 24px
                     &:hover
                         color: $primary
-                        padding-left: 20px
-                    
+                        // padding-left: 20px
+                &.hasDropdown
+                    position: relative
+                    .plu-ico
+                        position: absolute
+                        right: 0
+                        top: 4px
+                        --sizeplu: 22px
+                        height: var(--sizeplu)
+                        width: var(--sizeplu)
+                        cursor: pointer
+                        &::before,&::after
+                            content: ''
+                            position: absolute
+                            top: 50%
+                            translate: 0 -50%
+                            left: 0
+                            right: 0
+                            height: 2px
+                            width: 100%
+                            background: $black
+                            transition: .5s ease
+                        &::before
+                            transform: rotate(90deg)
+                        &.active
+                            &::before
+                                transform: rotate(0deg)
+                                opacity: 0
+                    .dropdown-menu-ham
+                        display: none
+                        border: 1px solid #ccc
+                        border-right: none
+                        border-left: none
+                        margin: 12px 0
+                        padding: 15px 0
+                        li
+                            padding-left: 10px
+                            &:not(:last-child)
+                                margin-bottom: 5px
+                            a
+                                color: $text
+                                &:hover
+                                    color: $black
         .bottom-list
-            border-top: 1px solid #000
+            border-top: 1px solid #444
             margin-top: 2rem
             padding-top: 1rem
             display: flex
             align-items: center
             gap: 1rem
-            display: none
             .social-icons
                 a
                     display: inline-flex
@@ -553,9 +599,10 @@ footer
                         path
                             transition: none
                             &[stroke],&[fill="none"]
-                                stroke: currentColor
+                                // stroke: currentColor
+                                stroke: #444
                             &[fill]
-                                fill: currentColor
+                                // fill: currentColor
                         &:hover
                             path
                                 &[fill]
@@ -1256,6 +1303,7 @@ footer
                 color: $white
                 font-size: 14px
                 height: var(--footerstrip)
+                text-transform: uppercase
                 svg
                     width: 20px
                     height: 20px
@@ -1265,9 +1313,9 @@ footer
                         fill: $white
                     path
                         &[stroke]
-                            stroke: $white
+                            // stroke: $white
                         &[fill]
-                            fill: $white
+                            // fill: $white
 
 
 

@@ -220,6 +220,26 @@ $(function () {
         });
     }
 
+    // ===========================================================================================================
+    $('.hasDropdown').click(function (e) {
+        e.stopPropagation(); // Prevents event bubbling
+
+        var slideMenu = $(this).find('.dropdown-menu-ham');
+        var plusIcon = $(this).find('.plu-ico'); // Get the specific .plu-ico inside clicked .hasDropdown
+
+        // Close other open menus and remove active class
+        $('.dropdown-menu-ham').not(slideMenu).slideUp();
+        $('.hasDropdown').not(this).removeClass('active');
+        $('.plu-ico').not(plusIcon).removeClass('active'); // Remove active from other icons
+
+        // Toggle active class for the clicked menu and icon
+        $(this).toggleClass('active');
+        plusIcon.toggleClass('active'); // Only add/remove active for the clicked plu-ico
+
+        slideMenu.stop().slideToggle();
+    });
+    // ===========================================================================================================
+
     // Home-Swiper==========================>>>>
     new Swiper(".homeSwiper", {
         loop: true,
@@ -355,6 +375,38 @@ $(function () {
         }
     });
     // About  SLIDER END ======================>
+
+        
+    // MORE BLOG DETAILS PAGE SLIDER START ======================>
+    new Swiper('.blog-details-slider', {
+        loop: false,
+        navigation: {
+            prevEl: '.blog-details-prev',
+            nextEl: '.blog-details-next',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+                speed: 500,
+            },
+            675: {
+                slidesPerView: 2,
+                spaceBetween: 12,
+                speed: 1000,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                speed: 1000,
+            }
+        }
+    });
+
+    // MORE BLOG DETAILS PAGE SLIDER END ======================>
+
+
+
 
     // Review Slider Start ====================>
     new Swiper('.review-slider', {
