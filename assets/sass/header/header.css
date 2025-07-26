@@ -1000,11 +1000,6 @@ button {
     z-index: 2;
   }
 }
-@media only screen and (max-width: 675px) {
-  .overlay {
-    display: none;
-  }
-}
 .overlay.is-open {
   transition: opacity 1s ease;
   opacity: 1;
@@ -2257,12 +2252,17 @@ button {
 }
 @media only screen and (max-width: 675px) {
   .subscription-pop .model-body {
-    padding: 40px 25px 50px;
+    padding: 50px 25px;
   }
 }
 .subscription-pop .model-body .heading h2 {
   font-size: 25px;
   text-align: left;
+}
+@media only screen and (max-width: 540px) {
+  .subscription-pop .model-body .heading h2 {
+    font-size: 20px !important;
+  }
 }
 .subscription-pop .model-body .heading p {
   font-size: 14px;
@@ -2271,6 +2271,11 @@ button {
   padding: 30px 0 0 0;
   --item: 2;
   --borderafter: var(--primary);
+}
+@media only screen and (max-width: 540px) {
+  .subscription-pop .model-body .form-grid {
+    --item: 1;
+  }
 }
 .subscription-pop .model-body .form-grid button {
   opacity: 1;
@@ -2281,6 +2286,11 @@ button {
   align-items: center;
   background: var(--primary);
   transition: 0.5s ease;
+}
+@media only screen and (max-width: 540px) {
+  .subscription-pop .model-body .form-grid button {
+    margin: auto;
+  }
 }
 .subscription-pop .model-body .form-grid button:hover {
   background: var(--white);
