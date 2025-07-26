@@ -109,6 +109,16 @@
   justify-content: space-evenly;
   overflow: hidden;
 }
+@media only screen and (max-width: 1024px) {
+  .contact-secA .flex-box {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-secA .flex-box {
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 540px) {
   .contact-secA .flex-box {
     flex-direction: column-reverse;
@@ -157,6 +167,17 @@
 }
 .contact-secA .flex-box .flex-box-item:last-child .heading h2 span:nth-child(3) {
   color: var(--black);
+}
+@media only screen and (max-width: 768px) {
+  .contact-secA .flex-box .flex-box-item:last-child .heading h2 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .flex-box .flex-box-item:last-child .heading h2 {
+    font-size: 24px !important;
+    margin-bottom: 20px;
+  }
 }
 .contact-secA .flex-box .flex-box-item:last-child ul li {
   display: flex;
@@ -267,6 +288,11 @@
 .contact-secB .box .heading {
   text-align: center;
   margin-bottom: 70px;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB .box .heading {
+    margin-bottom: 50px;
+  }
 }
 .contact-secB .box .heading h2 {
   font-weight: 600;

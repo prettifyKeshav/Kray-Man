@@ -131,24 +131,41 @@
                         <h2>Our culture is one of our most valuable assets</h2>
                     </div>
 
-                    <div class="grid-box">
-                        <div class="grid-box-item">
-                            <figure>
-                                <img src="assets/images/gallary/1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="grid-box-item">
-                            <figure>
-                                <img src="assets/images/gallary/2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="grid-box-item">
-                            <figure>
-                                <img src="assets/images/gallary/3.jpg" alt="">
-                            </figure>
+                    <div class="swiper ourculture-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="grid-box-item">
+                                    <figure><img src="assets/images/gallary/1.jpg" alt="" /></figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid-box-item">
+                                    <figure><img src="assets/images/gallary/2.jpg" alt="" /></figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid-box-item">
+                                    <figure><img src="assets/images/gallary/3.jpg" alt="" /></figure>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="grid-box-item">
+                                    <figure><img src="assets/images/gallary/1.jpg" alt="" /></figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid-box-item">
+                                    <figure><img src="assets/images/gallary/2.jpg" alt="" /></figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid-box-item">
+                                    <figure><img src="assets/images/gallary/3.jpg" alt="" /></figure>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -881,6 +898,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new Swiper(".ourculture-slider", {
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                // pauseOnMouseEnter: true,
+                reverseDirection: true
+                
+            },
+            breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+                speed: 3000,
+            },
+            540: {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+                speed: 3000,
+            },
+            1024: {
+                slidesPerView: 3.2,
+                spaceBetween: 20,
+                speed: 3000
+            }
+        }
+        });
+    </script>
 
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

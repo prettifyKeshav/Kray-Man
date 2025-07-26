@@ -362,6 +362,8 @@ footer
             z-index: 1
             @include media(991)
                 grid-template-columns: repeat(2, 1fr)
+                grid-gap: 40px
+
             @include media(768)
                 grid-template-columns: repeat(1, 1fr)
             @include media(540)
@@ -383,7 +385,7 @@ footer
                     justify-content: space-between
                     gap: 30px
                     @include media(768)
-                        justify-content: space-evenly
+                        justify-content: space-between
                         gap: 0
 
                 h6
@@ -415,7 +417,7 @@ footer
                     color: $white
                     margin-bottom: 20px
                     @include media(768)
-                        max-width: 70%
+                        max-width: 100%
                         margin: auto
                         margin-bottom: 20px
                     @include media(675)
@@ -426,7 +428,7 @@ footer
                         margin-bottom: 20px
                 .location
                     @include media(768)
-                        width: 70%
+                        width: 100%
                         margin: auto
                     @include media(540)
                         width: 100%
@@ -463,6 +465,7 @@ footer
         display: flex
         justify-content: center
         align-items: center
+        line-height: 0
         @include media(540)
             padding-bottom: 100px
         p

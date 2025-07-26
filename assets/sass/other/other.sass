@@ -1,3 +1,5 @@
+@import '../_var'
+
 .privacy-secA
   background: var(--white)
   margin-top: var(--headerheight)
@@ -101,6 +103,8 @@
 .thanks-banner
   height: 100vh
   margin-top: 0
+  .logo
+    padding: 50px 0
   h1
     max-width: 100% !important
   .content
@@ -109,7 +113,39 @@
     left: 50%
     transform: translate(-50%, -50%)
     text-align: center
+    width: 90%
     // @include media(540)
       // width: 80%
-  .bottom-btn
-    padding: 20px
+  .more-btn
+    margin: 50px 
+    a
+      opacity: 1
+      border-radius: 5px
+      padding: 8px 15px
+      color: $white
+      align-items: center
+      background: $primary
+      border: 1px solid $primary
+      display: flex
+      align-items: center
+      width: fit-content
+      font-weight: 500
+      margin: auto
+      @include media(768)
+        margin: auto
+        padding: 1px 15px
+      @include media(540)
+        margin: auto
+        padding: 1px 15px
+      svg
+        padding-left: 10px
+        transition: 0.3s ease
+        width: 30px 
+        height: 30px 
+      &:hover
+        background: $white
+        border: 1px solid $primary
+        color: $primary
+        font-weight: 500
+        svg path
+          stroke: $primary

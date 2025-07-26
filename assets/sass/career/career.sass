@@ -22,6 +22,8 @@
         width: 100%
         height: 100%
         background: linear-gradient(360deg, rgba(0, 0, 0, 0) 50.48%, rgba(0, 0, 0, 0.98) 100%),linear-gradient(270deg, rgba(0, 0, 0, 0) 57.69%, rgba(0, 0, 0, 0.65) 100%),linear-gradient(180deg, rgba(0, 0, 0, 0) 55.49%, rgba(0, 0, 0, 0.95) 100%)
+        @include media(991)
+            background:  linear-gradient(20deg, rgba(0, 0, 0, 0) 50.48%, rgba(0, 0, 0, 0.98) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 57.69%, rgba(0, 0, 0, 0.65) 100%), linear-gradient(178deg, rgba(0, 0, 0, 0) 45.49%, rgba(0, 0, 0, 0.95) 100%)
         @include media(540)    
             background: linear-gradient(360deg, rgba(0, 0, 0, 0) 50.48%, rgba(0, 0, 0, 0.98) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0) 57.69%, rgba(0, 0, 0, 0.65) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 35.49%, rgba(0, 0, 0, 0.95) 100%)
     .banner-wrapper 
@@ -48,7 +50,7 @@
                 bottom: 20%
                 margin-left: 10px
                 @include media(991)
-                    bottom: 40%
+                    bottom: 10%
                 @include media(540)
                     bottom: 14%
                     margin-left: 0
@@ -95,6 +97,8 @@
     .heading
         max-width: 40%
         margin: auto
+        @include media(1024)
+            max-width: 50%
         @include media(991)
             max-width: 70%
         @include media(540)
@@ -110,28 +114,42 @@
             font-weight: 500
             font-size: 16px
             text-align: center 
-    .grid-box
-        display: grid
-        grid-template-columns: repeat(3,1fr)
-        grid-gap: 30px
-        padding: 70px 0 0 0
-        @include media(540)
-            padding: 40px 0 0 0
-        .grid-box-item
-            width: 100%
-            border-radius: 10px
-            overflow: hidden
+    .ourculture-slider
+        padding: 50px 0 0 0
+        .swiper-wrapper
+            transition-timing-function: linear !important
+        .swiper-slide
+            flex-shrink: 0
             figure
-                width: 100%
                 img
                     width: 100%
                     height: 100%
                     object-fit: cover
 
+    // .grid-box
+    //     display: grid
+    //     grid-template-columns: repeat(3,1fr)
+    //     grid-gap: 30px
+    //     padding: 70px 0 0 0
+    //     @include media(540)
+    //         padding: 40px 0 0 0
+    //     .grid-box-item
+    //         width: 100%
+    //         border-radius: 10px
+    //         overflow: hidden
+    //         figure
+    //             width: 100%
+    //             img
+    //                 width: 100%
+    //                 height: 100%
+    //                 object-fit: cover
+
 .career-secB
     padding: 50px 0
     position: relative
     overflow: hidden
+    // @include media(991)
+    //     padding: 0
     @include media(540)
         padding: 0 0 50px 0 
     .flex-box
@@ -153,6 +171,8 @@
                         color: $primary
                     span:nth-child(3)
                         color: #666666
+                    @include media(991)
+                        font-size: 35px
         .flex-box-item
             width: 638px
             @include media(540)
@@ -161,6 +181,8 @@
                 font-weight: 400
                 font-size: 16px
                 margin-bottom: 15px
+                @include media(991)
+                    font-size: 14px
                 @include media(540)
                     text-align: center
                     font-size: 14px
@@ -191,13 +213,29 @@
                 display: flex
                 overflow: hidden
                 height: 420px
+                width: fit-content
+                @include media(991)
+                    height: 600px
+                @include media(540)
+                    height: 500px
+                    gap: 4px
                 &.active
                     .tab-content
                         padding: 40px 30px
                         width: 100%
                         max-width: 1280px
+                        @include media(540)
+                            padding: 20px 10px
                         .tab-text
                             opacity: 1
+                            overflow: auto
+                            &::-webkit-scrollbar
+                                width: 2px
+                            &::-webkit-scrollbar-track
+                                box-shadow: unset
+                                background: #fff
+                            &::-webkit-scrollbar-thumb
+                                background-color: $primary
                         .tab-image
                             opacity: 1
                     .tabs-title
@@ -213,10 +251,16 @@
                     z-index: 1
                     cursor: pointer
                     transition: 0.5s ease-in-out
+                    @include media(991)
+                        text-align: right
+                    @include media(540)
+                        padding: 20px 7px
                     p
                         font-weight: 500
                         font-size: 20px
                         color: $white
+                        @include media(540)
+                            font-size: 12px
                 .tab-content
                     display: flex
                     justify-content: space-between
@@ -226,33 +270,69 @@
                     max-width: 0
                     width: 0
                     transition: 0.5s ease-in-out
+                    @include media(991)
+                        flex-direction: column
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                    @include media(540)
+                        justify-content: start
                     .tab-text
                         width: 50%
                         opacity: 0
                         transition: 0.5s ease-in-out
                         padding: 10px 0
-                        height: 165px
-                        overflow: hidden
+                        // height: 165px
+                        overflow: auto
+                        &::-webkit-scrollbar
+                            width: 2px
+                        &::-webkit-scrollbar-track
+                            box-shadow: unset
+                            background: #fff
+                        &::-webkit-scrollbar-thumb
+                            background-color: $primary
+                        @include media(991)
+                            width: 100%
+                            // height: 180px
+                            text-align: center
+                            padding: 0 30px
+                        @include media(540)
+                            padding: 0
+                            
+                          
                         h3
                             font-weight: 600
                             font-size: 32px
                             line-height: 24px
                             color: $black
                             margin-bottom: 20px
+                            line-height: 1.1
+                            @include media(991)
+                                font-size: 25px
+                            @include media(540)
+                                font-size: 20px
+                                margin-bottom: 10px
                         p
                             font-weight: 400
                             font-size: 16px
                             color: $black
                             line-height: 1.4
+                            @include media(1024)
+                                font-size: 14px
+                            @include media(540)
+                                font-size: 12px
                     .tab-image
-                        width: 474px
+                        // width: 474px
                         opacity: 0
                         transition: 0.5s ease-in-out
-
                         figure
                             width: 474px
                             height: 333px
                             border-radius: 10px
+                            overflow: hidden
+                            @include media(540)
+                                width: auto
+                                height: auto
                             img
                                 height: 100%
                                 width: 100%
@@ -398,6 +478,8 @@
             .review-slider
                 padding: 70px 0 50px 0
                 position: relative
+                @include media(991)
+                    padding: 50px 0 50px 0
                 @include media(540)
                     padding: 40px 0 30px 0
                 .swiper-slide
@@ -546,7 +628,8 @@
                                 color: #666666
                         .flex-box-item:last-child
                             .button
-                                height: 48px
+                                // height: 48px
+                                white-space: nowrap
                                 border-radius: 5px
                                 border-width: 1px
                                 padding: 14px 40px

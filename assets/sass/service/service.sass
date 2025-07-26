@@ -101,6 +101,8 @@
         justify-content: space-between
         .flex-box-item:first-child
             width: 65%
+            @include media(1024)
+                width: 55%
             @include media(991)
                 width: 100%
             .content
@@ -203,15 +205,13 @@
                                 background-repeat: no-repeat
                                 aspect-ratio: 1
 
-
-
 .service-secB
     .banner
         .bg
             position: relative
             height: 100vh
             @include media(768)
-                height: 80vh
+                height: 70vh
             @include media(540)
                 height: 100vh
             &::before

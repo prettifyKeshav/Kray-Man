@@ -267,6 +267,11 @@
   padding: 50px 40px;
   transition: 0.5s ease;
 }
+@media only screen and (max-width: 540px) {
+  .home-secA .container .services-slider .services-slider-slider .swiper-slide {
+    background: rgba(255, 255, 255, 0.29);
+  }
+}
 .home-secA .container .services-slider .services-slider-slider .swiper-slide svg path {
   stroke: #43ADFF;
 }
@@ -532,6 +537,11 @@
   transform: translate(-10%, 0%);
   border-top-left-radius: 50px;
 }
+@media only screen and (max-width: 1024px) {
+  .home-secB .flex-box .flex-box-item:last-child .video-sec figure video {
+    transform: translate(-4%, 5%);
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secB .flex-box .flex-box-item:last-child .video-sec figure video {
     transform: translate(0, 0);
@@ -565,8 +575,8 @@
 }
 @media only screen and (max-width: 768px) {
   .home-secB .flex-box .flex-box-item:last-child .video-sec .bg {
-    top: 7%;
-    left: 13%;
+    top: 9%;
+    left: 15%;
   }
 }
 @media only screen and (max-width: 504px) {
@@ -620,6 +630,11 @@
   justify-content: space-around;
   padding: 70px 0 0 0;
   overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .home-secC .container .flex-box {
+    justify-content: space-between;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secC .container .flex-box {
@@ -783,7 +798,7 @@
 }
 @media only screen and (max-width: 768px) {
   .home-secD .video-sec .figinfo2 {
-    width: 100vw;
+    width: 90vw;
   }
 }
 @media only screen and (max-width: 540px) {

@@ -267,7 +267,7 @@ $(function () {
             },
             breakpoints: {
                 0: {
-                    slidesPerView: 1.1,
+                    slidesPerView: 1.2,
                     spaceBetween: 10,
                     speed: 500,
                 },
@@ -376,7 +376,7 @@ $(function () {
     });
     // About  SLIDER END ======================>
 
-        
+
     // MORE BLOG DETAILS PAGE SLIDER START ======================>
     new Swiper('.blog-details-slider', {
         loop: false,
@@ -976,8 +976,8 @@ $(function () {
     );
 
     // GSAP ON SCROLL END ===============================================>>>>>>>
-
-
+    
+    // Bedge Slider End
 
 });
 
