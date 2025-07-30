@@ -32,33 +32,32 @@
 
 </head>
 
-<body>
+<body class="home-page">
 
     <!-- ================= HEADER START ================= -->
-    <header class="">
+    <header>
         <div class="container-fluid">
             <div class="header-wrapper">
-
                 <div class="colA">
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.svg" alt="KrayMan" title="KrayMan">
+                        <img src="assets/images/logo.svg" alt="KrayMan" title="KrayMan" />
                     </a>
                 </div>
-
                 <div class="colB">
-
                     <ul class="upper-menu-list">
                         <li>
-                            <a href="tel:+919818937799"><span><img class="svg" src="assets/icon/call-white.svg"
-                                        alt=""></span> +91 - 98189 37799
+                            <a href="tel:+919818937799">
+                                <span><img class="svg" height="16px" width="16px" src="assets/icon/call-white.svg" alt="" /></span>
+                                +91 - 98189 37799
                             </a>
                         </li>
                         <ul class="upper-menu-right">
                             <li>
                                 <a href="javascript:void(0);">
                                     <span>
-                                        <img src="/assets/icon/globe.svg" alt="">
-                                    </span>English
+                                        <img src="/assets/icon/globe.svg" alt="" />
+                                    </span>
+                                    English
                                 </a>
                             </li>
                             <span>|</span>
@@ -69,27 +68,100 @@
                             </li>
                         </ul>
                     </ul>
-
                     <ul class="menu-list">
-                        <li>
-                            <a href="javascript:void(0);">About us
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt=""></span>
+                        <li class="hasDropdown single">
+                            <a aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">
+                                About us
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
+                            <div class="dropdown-menu" role="menu">
+                                <ul>
+                                    <li><a href="about.html#story">KrayMan Story</a></li>
+                                    <li><a href="about.html#visionmistion">Vision & Mission</a></li>
+                                    <li><a href="about.html#coreValues">Core Values</a></li>
+                                    <li><a href="about.html#leadershipTeam">Leadership Team</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li>
-                            <a href="javascript:void(0);">Services
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt=""></span>
+
+                        <li class="hasDropdown">
+                            <a aria-haspopup="true" aria-expanded="false" href="service.html">
+                                Services
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
+                            <div class="dropdown-menu" role="menu">
+                                <ul>
+                                    <li>
+                                        <a href="service.html">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            India Entry Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            Accounting
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            Taxation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            Regulatory
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            Assurance
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            HR & Payroll
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            Loan Staffing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <img class="svg" src="assets/images/home/service-icon/2.svg" alt="" />
+                                            Global Capability Center
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li><a href="javascript:void(0);">Publications</a></li>
-                        <li>
-                            <a href="javascript:void(0);">Life at KrayMan
-                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt=""></span>
+
+                        <li><a href="publications.html">Publications</a></li>
+
+                        <li class="hasDropdown single">
+                            <a aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">
+                                Life at KrayMan
+                                <span><img class="svg" width="16" src="assets/icon/arrow-down-white.svg" alt="" /></span>
                             </a>
+                            <div class="dropdown-menu" role="menu">
+                                <ul>
+                                    <li><a href="career.html#OurCulture">Our Culture</a></li>
+                                    <li><a href="career.html#CSR">CSR Initative</a></li>
+                                    <li><a href="career.html#Review">Employee Review</a></li>
+                                    <li><a href="career.html#openings">Current Openings</a></li>
+                                </ul>
+                            </div>
                         </li>
+
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
-
                 </div>
 
                 <button type="button" class="ham-btn" data-model=".ham-pop">
@@ -101,6 +173,7 @@
         </div>
     </header>
     <!-- ================= HEADER END ================= -->
+
 
     <main>
 
@@ -213,7 +286,8 @@
 
         <section class="about-secC" id="coreValues">
             <div class="property-column active" data-bg="assets/images/about/core-value/1.jpg">
-                <img src="assets/images/about/core-value/1.svg" alt="Logo" />
+                <!-- <img src="assets/images/about/core-value/1.svg" alt="Logo" /> -->
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" d="M24 43.5c3.883 0 14.68-7.263 15.658-19.893v-13.48L24 4.5L8.342 10.127v13.48C8.906 35.517 19.834 43.5 24 43.5" stroke-width="1"/><circle cx="24" cy="24.044" r="5.846" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" d="m35.531 35.117l-7.179-7.18" stroke-width="1"/></svg>
                 <h3>Act with Integrity</h3>
                 <div class="property-content">
                     <p>Upholding highest professional standards by doing business fairly & honestly, we
@@ -222,7 +296,8 @@
             </div>
 
             <div class="property-column" data-bg="assets/images/about/core-value/2.jpg">
-                <img src="assets/images/about/core-value/2.svg" alt="Logo" />
+                <!-- <img src="assets/images/about/core-value/2.svg" alt="Logo" /> -->
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" d="M11.5.5h-9a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-11a1 1 0 0 0-1-1m-10 10h11M4.5 3h5m-5 2.5h5M4.5 8h3" stroke-width="0.2"/></svg>
                 <h3>Accountability</h3>
                 <div class="property-content">
                     <p>We take personal responsibility and ownership for own work. Commit to deliver on
@@ -232,7 +307,8 @@
             </div>
 
             <div class="property-column" data-bg="assets/images/about/core-value/3.jpg">
-                <img src="assets/images/about/core-value/3.svg" alt="Logo" />
+                <!-- <img src="assets/images/about/core-value/3.svg" alt="Logo" /> -->
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"><path d="M44 42H31l-2.956-13.793a2 2 0 0 1-.044-.419V15l-7.43-5.964a1.962 1.962 0 0 1 2.19-3.24L32 11l3.947 14.803q.053.197.144.38zm-8-16l-8 2"/><path d="m19.379 25.52l.064.054a2 2 0 0 0 3-.508L24 22.463V17.77L20.32 15l-6.36.846l-4.145 8.096q-.075.145-.125.3L4 42h11.96V29L17 24.087L17.5 22H19l-.304 1.617a2 2 0 0 0 .683 1.904M10 25l6 3"/></g></svg>
                 <h3>Respect for Stakeholders</h3>
                 <div class="property-content">
                     <p>We are respectful, open and honest, and build relationships based on trust.</p>
@@ -625,12 +701,13 @@
                         <div class="col-mdB">
                             <h6>Company</h6>
                             <ul>
-                                <li><a href="">About us</a></li>
+                                <li><a href="about.html">About us</a></li>
                                 <li><a href="">Corporate Brochure</a></li>
                                 <li><a href="">Japan Desk Brochure</a></li>
-                                <li><a href="">Publications</a></li>
-                                <li><a href="">Life at KrayMan</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                                <li><a href="career.html">Life at KrayMan</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>

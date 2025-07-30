@@ -7,6 +7,7 @@ $(function () {
     }
 
     //
+    
 
     const formControls = $(".form-control");
     formControls.on('focus input change blur', throttle(handleForm));
@@ -253,6 +254,35 @@ $(function () {
         },
     });
     // Home-Swiper==========================>>>>
+
+
+     new Swiper(".ourculture-slider", {
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                // pauseOnMouseEnter: true,
+                reverseDirection: true
+                
+            },
+            breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+                speed: 3000,
+            },
+            540: {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+                speed: 3000,
+            },
+            1024: {
+                slidesPerView: 3.2,
+                spaceBetween: 20,
+                speed: 3000
+            }
+        }
+        });
 
 
 
